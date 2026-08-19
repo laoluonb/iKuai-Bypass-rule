@@ -1,5 +1,3 @@
-com.tencent.ibg.joox
 i-joox.com
 joox.com
-jooxweb-api
 sanook.com

@@ -25,7 +25,6 @@ steam.eca.qtlglb.com
 steam.naeu.qtlglb.com
 steam.ru.qtlglb.com
 steam.tv
-steambroadcast
 steambroadcast.akamaized.net
 steamcdn-a.akamaihd.net
 steamcommunity-a.akamaihd.net
@@ -42,11 +41,9 @@ steampowered.com.8686c.com
 steamstat.us
 steamstatic.com
 steamstatic.com.8686c.com
-steamstore
 steamstore-a.akamaihd.net
 steamunlocked.net
 steamusercontent-a.akamaihd.net
-steamuserimages
 steamuserimages-a.akamaihd.net
 steamvideo-a.akamaihd.net
 underlords.com

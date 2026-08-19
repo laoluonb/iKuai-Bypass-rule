@@ -2,7 +2,6 @@ atom.io
 dependabot.com
 ghcr.io
 git.io
-github
 github-atom-io-herokuapp-com.freetls.fastly.net
 github-avatars.oss-cn-hongkong.aliyuncs.com
 github-cloud.s3.amazonaws.com

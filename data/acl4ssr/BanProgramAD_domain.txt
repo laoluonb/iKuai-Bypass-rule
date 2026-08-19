@@ -384,7 +384,6 @@ f10.baidu.com
 fa.corp.163.com
 fair.sogou.com
 fav.simba.taobao.com
-fc-.cdn.bcebos.com
 fc-feed.cdn.bcebos.com
 fclick.baidu.com
 fds.api.moji.com
@@ -646,7 +645,6 @@ nstat.tudou.com
 o.if.qidian.com
 oimagea2.ydstatic.com
 omgmta1.qq.com
-omgmtaw
 onepush.query.yahoo.com
 openapi-news.meizu.com
 openrcv.baidu.com

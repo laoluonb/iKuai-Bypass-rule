@@ -7,4 +7,3 @@ dcblivedazn.akamaized.net
 indazn.com
 indaznlab.com
 sentry.io
-voddazn

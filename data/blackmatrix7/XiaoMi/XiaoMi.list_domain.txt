@@ -14,7 +14,6 @@ api-aos-cnbj6.huami.com
 api-mifit-cn.huami.com
 api-mifit.huami.com
 app-analytics-cn.huami.com
-com.xiaomi.mibrain.speech
 duokan.com
 duokanbox.com
 facephoto.com
@@ -147,4 +146,3 @@ xlaomi.net
 youpin.cn
 youpin.com.cn
 zhutidasai.com
-小米云服务.exe

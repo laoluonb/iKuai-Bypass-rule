@@ -1,4 +1,3 @@
-backupandsync
 docs.google.com
 drive.google.com
 googledrive.com

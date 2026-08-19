@@ -11,15 +11,15 @@
 | 规则名称 | 域名格式 | ISP/IP 格式 |
 | --- | --- | --- |
 | `Advertising.list` | [下载](Advertising.list_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising.list_domain.txt) | [下载](Advertising.list_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising.list_isp.txt) |
-| `Advertising.yaml` | [下载](Advertising.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising.yaml_domain.txt) | [下载](Advertising.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising.yaml_isp.txt) |
+| `Advertising.yaml` | - | [下载](Advertising.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising.yaml_isp.txt) |
 | `Advertising_Classical.yaml` | [下载](Advertising_Classical.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_Classical.yaml_domain.txt) | [下载](Advertising_Classical.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_Classical.yaml_isp.txt) |
 | `Advertising_Classical_No_Resolve.yaml` | [下载](Advertising_Classical_No_Resolve.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_Classical_No_Resolve.yaml_domain.txt) | [下载](Advertising_Classical_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_Classical_No_Resolve.yaml_isp.txt) |
 | `Advertising_Domain.yaml` | [下载](Advertising_Domain.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_Domain.yaml_domain.txt) | [下载](Advertising_Domain.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_Domain.yaml_isp.txt) |
-| `Advertising_No_Resolve.yaml` | [下载](Advertising_No_Resolve.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_No_Resolve.yaml_domain.txt) | [下载](Advertising_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_No_Resolve.yaml_isp.txt) |
+| `Advertising_No_Resolve.yaml` | - | [下载](Advertising_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Advertising/Advertising_No_Resolve.yaml_isp.txt) |
 
 ## 格式说明
 
-- 域名文件：每行一条域名或可用的域名规则值。
+- 域名文件：每行一条经过校验的真实域名；正则、关键词、通配符和未知格式会跳过。
 - ISP/IP 文件：每行一条 IPv4 或 IPv4/CIDR；没有有效内容时不生成。
 - 同一文件内及合并文件均已去重并排序。
 

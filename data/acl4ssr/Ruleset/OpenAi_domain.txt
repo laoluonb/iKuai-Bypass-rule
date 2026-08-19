@@ -9,7 +9,6 @@ intercom.io
 intercomcdn.com
 oaistatic.com
 oaiusercontent.com
-openai
 openai.com
 openaiapi-site.azureedge.net
 sentry.io

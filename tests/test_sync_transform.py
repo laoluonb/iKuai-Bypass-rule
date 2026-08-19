@@ -96,7 +96,7 @@ DOMAIN-SUFFIX,*.invalid.example
 DOMAIN,example.com
 """
     values, stats = extract_clash_all_values(content)
-    assert values == ["*.invalid.example", "example.com", "example.org", "ignored"]
+    assert values == ["example.com", "example.org"]
     assert stats["duplicates"] == 1
 
 
@@ -111,15 +111,13 @@ unknown:value
 """
     values, stats = extract_v2ray_all_values(content)
     assert values == [
-        "(^|\\.)example\\.net$",
         "1.2.3.0/24",
         "1.2.3.4",
         "api.example.com",
         "cdn.example.com",
         "example.com",
-        "value",
     ]
-    assert stats["accepted"] == 7
+    assert stats["accepted"] == 5
 
 
 def test_extract_clash_values_into_ikuai_domain_and_isp_lists():
@@ -147,9 +145,36 @@ cidr:1.2.3.0/24
 regexp:(^|\\.)example\\.net$
 """
     domains, ips, stats = extract_v2ray_ikuai_values(content)
-    assert domains == ["(^|\\.)example\\.net$", "api.example.com", "cdn.example.com", "example.com"]
+    assert domains == ["api.example.com", "cdn.example.com", "example.com"]
     assert ips == ["1.2.3.0/24", "1.2.3.4"]
-    assert stats["accepted"] == 6
+    assert stats["accepted"] == 5
+
+
+def test_domain_outputs_reject_regex_and_keep_real_domains():
+    content = """regexp:(^|\\.)1-5gaoap\\.com$
+domain:valid.example.com
+full:api.valid.example.com
+keyword:ignored.example.com
+https://example.com/rules
+*.wildcard.example.com
+"""
+    domains, ips, stats = extract_v2ray_ikuai_values(content)
+    assert domains == ["api.valid.example.com", "valid.example.com"]
+    assert ips == []
+    assert stats["skipped"] == 4
+
+
+def test_clash_domain_keyword_is_not_converted_to_domain():
+    content = """DOMAIN,valid.example.com
+DOMAIN-SUFFIX,example.org
+DOMAIN-KEYWORD,keyword
+DOMAIN-REGEX,(^|\\.)example\\.net$
+RULE-SET,https://example.com/rules
+"""
+    domains, ips, stats = extract_clash_ikuai_values(content)
+    assert domains == ["example.org", "valid.example.com"]
+    assert ips == []
+    assert stats["skipped"] == 3
 
 
 def test_collect_proxy_outputs_deduplicates_and_removes_china_values():

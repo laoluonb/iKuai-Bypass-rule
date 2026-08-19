@@ -1,10 +1,7 @@
-apiproxy-device-prod-nlb-
-dualstack.apiproxy-
 fast.com
 netflix.com
 netflix.com.edgesuite.net
 netflix.net
-netflixdnstest
 netflixdnstest0.com
 netflixdnstest1.com
 netflixdnstest2.com

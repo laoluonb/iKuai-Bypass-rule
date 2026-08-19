@@ -128,7 +128,6 @@ easyanticheat.net
 edge.steam-dns.top.comcast.net
 electronicarts.com
 electronicarts.fr
-epicgames
 epicgames.com
 epicgames.dev
 excitebots.com
@@ -432,7 +431,6 @@ steam.eca.qtlglb.com
 steam.naeu.qtlglb.com
 steam.ru.qtlglb.com
 steam.tv
-steambroadcast
 steambroadcast.akamaized.net
 steamcdn-a.akamaihd.net
 steamchina.com
@@ -452,12 +450,10 @@ steamserver.net
 steamstat.us
 steamstatic.com
 steamstatic.com.8686c.com
-steamstore
 steamstore-a.akamaihd.net
 steamunlocked.net
 steamusercontent-a.akamaihd.net
 steamusercontent.com
-steamuserimages
 steamuserimages-a.akamaihd.net
 steamvideo-a.akamaihd.net
 store-images.s-microsoft.com

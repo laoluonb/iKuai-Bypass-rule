@@ -10,7 +10,6 @@ app.bilibili.com
 cache.video.iqiyi.com
 chuangcachecdnoversea-tw.inter.iqiyi.com
 chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
-cn-hk-eq-bcache-
 grpc.biliapi.net
 intl-rcd.iqiyi.com
 intl-subscription.iqiyi.com

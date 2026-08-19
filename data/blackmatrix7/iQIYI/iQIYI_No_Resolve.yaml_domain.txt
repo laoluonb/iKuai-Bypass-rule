@@ -8,7 +8,6 @@ aiqiyicloud-mgmt.com
 aiqiyicloud.com
 aiqiyicloud.net
 baiying.com
-com.qiyi.video
 gitv.cn
 gitv.tv
 ibkstore.com
@@ -27,7 +26,6 @@ ppstream.com.cn
 ppstream.net
 ppstream.net.cn
 ppsurl.com
-qiyi
 qiyi.cn
 qiyi.com
 qiyipic.com

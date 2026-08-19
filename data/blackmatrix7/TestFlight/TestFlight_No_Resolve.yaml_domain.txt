@@ -1,3 +1,2 @@
 beta.apple.com
-testflight
 testflight.apple.com

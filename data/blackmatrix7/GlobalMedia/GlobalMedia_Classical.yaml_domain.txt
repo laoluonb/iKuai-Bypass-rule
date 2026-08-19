@@ -9,7 +9,6 @@ abc.com
 abema-tv.com
 abema.io
 abema.tv
-abematv.akamaized.net
 aboutamazon.com
 adobedtm.com
 adventuresbydisney.com
@@ -47,14 +46,12 @@ amerikayidzayn.com
 amerikiskhma.com
 amlg.io
 anidom.com
-anthropic
 anthropic.com
 api.githubcopilot.com
 api.groq.com
 api.okzy.tv
 api.together.xyz
 api.tv.colnv.com
-apiproxy-device-prod-nlb-
 apm-misaka.biliapi.net
 apple.comscoreresearch.com
 apple.news
@@ -71,7 +68,6 @@ atv-ps-eu.amazon.com
 atv-ps-fe.amazon.co.jp
 atv-ps-fe.amazon.com
 atv-ps.amazon.com
-avoddashs
 avodmp4s3ww-a.akamaihd.net
 babble.com
 babyzone.com
@@ -86,7 +82,6 @@ bbc.com
 bbc.in
 bbc.net.uk
 bbcchinese.com
-bbcfmt
 bbcfmt.s.llnwi.net
 bbci.co
 bbci.co.uk
@@ -148,7 +143,6 @@ channel5.com
 chocotv.com.tw
 chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 cinemax.com
-claude
 claude.ai
 claude.com
 claudeusercontent.com
@@ -164,9 +158,6 @@ cnnmoney.ch
 cobeuz.fr
 cobuz.fr
 cobuzz.fr
-com.viu.pad
-com.viu.phone
-com.vuclip.viu
 console.groq.com
 content.jwplatform.com
 control.kochava.com
@@ -214,7 +205,6 @@ directv.com
 disco-api.com
 discomax.com
 discovery.com
-discovery.uplynk.com
 discoveryplus.co.uk
 discoveryplus.com
 discoveryplus.in
@@ -324,8 +314,6 @@ dssott.com
 dtci.co
 dtci.technology
 dtvce.com
-dualstack.apiproxy-
-dualstack.ichnaea-web-
 dzcdn.net
 e-hentai.org
 e13252.dscg.akamaiedge.net
@@ -567,7 +555,6 @@ h-dazn.online-metrix.net
 h-netflix.online-metrix.net
 haiwaikan.com
 hamifans.emome.net
-hamivideo.cdn.hinet.net
 happyon.jp
 hath.network
 hayabusa.dev
@@ -584,7 +571,6 @@ hbogeo.cust.footprint.net
 hbogo.co.th
 hbogo.com
 hbogo.eu
-hbogoasia
 hbogoasia.com
 hbogoasia.hk
 hbogoasia.id
@@ -679,12 +665,10 @@ itv.com
 itvpnpmobile-a.akamaihd.net
 itvstatic.com
 iwara.tv
-japonx
 japonx.com
 japonx.net
 japonx.tv
 japonx.vip
-japronx
 japronx.com
 japronx.net
 japronx.tv
@@ -693,7 +677,6 @@ jetbrains.ai
 joeswall.com
 joinmaidez.com
 joox.com
-jooxweb-api
 js-agent.newrelic.com
 jtvnw.net
 jwpcdn.com
@@ -812,7 +795,6 @@ netflix.com
 netflix.com.au
 netflix.com.edgesuite.net
 netflix.net
-netflixdnstest
 netflixdnstest0.com
 netflixdnstest1.com
 netflixdnstest2.com
@@ -848,7 +830,6 @@ nikkei.co.jp
 nikkei.com
 nikkei.jp
 nimg.jp
-nivod
 nivod.tv
 nivodi.tv
 nivodz.com
@@ -861,7 +842,6 @@ now.com.hk
 nowe.com
 nowe.hk
 nowestatic.com
-nowtv100
 nypost.com
 nypost.help
 nypostreprints.com
@@ -879,7 +859,6 @@ ocnttv.com
 ocvideo.apple.com
 olehd.com
 olelive.com
-olevod
 olevod.com
 olevod.io
 olevod.tv
@@ -963,7 +942,6 @@ rpg.pic-imges.com
 rprimelab.com
 rthk.hk
 rthk.org.hk
-rthklive
 rthklive2-lh.akamaihd.net
 s-nbcnews.com
 s.yimg.jp
@@ -996,7 +974,6 @@ speedfantasybid.com
 speedracegear.com
 speedxtra.com
 spoti.fi
-spotify
 spotify-everywhere.com
 spotify.com
 spotify.design
@@ -1036,17 +1013,14 @@ tidalhifi.com
 tik-tokapi.com
 tiktok.com
 tiktok.us
-tiktokcdn
 tiktokcdn.com
 tiktokv.com
 timestalks.com
 tospotify.com
-ttvnw
 ttvnw.net
 tv.apple.com
 tvb.com
 tvb.com.au
-tvbanywhere
 tvbanywhere.com
 tvbanywhere.com.sg
 tvbeventpower.com.hk
@@ -1061,7 +1035,6 @@ twitch.tv
 twitchcdn.net
 twitchsvc.net
 tynt.com
-uk-live
 universalkids.com
 uplynk.com
 urduvoa.com
@@ -1131,7 +1104,6 @@ voatiengviet.com
 voatour.com
 voazimbabwe.com
 vod360.net
-voddazn
 vox-cdn.com
 vox.com
 voxcreative.com

@@ -36,14 +36,12 @@ appbridge.ca
 appbridge.io
 appbridge.it
 apps5.oingo.com
-appspot
 appspot.com
 apture.com
 area120.com
 asp-cc.com
 autodraw.com
 avail.googleflights.net
-backupandsync
 bandpage.com
 baselinestudy.com
 baselinestudy.org
@@ -57,7 +55,6 @@ blink.org
 blog.google
 blogblog.com
 blogger.com
-blogspot
 blogspot.ae
 blogspot.al
 blogspot.am
@@ -164,10 +161,6 @@ cloudproxy.app
 cloudrobotics.com
 cobrasearch.com
 codespot.com
-com.android.vending
-com.google.android.gms
-com.google.android.gsf
-com.google.android.play.games
 conscrypt.com
 conscrypt.org
 cookiechoices.org
@@ -235,7 +228,6 @@ ggoogle.com
 gipscorp.com
 gkecnapps.cn
 globaledu.org
-gmail
 gmail.com
 gmodules.com
 go-lang.com
@@ -254,7 +246,6 @@ goo.gl
 googel.com
 googil.com
 googl.com
-google
 google-analytics-cn.com
 google-analytics.com
 google-syndication.com
@@ -475,7 +466,6 @@ googlecompare.co.uk
 googledanmark.com
 googledomains.com
 googledrive.com
-googledrivefs.exe
 googlee.com
 googleearth.com
 googlefiber.com
@@ -601,7 +591,6 @@ qpx.googleflights.net
 questvisual.com
 quickoffice.com
 quiksee.com
-recaptcha
 recaptcha-cn.net
 recaptcha.net
 redhotlabs.com

@@ -1,4 +1,3 @@
-.tmall.com
 0.zone
 00.net
 000.link
@@ -11273,7 +11272,6 @@ alicache.com
 alicall.com
 alicaptcha.com
 alicdm.com
-alicdn
 alicloud.com
 alicloudapi-inner.com
 alicloudapi.com
@@ -11336,7 +11334,6 @@ aliog.com
 alionexpo.com
 alipan.com
 alipansou.com
-alipay
 alipcsec.com
 aliplay.com
 aliplus.com
@@ -11380,7 +11377,6 @@ aliyiyao.com
 aliyizhan.com
 aliypc.com
 aliyue.net
-aliyun
 alizhaopin.com
 alizhizhu.com
 alizila.com
@@ -13594,7 +13590,6 @@ baidevalve.com
 baideye.com
 baidiapp.com
 baidinet.com
-baidu
 baieryk.com
 baifae.com
 baifang.in
@@ -14878,7 +14873,6 @@ benztto.com
 beony.com
 beook.com
 bepal.pro
-beplay
 bepurestandards.com
 bequ6.com
 bequ6.org
@@ -15446,7 +15440,6 @@ bilfinance.com
 biliapi.com
 biliapi.net
 bilibil.com
-bilibili
 bilicdn1.com
 bilicdn2.com
 bilicdn3.com
@@ -24295,18 +24288,9 @@ columbia-china.com
 columbia-kaiyuan.com
 columbia-wuxi.com
 com-hs-hkdy.com
-com.bilibili.app.blue
-com.bilibili.app.in
-com.bilibili.comic
-com.bilibili.comic.intl
 com.fi
-com.jjwxc.reader
 com.mp
-com.qiyi.video
-com.taobao.taobao
 com.tv
-com.xiaomi.mibrain.speech
-com.zhiliaoapp.musically
 com4loves.com
 comac.cc
 comake.online
@@ -45731,7 +45715,6 @@ hnaec.com
 hnaec.org
 hnaee.com
 hnafxh.com
-hnagroup
 hnainfrastructure.com
 hnair.com
 hnair.net
@@ -70320,7 +70303,6 @@ officeaid.com
 officeaid02.com
 officebai.com
 officebay.net
-officecdn
 officectrl.com
 officemkt.download.prss.microsoft.com
 officemktuat.download.prss.microsoft.com
@@ -74856,7 +74838,6 @@ qiyeweixin.com
 qiyewenhua.net
 qiyeyougou.com
 qiyeyouxiang.net
-qiyi
 qiyoubangbang.com
 qiyouji.com
 qiyoujiage.com
@@ -84565,7 +84546,6 @@ streamlake.com
 streamlakeapi.com
 streffy.com
 strinova.com
-stripe
 strong-light.com
 strong-study.com
 strongfc.com
@@ -87010,7 +86990,6 @@ taoa.com
 taoad.com
 taoart.com
 taoban.com
-taobao
 taobeihai.com
 taobizhong.com
 taoc.cc
@@ -88329,8 +88308,6 @@ thtfpc.com
 thufeng.net
 thumbenv.com
 thumedialab.com
-thunder
-thunder.exe
 thundercdn.com
 thundercdn.net
 thundercloud.group
@@ -90638,8 +90615,6 @@ tuzi8.com
 tuzigames.com
 tuziip.com
 tv.cnbeijing.xyz
-tv.danmaku.bili
-tv.danmaku.bilibilihd
 tv.drs.hhtv.cc
 tv.jrsncn.com
 tv.nknews.org
@@ -94258,7 +94233,6 @@ weibanan.com
 weibang.vip
 weibangong.com
 weibanzhushou.com
-weibo
 weibu.com
 weibusi.net
 weicaifu.com
@@ -111331,4 +111305,3 @@ zzzyy.com
 zzzyyy.com
 zzzzaaaa.com
 zzzzzz.me
-小米云服务.exe

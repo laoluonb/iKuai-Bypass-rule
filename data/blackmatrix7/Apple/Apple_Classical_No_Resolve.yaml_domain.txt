@@ -97,7 +97,6 @@ apple-pay.wang
 apple-store.cn
 apple-store.net
 apple-store.wang
-apple-support.akadns.net
 apple-usa.net
 apple-watch.com.ru
 apple.ae
@@ -121,7 +120,6 @@ apple.co.th
 apple.co.uk
 apple.com
 apple.com.af
-apple.com.akadns.net
 apple.com.au
 apple.com.bo
 apple.com.br
@@ -130,7 +128,6 @@ apple.com.cn
 apple.com.co
 apple.com.de
 apple.com.do
-apple.com.edgekey.net
 apple.com.gr
 apple.com.gy
 apple.com.jm
@@ -415,7 +412,6 @@ appstore.ph
 appstoreapple.cn
 appule.com
 appye.com
-apsd
 apyle.com
 apzones.com
 asto.re
@@ -717,7 +713,6 @@ burstly.net
 burstlyrewards.com
 businesswebwise.com
 buy-from-shanghai.com
-buy.itunes.apple.com
 buyaapl.com
 buyaapl.net
 buyaple.com
@@ -816,11 +811,8 @@ chomp.com
 ciattackers.com
 cmhalq.com
 cnshopin.com
-com.apple.geod
-com.apple.maps
 cooliphonecasesstore.com
 coolmonster.net
-corelocationagent
 coreml.net
 cozydrdrebeats.com
 cqcorea.com
@@ -949,11 +941,9 @@ famosascalvas.com
 finalcutpro.com
 find-apple.com
 findmybeats.com
-findmydevice-user-agent
 findmyipad.com
 firewire.cl
 firewire.eu
-fmfd
 foundationdb.org
 fr-beatsbydrestore.com
 francecasquebeatssolde.com
@@ -1018,7 +1008,6 @@ icloud-sandbox.com
 icloud.ch
 icloud.cn
 icloud.com
-icloud.com.akadns.net
 icloud.com.cn
 icloud.de
 icloud.ee
@@ -1255,7 +1244,6 @@ livephotos.com.cn
 livephotos.tv
 lojaiphone.com.br
 lookup-api.apple.com.edgekey.net
-lookupviewservice
 lovebeatsdr.com
 lovemarca.com
 ls.apple.com.edgesuite.net
@@ -1312,7 +1300,6 @@ macruby.org
 mairbeats.com
 makeeu.com
 mallheadphone.com
-mapspushd
 mbeats-tech.com
 mbheadphone.com
 me.com
@@ -1384,7 +1371,6 @@ monstershopcheapbeats.net
 moreheadphones.com
 mr-apple.com.tw
 ms4dre.com
-music
 musickit.net
 myappleid.com
 mybeatsbydrestudio.com
@@ -1399,7 +1385,6 @@ namemybeats.com
 neborder.com
 negozimonsterbeats.com
 negoziomonsterbeats.com
-netbiosd
 newbeatsblackfriday.com
 newbemany.com
 newdrediscount.com
@@ -1485,7 +1470,6 @@ shopping-days.net
 shoppinguheadphones.com
 simplyipod.com
 siri.com
-smp-device
 sneaker666.com
 sneakerpage.net
 sneakerskick.com
@@ -1509,7 +1493,6 @@ swiftui.com.cn
 szcheapmonsterheadphones.com
 szwinnertechnology.com
 takegoto.com
-testflight
 texture.com
 the-monster-beats.com
 thebeatsbydre.com
@@ -1525,10 +1508,8 @@ touchid.wang
 tracking-location.com
 tradevip1.com
 truedepth3d.com
-trustd
 tryrating.com
 tteshop.com
-tv
 tvappstore.net
 ubnw.net
 ukipad.com
@@ -1541,7 +1522,6 @@ vipbeatsbydre.com
 vipheadphones.com
 vipshoes2.com
 wasdj.com
-weatherwidget
 webkit.org
 webkitgtk.org
 webobjects.co.uk

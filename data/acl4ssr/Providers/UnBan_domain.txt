@@ -1,4 +1,3 @@
-*.tokenplus.app
 adservice.google.com
 c.pki.goog
 cdn-china.ampproject.org

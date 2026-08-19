@@ -1,8 +1,3 @@
-211157
-44907
-59930
-62014
-62041
 api.imem.app
 api.swiftgram.app
 cdn-telegram.org
@@ -11,9 +6,6 @@ contest.com
 graph.org
 legra.ph
 mbrx.app
-nekox.messenger
-nicegram
-org.telegram.messenger
 quiz.directory
 stel.com
 t.me
@@ -21,16 +13,12 @@ tdesktop.com
 telega.one
 telegra.ph
 telegram-cdn.org
-telegram-desktop
 telegram.dog
-telegram.exe
 telegram.me
 telegram.org
 telegram.space
 telegramdownload.com
 telesco.pe
 tg.dev
-tw.nekomimi.nekogram
 tx.me
 usercontent.dev
-xyz.nextalone.nagram

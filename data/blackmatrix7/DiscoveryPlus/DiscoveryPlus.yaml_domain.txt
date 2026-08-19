@@ -1,7 +1,6 @@
 disco-api.com
 discovery-us.conax.cloud
 discovery.com
-discovery.uplynk.com
 discoveryplus.co.uk
 discoveryplus.com
 discoveryplus.in

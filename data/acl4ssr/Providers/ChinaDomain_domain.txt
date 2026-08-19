@@ -14,7 +14,6 @@
 17k.com
 21cn.com
 360.com
-360buy
 360buy.com
 360buyimg.com
 360doc.com
@@ -50,14 +49,11 @@ alibaba.com
 alibabachengdun.com
 alibabacloud.com
 alibabausercontent.com
-alicdn
 alicdn.com
 alicloudccp.com
 aliexpress.com
 aliimg.com
 alikunlun.com
-alimama
-alipay
 alipay.com
 alipayobjects.com
 alisoft.com
@@ -73,7 +69,6 @@ amap.com
 amemv.com
 appsimg.com
 appvipshop.com
-appzapp
 asklink.com
 auth.wo.cn
 auth.wosms.cn
@@ -85,7 +80,6 @@ baicizhan.com
 baidu.com
 baidubcr.com
 baidupan.com
-baidupcs
 baidupcs.com
 baidustatic.com
 baike.com
@@ -100,7 +94,6 @@ bigfun.cn
 bigfunapp.cn
 biliapi.com
 biliapi.net
-bilibili
 bilibili.co
 bilibili.com
 biligame.com
@@ -127,14 +120,12 @@ bytetos.com
 bytexservice.com
 c-ctrip.com
 camera360.com
-ccgslb
 cctv.com
 cctvpic.com
 cdnmama.com
 chaipip.com
 chaoxing.com
 che168.com
-chinacache
 chinacache.net
 chinaplay.store
 chinaso.com
@@ -187,7 +178,6 @@ douyucdn.cn
 douyuscdn.com
 douyutv.com
 dpfile.com
-duobao
 duokan.com
 duowan.com
 dxycdn.com
@@ -285,7 +275,6 @@ jcloudcs.com
 jd.com
 jd.hk
 jdcloud.com
-jdpay
 jdpay.com
 jianguoyun.com
 jianshu.com
@@ -360,7 +349,6 @@ mogu.com
 mogucdn.com
 mogujie.com
 moji.com
-moke
 moke.com
 mpyit.com
 msftconnecttest.com
@@ -405,7 +393,6 @@ qcloud.com
 qcloudcdn.com
 qdaily.com
 qdmm.com
-qhimg
 qhimg.com
 qhres.com
 qhstatic.com
@@ -534,7 +521,6 @@ vipstatic.com
 vivo.com
 vmall.com
 vmallres.com
-vpimg
 wandoujia.com
 weather.com
 wechat.com
@@ -555,13 +541,11 @@ wukong.com
 xdrig.com
 xhscdn.com
 xiachufang.com
-xiami
 xiami.com
 xiami.net
 xiaohongshu.com
 xiaojukeji.com
 xiaoka.tv
-xiaomi
 xiaomi.com
 xiaomi.net
 xiaomicp.com

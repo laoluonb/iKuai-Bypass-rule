@@ -96,7 +96,6 @@ bili23.cn
 bili33.cn
 biliapi.com
 biliapi.net
-bilibili
 bilibili.cc
 bilibili.cn
 bilibili.co
@@ -146,10 +145,6 @@ cnms.net.cn
 cntv.cn
 cntv.com.cn
 cntvwb.cn
-com.bilibili.app.blue
-com.bilibili.app.in
-com.bilibili.comic
-com.bilibili.comic.intl
 corari.com
 dldir1.qq.com
 dmhmusic.com
@@ -247,7 +242,6 @@ ppstream.net.cn
 ppsurl.com
 pptv.com
 qianqian.com
-qiyi
 qiyi.cn
 qiyi.com
 qiyipic.com
@@ -271,8 +265,6 @@ tazai.com
 tencentmusic.com
 ts.qq.com
 tudou.com
-tv.danmaku.bili
-tv.danmaku.bilibilihd
 tvcc.cn
 tvcc.com.cn
 ukoo.com.cn

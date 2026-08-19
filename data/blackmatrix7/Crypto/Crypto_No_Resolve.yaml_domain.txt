@@ -11,8 +11,6 @@ asproex.com
 asproexapi.com
 avax.network
 bibox.com
-binance
-binance.exe
 bisq.io
 bisq.network
 bitbank.cc
@@ -124,8 +122,6 @@ hbfile.net
 heco-scan.com
 hecochain.com
 hecoview.com
-huobi
-huobi.exe
 icodrops.com
 intotheblock.com
 ipfs.io
@@ -146,7 +142,6 @@ mdex.co
 mdex.com
 mdex.me
 mdex.one
-metamask
 mexc.com
 myetherwallet.com
 nansen.ai
@@ -157,8 +152,6 @@ nonfungible.com
 nyctale.io
 okex.com
 oklink.com
-okx
-okx.exe
 opensea.io
 optimism.io
 pancakeswap.com

@@ -4,9 +4,7 @@ app-measurement.net
 c.gle
 g.co
 ggpht.com
-gmail
 goo.gl
-google
 googleapis.cn
 googleapis.com
 gstatic.cn

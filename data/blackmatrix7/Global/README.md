@@ -11,15 +11,15 @@
 | 规则名称 | 域名格式 | ISP/IP 格式 |
 | --- | --- | --- |
 | `Global.list` | [下载](Global.list_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global.list_domain.txt) | [下载](Global.list_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global.list_isp.txt) |
-| `Global.yaml` | [下载](Global.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global.yaml_domain.txt) | [下载](Global.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global.yaml_isp.txt) |
+| `Global.yaml` | - | [下载](Global.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global.yaml_isp.txt) |
 | `Global_Classical.yaml` | [下载](Global_Classical.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_Classical.yaml_domain.txt) | [下载](Global_Classical.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_Classical.yaml_isp.txt) |
 | `Global_Classical_No_Resolve.yaml` | [下载](Global_Classical_No_Resolve.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_Classical_No_Resolve.yaml_domain.txt) | [下载](Global_Classical_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_Classical_No_Resolve.yaml_isp.txt) |
 | `Global_Domain.yaml` | [下载](Global_Domain.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_Domain.yaml_domain.txt) | - |
-| `Global_No_Resolve.yaml` | [下载](Global_No_Resolve.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_No_Resolve.yaml_domain.txt) | [下载](Global_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_No_Resolve.yaml_isp.txt) |
+| `Global_No_Resolve.yaml` | - | [下载](Global_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Global/Global_No_Resolve.yaml_isp.txt) |
 
 ## 格式说明
 
-- 域名文件：每行一条域名或可用的域名规则值。
+- 域名文件：每行一条经过校验的真实域名；正则、关键词、通配符和未知格式会跳过。
 - ISP/IP 文件：每行一条 IPv4 或 IPv4/CIDR；没有有效内容时不生成。
 - 同一文件内及合并文件均已去重并排序。
 

@@ -1,8 +1,4 @@
-apiproxy-device-prod-nlb-
-com.netflix.mediaclient
 cookielaw.org
-dualstack.apiproxy-
-dualstack.ichnaea-web-
 e13252.dscg.akamaiedge.net
 fast.com
 flxvpn.net
@@ -12,7 +8,6 @@ netflix.com
 netflix.com.au
 netflix.com.edgesuite.net
 netflix.net
-netflixdnstest
 netflixdnstest0.com
 netflixdnstest1.com
 netflixdnstest10.com

@@ -1,4 +1,3 @@
-1drv
 aadrm.com
 acompli.com
 acompli.net
@@ -22,7 +21,6 @@ hotmail.com
 live.com
 live.net
 lync.com
-microsoft
 msappproxy.net
 msauth.net
 msauthimages.net

@@ -1,5 +1,3 @@
-.pinterest.
-1e100
 1password.com
 4everproxy.com
 4shared.com
@@ -9,7 +7,6 @@
 9gag.com
 9to5mac.com
 abc.com
-abema
 abpchina.org
 accountkit.com
 adblockplus.org
@@ -52,7 +49,6 @@ apk-dl.com
 apkmirror.com
 apkpure.com
 appdownloader.net
-appledaily
 appshopper.com
 aqi.aqicn.org
 arcgis.com
@@ -72,7 +68,6 @@ async.be
 att.com
 avg.com
 avgle.com
-avtb
 awsstatic.com
 axios.com
 az416426.vo.msecnd.net
@@ -87,7 +82,6 @@ bbc.co
 bbc.com
 bbtoystore.com
 bcvcdn.com
-beetalk
 behance.net
 bet365.com
 beta.music.apple.com
@@ -204,7 +198,6 @@ disq.us
 disqus.com
 disquscdn.com
 dler.io
-dlercloud
 dlive.tv
 dmm.co.jp
 dnsimple.com
@@ -214,7 +207,6 @@ dockerhub.com
 doub.io
 dowjones.com
 dribbble.com
-dropbox
 droplr.com
 dubox.com
 duckduckgo.com
@@ -237,7 +229,6 @@ evernote.com
 extmatrix.com
 eyny.com
 f8.com
-facebook
 fanatical.com
 fanbox.cc
 fastly.net
@@ -246,7 +237,6 @@ fb.com
 fb.me
 fb.watch
 fbaddins.com
-fbcdn
 fbsbx.com
 fbworkmail.com
 fc2.com
@@ -333,7 +323,6 @@ ingress.com
 inoreader.com
 insder.co
 instagr.am
-instagram
 instapaper.com
 instructables.com
 investing.com
@@ -492,7 +481,6 @@ parse.com
 parsevideo.com
 paste.ee
 pastie.org
-paypal
 pcloud.com
 pdfexpert.com
 peing.net
@@ -519,7 +507,6 @@ podbean.com
 pokemon.com
 poloniex.com
 popo.tw
-porn
 potato.im
 prism-break.org
 privoxy.org
@@ -566,7 +553,6 @@ rthk.hk
 s.team
 sb-cd.com
 scdn.co
-sci-hub
 sciencedaily.com
 sciencemag.org
 scmp.com
@@ -605,7 +591,6 @@ speedsmart.net
 spideroak.com
 spiegel.de
 spike.com
-spotify
 spring.io
 spring.net
 squarespace.com
@@ -657,7 +642,6 @@ techsmith.com
 techspot.com
 teddysun.com
 telegra.ph
-telegram
 telesco.pe
 terabox.com
 teraboxcdn.com
@@ -704,7 +688,6 @@ trendsmap.com
 trulyergonomic.com
 trustasiassl.com
 tt-rss.org
-ttvnw
 tumbex.com
 tumblr.co
 tumblr.com
@@ -721,7 +704,6 @@ twimg.com
 twimg.org
 twitch.tv
 twitpic.com
-twitter
 twitthat.com
 twtkr.com
 twttr.com
@@ -736,7 +718,6 @@ uchicago.edu
 udn.com
 ugo.com
 uhdwallpapers.org
-uk-live
 ulyssesapp.com
 unblockdmm.com
 unblocksites.co
@@ -806,7 +787,6 @@ welt.de
 wenxuecity.com
 westca.com
 westpoint.edu
-whatsapp
 whoer.net
 wikibooks.org
 wikidata.org

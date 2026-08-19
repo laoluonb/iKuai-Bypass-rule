@@ -128,7 +128,7 @@
 | `VikACG` | [下载](VikACG_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/VikACG_domain.txt) | - |
 | `ViuTV` | [下载](ViuTV_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/ViuTV_domain.txt) | - |
 | `Wechat` | [下载](Wechat_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Wechat_domain.txt) | [下载](Wechat_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Wechat_isp.txt) |
-| `Whatsapp` | [下载](Whatsapp_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Whatsapp_domain.txt) | [下载](Whatsapp_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Whatsapp_isp.txt) |
+| `Whatsapp` | - | [下载](Whatsapp_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Whatsapp_isp.txt) |
 | `Wikipedia` | [下载](Wikipedia_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Wikipedia_domain.txt) | - |
 | `Xbox` | [下载](Xbox_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Xbox_domain.txt) | - |
 | `Ximalaya` | [下载](Ximalaya_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Ximalaya_domain.txt) | - |
@@ -141,7 +141,7 @@
 
 ## 格式说明
 
-- 域名文件：每行一条域名或可用的域名规则值。
+- 域名文件：每行一条经过校验的真实域名；正则、关键词、通配符和未知格式会跳过。
 - ISP/IP 文件：每行一条 IPv4 或 IPv4/CIDR；没有有效内容时不生成。
 - 同一文件内及合并文件均已去重并排序。
 

@@ -1,5 +1,3 @@
-com.cw.fullepisodes.android
-com.cw.seed.android
 cwseed.com
 cwtv-amd-akamai.akamaized.net
 cwtv.com

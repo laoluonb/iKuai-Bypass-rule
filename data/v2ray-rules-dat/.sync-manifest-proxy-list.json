@@ -5,7 +5,7 @@
     "data/v2ray-rules-dat/.sync-manifest-proxy-list.json",
     "data/v2ray-rules-dat/proxy-list_domain.txt"
   ],
-  "domains": 27194,
+  "domains": 27043,
   "ips": 0,
-  "skipped": 0
+  "skipped": 151
 }

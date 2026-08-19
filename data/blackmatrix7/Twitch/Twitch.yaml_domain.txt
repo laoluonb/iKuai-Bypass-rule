@@ -1,9 +1,7 @@
 ext-twitch.tv
 jtvnw.net
 live-video.net
-ttvnw
 ttvnw.net
-tv.twitch.android.app
 twitch-ext.rootonline.de
 twitch.tv
 twitchcdn.net

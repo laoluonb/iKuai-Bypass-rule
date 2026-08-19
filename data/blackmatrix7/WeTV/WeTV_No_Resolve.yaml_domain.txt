@@ -1,5 +1,3 @@
-com.tencent.qqlivei18n
-com.tencent.qqlivei18n.us
 iflix-images.akamaized.net
 iflix.com
 vv.video.qq.com

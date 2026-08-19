@@ -1,5 +1,4 @@
 cinemax.com
-com.hbo.hbonow
 discomax.com
 h264.io
 hbomax.com

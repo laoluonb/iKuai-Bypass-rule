@@ -10,7 +10,6 @@ galaxyclub.cn
 mdc-dev.cn
 mdc-prd.cn
 mdc-stg.cn
-samsung
 secb2b.com.cn
 smartthingstlm.cn
 srcbeijing.com

@@ -2,4 +2,3 @@ fast.com
 ooklaserver.net
 speed.cloudflare.com
 speed.dler.io
-speedtest

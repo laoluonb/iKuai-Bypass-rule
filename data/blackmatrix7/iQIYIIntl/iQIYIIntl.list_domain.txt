@@ -1,6 +1,4 @@
 cache.video.iqiyi.com
-com.iqiyi.i18n
-com.iqiyi.i18n.tv
 inter.iqiyi.com
 intl-rcd.iqiyi.com
 intl-subscription.iqiyi.com

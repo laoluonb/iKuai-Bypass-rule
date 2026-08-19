@@ -1,6 +1,5 @@
 bintray.com
 graph.facebook.com
-whatsapp
 whatsapp.biz
 whatsapp.com
 whatsapp.net

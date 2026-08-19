@@ -2,12 +2,9 @@ ai.google.dev
 alkalimakersuite-pa.clients6.google.com
 apis.google.com
 bard.google.com
-colab
 deepmind.com
 deepmind.google
-developerprofiles
 gemini.google.com
 generativeai.google
-generativelanguage
 makersuite.google.com
 proactivebackend-pa.googleapis.com

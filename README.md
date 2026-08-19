@@ -4,7 +4,7 @@
 
 - 每个上游文件保留原来的目录和文件对应关系。
 - 只有包含域名内容时才生成 `*_domain.txt`；只有包含 IPv4/CIDR 时才生成 `*_isp.txt`，不拆分批次。
-- `*_domain.txt` 是纯文本规则，每行一条域名类内容。
+- `*_domain.txt` 是纯文本规则，每行一条真实域名。
 - `*_isp.txt` 是纯 IPv4/IP-CIDR 列表，每行一条，适合爱快 ISP/IP 分流。
 - 所有结果逐行输出、去重并排序。
 - 自动生成每个同步目录的 `README.md`，列出上游地址、可用文件和 Raw 订阅地址。
@@ -63,7 +63,8 @@ data/proxy/
 
 ## 转换规则
 
-- `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-FULL`、`DOMAIN-KEYWORD` 等 Clash 规则都取逗号后的值，写入 `_domain.txt`。
+- `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-FULL` Clash 规则取逗号后的值，经过合法域名校验后写入 `_domain.txt`。
+- `DOMAIN-KEYWORD`、正则、通配符、URL、路径和其他无法表示为真实域名的格式会跳过。
 - `IP`、`IP-CIDR`、`IP-CIDR6` 取逗号后的值；IPv4 和 IPv4/CIDR 写入 `_isp.txt`，IPv6 不写入 ISP 文件。
 - 注释、空行和 YAML 结构行（例如 `payload:`）跳过。
 - 每个文件内部去重；`all_domain.txt` 和 `all_isp.txt` 会跨文件去重并排序。
@@ -76,7 +77,7 @@ data/proxy/
 
 - 裸域名、`full:example.com`、`domain:example.com` 去掉类型前缀后写入 `_domain.txt`。
 - `ip:1.2.3.4`、`cidr:1.2.3.0/24` 去掉类型前缀后写入 `_isp.txt`。
-- `regexp:...` 和其他非 IP 格式去掉类型前缀后写入 `_domain.txt`，保持上游内容可追踪。
+- `regexp:...`、关键词、正则表达式和其他未知格式无法转换为爱快域名格式，会跳过；只有合法域名会写入 `_domain.txt`。
 
 ## 只同步一个源
 

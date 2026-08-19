@@ -1,4 +1,3 @@
-^https?:\/\/int[\w-\.]+iqiyi\.com
 acg.tv
 acgvideo.com
 api.mob.app.letv.com

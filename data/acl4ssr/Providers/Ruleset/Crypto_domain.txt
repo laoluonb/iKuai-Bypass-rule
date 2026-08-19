@@ -11,7 +11,6 @@ asproex.com
 asproexapi.com
 avax.network
 bibox.com
-binance
 binance.cc
 binance.charity
 binance.cloud
@@ -154,7 +153,6 @@ hbfile.net
 heco-scan.com
 hecochain.com
 hecoview.com
-huobi
 huobi.br.com
 huobi.co.ma
 huobi.com
@@ -187,7 +185,6 @@ mdex.co
 mdex.com
 mdex.me
 mdex.one
-metamask
 mexc.com
 min-api.cryptocompare.com
 myetherwallet.com
@@ -199,7 +196,6 @@ nonfungible.com
 nyctale.io
 okex.com
 oklink.com
-okx
 okx-dns.com
 okx-dns1.com
 okx-dns2.com

@@ -3,7 +3,6 @@ bytegecko-i18n.com
 byteintlapi.com
 byteoversea.com
 capcut.com
-com.zhiliaoapp.musically
 ibytedtos.com
 ibyteimg.com
 ipstatp.com
@@ -17,7 +16,6 @@ p16-tiktokcdn-com.akamaized.net
 sgpstatp.com
 snssdk.com
 tik-tokapi.com
-tiktok
 tiktok.com
 tiktokcdn-us.com
 tiktokcdn.com

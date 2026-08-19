@@ -5,6 +5,5 @@ muscdn.com
 musical.ly
 tik-tokapi.com
 tiktok.com
-tiktokcdn
 tiktokcdn.com
 tiktokv.com

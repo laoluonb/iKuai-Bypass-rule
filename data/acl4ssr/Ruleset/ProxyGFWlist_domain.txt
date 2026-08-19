@@ -1,8 +1,3 @@
-*.pimg.tw
-*.sf.net
-*.tuzaijidi.com
-*.wordpress.com
-*2.bahamut.com.tw
 000webhost.com
 0rz.tw
 1-apple.com.tw
@@ -489,7 +484,6 @@ borgenmagazine.com
 botanwang.com
 bowenpress.com
 boxpn.com
-boxun*.azurewebsites.net
 boxun.com
 boxun.tv
 boysmaster.com
@@ -605,8 +599,6 @@ cdbook.org
 cdef.org
 cdig.info
 cdjp.org
-cdn*.i-scmp.com
-cdn*.search.xxx
 cdn-images.mailchimp.com
 cdn-telegram.org
 cdn.arstechnica.net
@@ -1180,7 +1172,6 @@ fb.com
 fb.me
 fb.watch
 fbaddins.com
-fbcdn*.akamaihd.net
 fbcdn.net
 fbsbx.com
 fbworkmail.com
@@ -1902,7 +1893,6 @@ huhamhire.com
 huhangfei.com
 hulu.com
 huluim.com
-hum*.uchicago.edu
 humanparty.me
 humanrightspressawards.org
 hung-ya.com
@@ -1970,7 +1960,6 @@ imagevenue.com
 imagezilla.net
 imago-images.com
 imb.org
-img*.picturedip.com
 img.dlsite.jp
 img.ly
 img.picgo.net
@@ -3311,7 +3300,6 @@ springboardplatform.com
 springwood.me
 sproutcore.com
 squirrelvpn.com
-ss*.4sqi.net
 ss-link.com
 ssglobal.co
 ssl.webpack.de

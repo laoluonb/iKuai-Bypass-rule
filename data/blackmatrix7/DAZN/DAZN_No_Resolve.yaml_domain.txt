@@ -15,4 +15,3 @@ intercom.io
 logx.optimizely.com
 s.yimg.jp
 sentry.io
-voddazn

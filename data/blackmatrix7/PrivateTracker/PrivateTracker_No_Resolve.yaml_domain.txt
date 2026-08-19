@@ -12,7 +12,6 @@ alpharatio.cc
 anime-tracker.aruku.kro.kr
 animebytes.tv
 animetorrents.me
-announce
 anthelion.me
 archive.torrentonline.cc
 asiancinema.me
@@ -40,7 +39,6 @@ byr.pt
 ccfbits.org
 cerf.cs.umd.edu
 cgpeers.com
-chdbits
 chdbits.co
 cinemageddon.net
 cinematik.net
@@ -101,7 +99,6 @@ leaguehd.com
 leet-tracker.moe
 lemonhd.org
 lztr.me
-m-team
 m-team.cc
 madsrevolution.net
 martin-gebhardt.eu
@@ -155,7 +152,6 @@ t.213891.xyz
 t.overflow.biz
 tju.pt
 tjupt.org
-torrent
 torrent.tracker.durukanbal.com
 torrentclub.online
 torrentday.com

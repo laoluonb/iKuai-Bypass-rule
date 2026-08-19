@@ -65,9 +65,7 @@ adlive.cn
 adlocus.com
 admaji.com
 admarket.mobi
-admarvel
 admarvel.com
-admaster
 admedia.com
 admin6.com
 admon.cn
@@ -83,21 +81,15 @@ adreal.cn
 adriver.ru
 adroll.com
 ads8.com
-adsage
 adsame.com
 adsco.re
-adsensor
 adservice.com
-adsmogo
 adsmogo.com
 adsmogo.org
-adsrvmedia
 adsrvr.org
-adsserving
 adsunflower.com
 adsunion.com
 adsymptotic.com
-adsystem
 adtaily.com
 adtech.de
 adtechjp.com
@@ -111,7 +103,6 @@ advmob.cn
 adwetec.com
 adwhirl.com
 adwo.com
-adwords
 adxmi.com
 adyun.com
 adzerk.net
@@ -138,8 +129,6 @@ appier.net
 appjiagu.com
 applifier.com
 applift.com
-applovin
-appsflyer
 appsflyer.com
 appuu.cn
 apsalar.com
@@ -218,7 +207,6 @@ dianjoy.com
 dianru.com
 directrev.com
 disqusads.com
-domob
 domob.cn
 domob.com.cn
 domob.org
@@ -229,9 +217,7 @@ doumob.com
 duanat.com
 duiba.com.cn
 dumedia.ru
-duomeng
 duomeng.cn
-dwtrack
 dxpmedia.com
 edigitalsurvey.com
 eduancm.com
@@ -269,7 +255,6 @@ gridsumdissector.cn
 gridsumdissector.com
 growingio.com
 gtags.net
-guanggao
 guohead.com
 guomob.com
 haoghost.com
@@ -400,11 +385,8 @@ ninebox.cn
 nylalobghyhirgh.com
 o2omobi.com
 oadz.com
-omgmta
-omniture
 oneapm.com
 onetad.com
-openx
 optaim.com
 optimix.asia
 optimix.cn
@@ -413,9 +395,7 @@ overture.com
 owneriq.net
 p0y.cn
 pagechoice.net
-partnerad
 pingdom.net
-pingfore
 pixels.asia
 plista.com
 plugrush.com
@@ -461,7 +441,6 @@ smaato.net
 smartadserver.com
 smartmad.com
 smartnews-ads.com
-socdm
 social-touch.com
 somecoding.com
 sponsorpay.com
@@ -473,7 +452,6 @@ steelhousemedia.com
 stg8.com
 stickyadstv.com
 supersonic.com
-supersonicads
 switchadhub.com
 sycbbs.com
 synacast.com
@@ -541,7 +519,6 @@ win-stock.com.cn
 winads.cn
 winasdaq.com
 wiyun.com
-wlmonitor
 wooboo.com.cn
 wqmobile.com
 wrating.com
@@ -583,6 +560,5 @@ zemanta.com
 zhidian3g.cn
 zhiziyun.com
 zhjfad.com
-zjtoolbar
 zqzxz.com
 zzsx8.com

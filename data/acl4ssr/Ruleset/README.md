@@ -101,7 +101,6 @@
 | `MI` | [下载](MI_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/MI_domain.txt) | - |
 | `Microsoft` | [下载](Microsoft_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Microsoft_domain.txt) | - |
 | `MIUIPrivacy` | [下载](MIUIPrivacy_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/MIUIPrivacy_domain.txt) | - |
-| `MOO` | [下载](MOO_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/MOO_domain.txt) | - |
 | `My5` | [下载](My5_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/My5_domain.txt) | - |
 | `MyTVSuper` | [下载](MyTVSuper_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/MyTVSuper_domain.txt) | - |
 | `NaSDDNS` | [下载](NaSDDNS_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/NaSDDNS_domain.txt) | [下载](NaSDDNS_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/NaSDDNS_isp.txt) |
@@ -128,7 +127,6 @@
 | `PublicDirectCDN` | [下载](PublicDirectCDN_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/PublicDirectCDN_domain.txt) | - |
 | `Qobuz` | [下载](Qobuz_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Qobuz_domain.txt) | - |
 | `Reddit` | [下载](Reddit_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Reddit_domain.txt) | - |
-| `RemoteDesktop` | [下载](RemoteDesktop_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/RemoteDesktop_domain.txt) | - |
 | `Samsung` | [下载](Samsung_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Samsung_domain.txt) | - |
 | `Scholar` | [下载](Scholar_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Scholar_domain.txt) | - |
 | `Sina` | [下载](Sina_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Sina_domain.txt) | - |
@@ -158,7 +156,7 @@
 | `Vip` | [下载](Vip_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Vip_domain.txt) | - |
 | `ViuTV` | [下载](ViuTV_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/ViuTV_domain.txt) | - |
 | `Wechat` | [下载](Wechat_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Wechat_domain.txt) | [下载](Wechat_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Wechat_isp.txt) |
-| `Whatsapp` | [下载](Whatsapp_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Whatsapp_domain.txt) | [下载](Whatsapp_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Whatsapp_isp.txt) |
+| `Whatsapp` | - | [下载](Whatsapp_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Whatsapp_isp.txt) |
 | `Wikipedia` | [下载](Wikipedia_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Wikipedia_domain.txt) | - |
 | `Xbox` | [下载](Xbox_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Xbox_domain.txt) | - |
 | `Ximalaya` | [下载](Ximalaya_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Ximalaya_domain.txt) | - |
@@ -171,7 +169,7 @@
 
 ## 格式说明
 
-- 域名文件：每行一条域名或可用的域名规则值。
+- 域名文件：每行一条经过校验的真实域名；正则、关键词、通配符和未知格式会跳过。
 - ISP/IP 文件：每行一条 IPv4 或 IPv4/CIDR；没有有效内容时不生成。
 - 同一文件内及合并文件均已去重并排序。
 

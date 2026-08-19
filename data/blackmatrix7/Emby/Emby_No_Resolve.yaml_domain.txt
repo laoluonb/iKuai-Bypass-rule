@@ -5,7 +5,6 @@ agajp1.jmsooo.com
 agasg1.jmsooo.com
 aws.jmsooo.com
 cf1.jmsooo.com
-com.mb.android
 cristiamo.xyz
 emby.cjpc.cc
 emby.cjpc.tv
@@ -34,13 +33,11 @@ hinet.jmsooo.com
 imetyou.top
 jellyfin.asia
 jellyfin.xeton.dev
-jmsooo
 line.emby.men
 mickeycloud.com
 movie.xeton.dev
 notnetflix.cos.cat
 ntt1.jmsooo.com
-odysseyplus
 ohhhh.org
 peachmv.me
 pilipiliultra.com

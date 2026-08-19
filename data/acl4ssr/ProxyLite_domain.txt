@@ -1,12 +1,9 @@
-1drv
-1e100
 1e100.net
 1password.com
 2mdn.net
 4sqi.net
 8teenxxx.com
 a248.e.akamai.net
-abema
 adguard.org
 adobedtm.com
 ahcdn.com
@@ -23,12 +20,10 @@ apkmirror.com
 apkpure.com
 app-measurement.com
 app-measurement.net
-appledaily
 appspot.com
 archive.org
 armorgames.com
 aspnetcdn.com
-avtb
 awsstatic.com
 azureedge.net
 azurewebsites.net
@@ -36,14 +31,12 @@ bandwagonhost.com
 bbc.co
 bbc.com
 bcvcdn.com
-beetalk
 bing.com
 bit.no.com
 bkrtx.com
 blogcdn.com
 blogger.com
 blogsmithmedia.com
-blogspot
 blogspot.com
 blogspot.hk
 blogspot.jp
@@ -81,7 +74,6 @@ disquscdn.com
 docker.com
 docker.io
 dockerhub.com
-dropbox
 dropbox.com
 dropboxapi.com
 dropboxstatic.com
@@ -95,14 +87,12 @@ elastic.co
 elastic.com
 eu
 eurekavpt.com
-facebook
 facebook.com
 fanatical.com
 fanbox.cc
 fastmail.com
 fb.com
 fb.me
-fbcdn
 fbcdn.com
 fbcdn.net
 firebaseio.com
@@ -115,7 +105,6 @@ garena.com
 gcr.io
 gfx.ms
 ggpht.com
-github
 github.com
 github.io
 githubapp.com
@@ -123,10 +112,8 @@ githubassets.com
 githubusercontent.com
 gitlab.com
 gitlab.io
-gmail
 gongm.in
 goo.gl
-google
 googleapis.cn
 googleapis.com
 gstatic.cn
@@ -144,7 +131,6 @@ icntv.xyz
 id.heroku.com
 inoreader.com
 instagr.am
-instagram
 instagram.com
 io.io
 ip138.com
@@ -193,7 +179,6 @@ nsstatic.net
 nytstyle.com
 ocnttv.com
 oneclient.sfx.ms
-onedrive
 onedrive.com
 onedrive.live.com
 openai.com
@@ -209,7 +194,6 @@ pinimg.com
 pinterest.com
 pixiv.net
 playartifact.com
-porn
 pornhub.com
 pornhubpremium.com
 potato.im
@@ -225,11 +209,9 @@ redhat.com
 redtube.com
 resilio.com
 sb-cd.com
-sci-hub
 sfx.ms
 sg
 shadowsocks.org
-skydrive
 skydrive.wns.windows.com
 slack-edge.com
 smartdnsproxy.com
@@ -240,7 +222,6 @@ soundcloud.com
 sourcegraph.com
 spankbang.com
 spoprod-a.akamaihd.net
-spotify
 spring.io
 spring.net
 stackoverflow.com
@@ -272,7 +253,6 @@ taptap.tw
 tdesktop.com
 teddysun.com
 telegra.ph
-telegram
 telegram.me
 telegram.org
 telesco.pe
@@ -284,7 +264,6 @@ thefacebook.com
 thepiratebay.org
 torproject.org
 trustasiassl.com
-ttvnw
 ttvnw.net
 tumbex.com
 tumblr.co
@@ -296,10 +275,8 @@ twimg.co
 twimg.com
 twimg.org
 twitch.tv
-twitter
 txmblr.com
 uk
-uk-live
 underlords.com
 unsplash.com
 v2ex.com
@@ -308,7 +285,6 @@ vikacg.com
 vimeo.com
 vine.co
 vox-cdn.com
-whatsapp
 wikibooks.org
 wikidata.org
 wikileaks.org
@@ -328,7 +304,6 @@ xnxx.com
 xvideos-cdn.com
 xvideos.com
 youtu.be
-youtube
 youtube-nocookie.com
 youtube.com
 ypncdn.com

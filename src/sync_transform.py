@@ -304,11 +304,16 @@ def extract_v2ray_rule_list(content: str) -> tuple[list[str], list[str], list[st
 
 
 def normalize_for_domain_output(value: str, preserve_case: bool = False) -> str | None:
-    """Keep any usable rule value in one line-oriented domain output list."""
-    value = value.strip().strip("\"'")
-    if not value or any(char in value for char in "\r\n"):
+    """Return only a real domain suitable for iKuai domain lists."""
+    # Keep the argument for compatibility with older callers, but never pass
+    # through arbitrary rule expressions such as regexes or keywords.
+    del preserve_case
+    candidate = value.strip().strip("\"'")
+    if not candidate or any(char in candidate for char in "^$()[]{}|+?*\\"):
         return None
-    return value if preserve_case else value.lower()
+    if candidate.startswith(("||", "!", ".", "http://", "https://")):
+        return None
+    return normalize_domain(candidate)
 
 
 def normalize_ikuai_isp_value(value: str) -> str | None:
@@ -376,7 +381,15 @@ def extract_clash_ikuai_values(
         if len(parts) == 1 and line.endswith(":"):
             stats["skipped"] += 1
             continue
-        candidate = parts[1] if len(parts) >= 2 else parts[0]
+        rule_type = parts[0].upper()
+        if len(parts) >= 2:
+            if rule_type not in CLASH_DOMAIN_RULES | CLASH_IP_RULES:
+                stats["skipped"] += 1
+                continue
+            candidate = parts[1]
+        else:
+            # Some upstream .list files contain one bare domain per line.
+            candidate = parts[0]
         _classify_rule_value(candidate, domains, ips, stats)
     return sorted(domains), sorted(ips, key=lambda value: (":" in value, value)), stats
 
@@ -397,8 +410,16 @@ def extract_v2ray_ikuai_values(
         line = line.split("#", 1)[0].strip()
         prefix, separator, payload = line.partition(":")
         prefix = prefix.strip().lower() if separator else ""
-        candidate = payload.strip() if separator else line
-        _classify_rule_value(candidate, domains, ips, stats, preserve_case=prefix == "regexp")
+        if separator:
+            if prefix not in V2RAY_DOMAIN_PREFIXES | V2RAY_IP_PREFIXES:
+                # regexp:, keyword:, geosite:, and unknown expressions cannot
+                # be represented by iKuai's plain domain/IP list format.
+                stats["skipped"] += 1
+                continue
+            candidate = payload.strip()
+        else:
+            candidate = line
+        _classify_rule_value(candidate, domains, ips, stats)
     return sorted(domains), sorted(ips, key=lambda value: (":" in value, value)), stats
 
 
@@ -565,7 +586,7 @@ def _render_directory_readme(
         "",
         "## 格式说明",
         "",
-        "- 域名文件：每行一条域名或可用的域名规则值。",
+        "- 域名文件：每行一条经过校验的真实域名；正则、关键词、通配符和未知格式会跳过。",
         "- ISP/IP 文件：每行一条 IPv4 或 IPv4/CIDR；没有有效内容时不生成。",
         "- 同一文件内及合并文件均已去重并排序。",
         "",

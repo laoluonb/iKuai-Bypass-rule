@@ -92,10 +92,6 @@ biliplus.com
 bilivideo.cn
 bilivideo.com
 bilivideo.net
-com.bilibili.app.blue
-com.bilibili.app.in
-com.bilibili.comic
-com.bilibili.comic.intl
 corari.com
 dreamcast.hk
 dyhgames.com
@@ -112,8 +108,6 @@ p-bstarstatic.akamaized.net
 p.bstarstatic.com
 sharejoytech.com
 smtcdns.net
-tv.danmaku.bili
-tv.danmaku.bilibilihd
 upos-bstar-mirrorakam.akamaized.net
 upos-bstar1-mirrorakam.akamaized.net
 upos-hz-mirrorakam.akamaized.net

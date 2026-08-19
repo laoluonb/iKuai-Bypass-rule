@@ -1,7 +1,6 @@
 t.me
 tdesktop.com
 telegra.ph
-telegram
 telegram.me
 telegram.org
 telesco.pe

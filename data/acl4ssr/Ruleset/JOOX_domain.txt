@@ -1,2 +1,1 @@
 joox.com
-jooxweb-api

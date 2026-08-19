@@ -1,6 +1,5 @@
 71.am
 71edge.com
-^https?:\/\/int[\w-\.]+iqiyi\.com
 intel-cache.m.iqiyi.com
 intel-cache.video.iqiyi.com
 inter.iqiyi.com

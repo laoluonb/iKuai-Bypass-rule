@@ -1,4 +1,3 @@
-.tmall.com
 00cdn.com
 0123456789.com
 0379home.com
@@ -345,7 +344,6 @@ alibabagroup.com
 alibabaplanet.com
 alibabaued.com
 alibabausercontent.com
-alicdn
 alicdn.com
 alicloud.com
 alicloudapi.com
@@ -363,7 +361,6 @@ alimama.com
 alimebot.com
 alimei.com
 alipan.com
-alipay
 alipay.com
 alipay.hk
 alipaydns.com
@@ -382,7 +379,6 @@ aliunicorn.com
 aliway.com
 aliwork.com
 alixiaomi.com
-aliyun
 aliyun-inc.com
 aliyun-iot-share.com
 aliyun.com
@@ -457,7 +453,6 @@ bababian.com
 babytree.com
 babytreeimg.com
 baduziyuan.com
-baidu
 baidu.com
 baidubce.com
 baidubcr.com
@@ -511,7 +506,6 @@ beitaichufang.com
 bengbeng.com
 benghuai.com
 benmi.com
-beplay
 berui.com
 bestopview.com
 bh3.com
@@ -2242,7 +2236,6 @@ miaomiaozhe.com
 miaopai.com
 miaostreet.com
 miaozhen.com
-microsoft
 microsoftonline.com
 midasbuy.com
 miercn.com
@@ -2396,7 +2389,6 @@ offcn.com
 office.com
 office.net
 office365.com
-officecdn
 officese.com
 oi-wiki.com
 oicq88.com
@@ -2866,7 +2858,6 @@ tangeche.com
 tanx.com
 tanxlog.istreamsche.com
 tao123.com
-taobao
 taobao.com
 taobao.org
 taobaocdn.com

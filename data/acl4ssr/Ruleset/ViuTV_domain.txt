@@ -1,8 +1,5 @@
 api.viu.now.com
 cognito-identity.us-east-1.amazonaws.com
-com.viu.pad
-com.viu.phone
-com.vuclip.viu
 d1k2us671qcoau.cloudfront.net
 d2anahhhmp1ffz.cloudfront.net
 dfp6rglgjqszk.cloudfront.net

@@ -21,8 +21,6 @@ cbsstatic.com
 cbsstore.com
 cbssvideo.com
 cbstelevisioncity.com
-com.cbs.app
-com.showtime.standalone
 mtvnservices.com
 paramount.com
 paramountplus.com

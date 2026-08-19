@@ -9,7 +9,6 @@ bbc.com
 bbc.in
 bbc.net.uk
 bbcchinese.com
-bbcfmt
 bbcfmt.hs.llnwd.net
 bbcfmt.s.llnwi.net
 bbci.co
@@ -18,7 +17,6 @@ bbcmedia.co.uk
 bbcpersian.com
 bbcverticals.com
 bidi.net.uk
-uk-live
 vod-dash-uk-live.akamaized.net
 vod-dash-ww-live.akamaized.net
 vod-hls-uk-live.akamaized.net

@@ -38,9 +38,7 @@
 1991way.com
 1998cdp.org
 1bao.org
-1drv
 1dumb.com
-1e100
 1eew.com
 1lib.sk
 1mobile.com
@@ -165,7 +163,6 @@ abc.xyz
 abchinese.com
 abebooks.co.uk
 abebooks.com
-abema
 ablwang.com
 about.me
 abpchina.org
@@ -406,7 +403,6 @@ appadvice.com
 appdownloader.net
 apple-dns.net
 applecensorship.com
-appledaily
 appshopper.com
 appsocks.net
 appspot-preview.com
@@ -503,7 +499,6 @@ avmoo.com
 avmoo.net
 avmoo.pw
 avoision.com
-avtb
 avyahoo.com
 awsstatic.com
 axios.com
@@ -597,7 +592,6 @@ bebo.com
 beeg.com
 beepool.com
 beepool.org
-beetalk
 beevpn.com
 behance.net
 behindkink.com
@@ -731,7 +725,6 @@ bloglovin.com
 blogs.com
 blogs.tampabay.com
 blogsmithmedia.com
-blogspot
 blogtd.net
 blogtd.org
 bloodshed.net
@@ -1488,7 +1481,6 @@ djangosnippets.org
 djorz.com
 dl-laby.jp
 dler.io
-dlercloud
 dlive.tv
 dlsite.com
 dlsite.jp
@@ -1570,7 +1562,6 @@ dribbble.com
 drmingxia.org
 dronedj.com
 dropbooks.tv
-dropbox
 droplr.com
 drsunacademy.com
 drtuber.com
@@ -1810,7 +1801,6 @@ f2pool.com
 f8.com
 f95zone.to
 fabric.io
-facebook
 faceless.me
 facesofnyfw.com
 facesoftibetanselfimmolators.info
@@ -1892,7 +1882,6 @@ fb.com
 fb.me
 fb.watch
 fbaddins.com
-fbcdn
 fbsbx.com
 fbworkmail.com
 fc2.com
@@ -2336,7 +2325,6 @@ gloryhole.com
 glorystar.me
 gluckman.com
 glype.com
-gmail
 gmauthority.com
 gmgard.com
 gmgn.ai
@@ -2399,7 +2387,6 @@ goodreads.com
 goodtv.com.tw
 goodtv.tv
 goofind.com
-google
 gopetition.com
 goproxing.net
 goreforum.com
@@ -2917,7 +2904,6 @@ insecam.org
 inside.com.tw
 insidevoa.com
 instagr.am
-instagram
 instanthq.com
 instapaper.com
 institut-tibetain.org
@@ -4163,7 +4149,6 @@ on.cc
 on2.com
 onapp.com
 one.one
-onedrive
 onedumb.com
 onejav.com
 onenote.com
@@ -4306,7 +4291,6 @@ patreon.com
 patreonusercontent.com
 pawoo.net
 paxful.com
-paypal
 pbs.org
 pbwiki.com
 pbworks.com
@@ -4476,7 +4460,6 @@ popvote.hk
 popxi.click
 popyard.com
 popyard.org
-porn
 port25.biz
 portablevpn.nl
 poskotanews.com
@@ -4859,7 +4842,6 @@ schwab.co.uk
 schwab.com
 schwab.com.cn
 schwab.com.hk
-sci-hub
 sciencedaily.com
 sciencemag.org
 sciencenets.com
@@ -5045,7 +5027,6 @@ sketchappsources.com
 skimtube.com
 skk.moe
 skybet.com
-skydrive
 skyking.com.tw
 skykiwi.com
 skynet.be
@@ -5176,7 +5157,6 @@ spideroak.com
 spiderpool.com
 spike.com
 spotflux.com
-spotify
 spreadsheet.new
 spreadshirt.es
 spreaker.com
@@ -5441,7 +5421,6 @@ tehrantimes.com
 telecomspace.com
 telega.one
 telegra.ph
-telegram
 telegraph.co.uk
 telesco.pe
 tellme.pw
@@ -5768,7 +5747,6 @@ tt-rss.org
 tt1069.com
 tttan.com
 ttv.com.tw
-ttvnw
 ttwstatic.com
 tu8964.com
 tubaholic.com
@@ -5903,7 +5881,6 @@ twitonmsn.com
 twitpic.com
 twitstat.com
 twittbot.net
-twitter
 twitthat.com
 twitturk.com
 twitturly.com
@@ -5957,7 +5934,6 @@ uhdwallpapers.org
 uhrp.org
 uighur.nl
 uighurbiz.net
-uk-live
 ukcdp.co.uk
 ukliferadio.co.uk
 uku.im
@@ -6344,7 +6320,6 @@ wha.la
 whatblocked.com
 whatbrowser.org
 whats.new
-whatsapp
 whatsonweibo.com
 wheatseeds.org
 wheelockslatin.com
@@ -6677,7 +6652,6 @@ youshun12.com
 youthnetradio.org
 youthwant.com.tw
 youtu.be
-youtube
 youversion.com
 youwin.com
 youxu.info

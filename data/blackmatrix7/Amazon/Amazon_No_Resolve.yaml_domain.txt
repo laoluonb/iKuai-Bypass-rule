@@ -101,7 +101,6 @@ amznl.com
 assoc-amazon.cn
 associates-amazon.com
 audible.com
-avoddashs
 avodmp4s3ww-a.akamaihd.net
 aws
 aws-iot-hackathon.com
@@ -124,7 +123,6 @@ awstrust.com
 boxofficemojo.com
 cdkworkshop.com
 cloudfront.net
-com.amazon.avod.thirdpartyclient
 containersonaws.com
 createspace.com
 elasticbeanstalk.com

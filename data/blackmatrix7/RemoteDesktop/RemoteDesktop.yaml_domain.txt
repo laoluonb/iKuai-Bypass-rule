@@ -1,9 +1,0 @@
-crashreport.exe
-devcon.exe
-driverinstaller.exe
-mstsc.exe
-sunloginclient.exe
-todesk.exe
-todesk_service.exe
-todesk_session.exe
-todesk_setup.exe

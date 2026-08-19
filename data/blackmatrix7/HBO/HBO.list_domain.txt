@@ -1,7 +1,6 @@
 bcbolthboa-a.akamaihd.net
 cf-images.ap-southeast-1.prod.boltdns.net
 cinemax.com
-com.hbo.hbonow
 dai3fd1oh325y.cloudfront.net
 execute-api.ap-southeast-1.amazonaws.com
 execute-api.us-east-1.amazonaws.com

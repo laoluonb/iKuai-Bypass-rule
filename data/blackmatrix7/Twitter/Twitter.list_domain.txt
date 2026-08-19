@@ -10,7 +10,6 @@ twimg.co
 twimg.com
 twimg.org
 twitpic.com
-twitter
 twitter.biz
 twitter.com
 twitter.jp

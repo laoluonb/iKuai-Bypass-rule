@@ -9,7 +9,6 @@ hboasia3-i.akamaihd.net
 hboasia4-i.akamaihd.net
 hboasia5-i.akamaihd.net
 hboasialive.akamaized.net
-hbogoasia
 hbogoasia.com
 hbogoasia.hk
 hbogoprod-vod.akamaized.net

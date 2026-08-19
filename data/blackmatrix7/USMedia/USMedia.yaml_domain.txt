@@ -24,9 +24,6 @@ cbsstatic.com
 cbsstore.com
 cbssvideo.com
 cbstelevisioncity.com
-com.cbs.app
-com.hulu.plus
-com.showtime.standalone
 cws-hulu.conviva.com
 dtci.co
 dtci.technology

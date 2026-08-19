@@ -7,7 +7,6 @@ bbc.com
 bbc.in
 bbc.net.uk
 bbcchinese.com
-bbcfmt
 bbci.co
 bbci.co.uk
 bbcmedia.co.uk
@@ -24,7 +23,6 @@ itvpnp.stage.ott.irdeto.com
 itvpnpmobile-a.akamaihd.net
 itvstatic.com
 massive-itv.com
-uk-live
 vod-dash-ww-live.akamaized.net
 vod-thumb-ww-live.akamaized.net
 vs-cmaf-pushb-ww-live.akamaized.net

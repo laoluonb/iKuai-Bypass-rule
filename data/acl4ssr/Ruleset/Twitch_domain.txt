@@ -1,6 +1,5 @@
 ext-twitch.tv
 jtvnw.net
-ttvnw
 ttvnw.net
 twitch-ext.rootonline.de
 twitch.tv

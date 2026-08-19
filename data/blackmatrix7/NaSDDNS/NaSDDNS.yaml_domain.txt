@@ -22,7 +22,6 @@ netdata.cloud
 plex.direct
 plex.tv
 portcheck.transmissionbt.com
-qcloud
 qnap.com
 quickconnect.cn
 quickconnect.to

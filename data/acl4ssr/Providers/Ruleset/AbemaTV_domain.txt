@@ -1,5 +1,4 @@
 abema.io
 abema.tv
-abematv.akamaized.net
 ameba.jp
 hayabusa.io

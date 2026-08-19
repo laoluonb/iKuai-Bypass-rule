@@ -4,7 +4,6 @@ applemusic.com
 audio-ssl.itunes.apple.com
 audio.itunes.apple.com
 blobstore.apple.com
-music
 music.apple.com
 mvod.itunes.apple.com
 streamingaudio.itunes.apple.com

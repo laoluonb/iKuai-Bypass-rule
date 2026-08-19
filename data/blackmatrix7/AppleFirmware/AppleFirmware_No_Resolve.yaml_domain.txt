@@ -82,7 +82,6 @@ appstore.my
 appstore.ph
 appstoreapple.cn
 asto.re
-com.apple.geod
 crashlytics.com
 darwinsource.com
 darwinsource.org
