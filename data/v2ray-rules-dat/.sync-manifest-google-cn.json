@@ -3,8 +3,7 @@
   "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt",
   "generated_files": [
     "data/v2ray-rules-dat/.sync-manifest-google-cn.json",
-    "data/v2ray-rules-dat/google-cn_domain.txt",
-    "data/v2ray-rules-dat/google-cn_isp.txt"
+    "data/v2ray-rules-dat/google-cn_domain.txt"
   ],
   "domains": 112,
   "ips": 0,
