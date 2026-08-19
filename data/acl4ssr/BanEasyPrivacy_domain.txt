@@ -1,4 +1,3 @@
-0.0.0.1/32
 0.myikas.com
 0.net.easyjet.com
 00px.net
@@ -14,7 +13,6 @@
 10298198.m.sofi.org
 10298198.o.sofi.org
 102d.pandasuite.io
-109.123.233.251/32
 10stepswp.advancedtech.com
 11959579.fun.joyrun.com
 11b6n4ty2x3.taxliencode.com
@@ -31,7 +29,6 @@
 16i6nuuc2ej.koelewijn.nl
 176.net.jumia.ma
 18052925.im.intermiles.com
-185.193.38.148/32
 18wosx.ru
 19035924.automated.almosafer.com
 19035924.email.almosafer.com
@@ -88,9 +85,6 @@
 2yqcaqbfnv.nextgen.shareablee.com
 3347.wolf-gordon.com
 3347.wolfgordon.com
-34.215.155.61/32
-35.194.26.233/32
-35.239.57.233/32
 3565433061881492849.academyofconsciousleadership.com
 3587285621425460184.academyofconsciousleadership.net
 360direct.qualfon.com
@@ -112,8 +106,6 @@
 40caidaylimpia.catzolab.net
 4251.tech
 4399stat.5054399.com
-44.228.85.26/32
-45.32.105.134/32
 46rtpw.ru
 48z7wyjdsywu.www.revistaferramental.com.br
 492733704185584515.academyforconsciousculture.com
@@ -155,7 +147,6 @@
 71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr
 757d.pandasuite.io
 76ef.pandasuite.io
-77.162.125.199/32
 771fnypadw0j.pt.themoneytizer.com
 78rkcgj4i8c6.www.cefirates.com
 7hdl8dlfjm4g.www.cybernetman.com

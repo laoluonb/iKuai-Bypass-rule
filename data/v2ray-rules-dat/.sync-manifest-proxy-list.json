@@ -3,8 +3,10 @@
   "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
   "generated_files": [
     "data/v2ray-rules-dat/.sync-manifest-proxy-list.json",
-    "data/v2ray-rules-dat/proxy-list_domain.txt"
+    "data/v2ray-rules-dat/proxy-list_domain.txt",
+    "data/v2ray-rules-dat/proxy-list_isp.txt"
   ],
-  "values": 27194,
+  "domains": 27194,
+  "ips": 0,
   "skipped": 0
 }

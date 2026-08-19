@@ -1,7 +1,5 @@
-173.194.0.0/16
 1e100.net
 2mdn.net
-74.125.0.0/16
 app-measurement.net
 c.gle
 g.co
