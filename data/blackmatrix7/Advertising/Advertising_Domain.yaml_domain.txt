@@ -6557,7 +6557,6 @@ images.go1.desjardinsassurancesgenerales.com
 images.go1.lapersonnelle.com
 images.hitwise.co.uk
 images.info.inttonagriculture.com
-images.mkt.zoominfo.com
 images.promotions.bankofguam.com
 images.reldirect.lenovo.com
 images.service.belboon.com
@@ -6664,7 +6663,6 @@ info.evidon.com
 info.iciba.com
 info.investa.com.au
 info.perkinelmer.com.cn
-info.sharks.com.au
 info4.a7.org
 informers.openmedia.com.ua
 infoweb-coolinfo.tk
@@ -8672,9 +8670,7 @@ metartmoney.met-art.com
 metrics.abbottfamily.co.id
 metrics.babycentre.co.uk
 metrics.cgu.com.au
-metrics.citibank.com.ph
 metrics.client-eng.a2z.com
-metrics.cosmopolitan.co.uk
 metrics.fidelity.com.edgekey.net
 metrics.hackerrank.com.edgekey.net
 metrics.kone.co.ke
@@ -8683,7 +8679,6 @@ metrics.kone.co.uk
 metrics.kone.co.za
 metrics.kone.com.au
 metrics.kone.com.tr
-metrics.m.abbottnutrition.com
 metrics.professionnels.roche.fr
 metrics.sbs.com.au
 metrics.sgic.com.au
@@ -8707,7 +8702,6 @@ mfjegjqb.com
 mfwfpucpfya.com
 mfwjyreguafi.com
 mfxzxrveb.com
-mg.info.averydennison.com
 mg4376.cc
 mg58.com
 mgd-adengine.elasticbeanstalk.com
@@ -10872,6 +10866,7 @@ qldozzpy.com
 qlfsat.co.uk
 qlhhbgkgggsp.com
 qljczwei.com
+qljiop.allabout.co.jp
 qlmgmgvmiepsb.com
 qlmygsvk.com
 qlxwtwasgmdf.com
@@ -11556,7 +11551,6 @@ sa2xskt.com
 sabin.free.fr
 sadbads.com
 sadiqtv.com
-sadobe.sodimac.com.pe
 sadsabs.com
 sadsamps.com
 sadsans.com
@@ -12328,8 +12322,6 @@ stats.kiwibank.co.nz
 stats.kumulos.com
 stats.mediaforge.com.edgekey.net
 stats.playrix.com
-stats.seat.com.tr
-stats.tiffany.co.jp
 stats.unity3d.com
 stats.v.duowan.com
 stauckag.com
@@ -12444,7 +12436,6 @@ svrybecqxgdq.com
 svuyfmzsxmjwa.com
 svwsjxptbsvqo.com
 sw3sydl.duoyi.com
-sw88.disney.com.tr
 sw88.foxchannels.com.tr
 sw88.nationalgeographic.co.uk
 sw88.nationalgeographicexpeditions.co.uk
@@ -12949,6 +12940,7 @@ tr.info.pret-participatif.fr
 tr.infos.mailrungis.com
 tr.jianshu.com
 tr.mattressman.co.uk
+tr.news.alinea.fr
 tr.news.kalivet.com
 tr.news.roadzila.com
 tr.newsletters.youmeetings.com
@@ -13987,7 +13979,6 @@ vvaqbhmahjb.com
 vvaqdyzdovonc.com
 vvbmvooy.com
 vvbvubdvfzihb.com
-vvcufx.colombo.com.br
 vvczvfrbtwrvs.com
 vvgttgprssiy.com
 vvjlrhuzmhzlws.com

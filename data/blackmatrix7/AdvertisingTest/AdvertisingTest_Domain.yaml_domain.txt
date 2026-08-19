@@ -9916,6 +9916,7 @@ tr.enquete-cpf.ifop.com
 tr.info.pret-participatif.fr
 tr.infos.mailrungis.com
 tr.mattressman.co.uk
+tr.news.alinea.fr
 tr.news.kalivet.com
 tr.news.roadzila.com
 tr.newsletters.youmeetings.com
