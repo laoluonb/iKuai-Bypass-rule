@@ -23,7 +23,7 @@ python -m pytest
 1. 提交项目到 GitHub。
 2. 在仓库的 Actions 页面手动运行一次 `Daily upstream sync`，确认输出符合预期。
 
-工作流默认每天 `03:15 UTC` 运行，也可以手动触发。GitHub Actions 会把 `data/` 下发生变化的生成文件自动提交回仓库。
+工作流默认每天北京时间 `03:00`（`19:00 UTC`）运行，也可以手动触发。GitHub Actions 会把 `data/` 下发生变化的生成文件自动提交回仓库。
 
 ## 目录结构
 

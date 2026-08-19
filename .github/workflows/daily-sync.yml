@@ -2,7 +2,8 @@ name: Daily upstream sync
 
 on:
   schedule:
-    - cron: "15 3 * * *"
+    # 每天北京时间 03:00（GitHub Actions 使用 UTC，这里是前一天 19:00 UTC）
+    - cron: "0 19 * * *"
   workflow_dispatch:
 
 permissions:
