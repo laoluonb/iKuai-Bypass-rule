@@ -1,0 +1,11 @@
+[project]
+name = "upstream-sync-transformer"
+version = "0.1.0"
+description = "Fetch upstream content on a schedule and transform it into configurable output formats."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

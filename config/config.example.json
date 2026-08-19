@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "name": "acl4ssr-clash",
+      "type": "github_directory",
+      "api_url": "https://api.github.com/repos/ACL4SSR/ACL4SSR/contents/Clash?ref=master",
+      "path_prefix": "Clash",
+      "recursive": true,
+      "include_extensions": [".list", ".yaml", ".yml"],
+      "exclude_prefixes": ["Clash/config", "Clash/mrs"],
+      "exclude_names": ["GeneralClashConfig.yml"],
+      "output_dir": "data/acl4ssr",
+      "merged_domain_output": "data/acl4ssr/all_domain.txt",
+      "timeout_seconds": 30
+    },
+    {
+      "name": "proxy-list",
+      "type": "rule_list",
+      "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
+      "output_dir": "data/v2ray-rules-dat",
+      "timeout_seconds": 30
+    },
+    {
+      "name": "google-cn",
+      "type": "rule_list",
+      "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt",
+      "output_dir": "data/v2ray-rules-dat",
+      "timeout_seconds": 30
+    }
+  ]
+}
