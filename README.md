@@ -3,7 +3,7 @@
 每天从 ACL4SSR Clash 规则目录和 Loyalsoldier 的 v2ray 规则文本同步内容，并转换为爱快可直接使用的逐行列表：
 
 - 每个上游文件保留原来的目录和文件对应关系。
-- 每个上游文件生成一个 `*_domain.txt` 和一个 `*_isp.txt`，不拆分批次。
+- 每个上游文件至少生成一个 `*_domain.txt`；只有包含 IPv4/CIDR 时才生成 `*_isp.txt`，不拆分批次。
 - `*_domain.txt` 是纯文本规则，每行一条域名类内容。
 - `*_isp.txt` 是纯 IPv4/IP-CIDR 列表，每行一条，适合爱快 ISP/IP 分流。
 - 所有结果逐行输出、去重并排序。
@@ -42,9 +42,8 @@ data/acl4ssr/
 
 data/v2ray-rules-dat/
 ├── proxy-list_domain.txt
-├── proxy-list_isp.txt
 ├── google-cn_domain.txt
-└── google-cn_isp.txt
+└── ...
 ```
 
 每个文件都保留上游相对目录。
@@ -138,7 +137,7 @@ GitHub 网页地址需要转换成 `api.github.com/repos/.../contents/...` 的 A
 
 - `output_dir`：每个源文件的输出根目录。
 - `merged_domain_output`：域名总表路径。
-- `merged_isp_output`：IPv4/CIDR 总表路径。
+- `merged_isp_output`：IPv4/CIDR 总表路径；没有任何 IPv4/CIDR 时不生成。
 - `include_extensions`：要处理的上游文本文件扩展名。
 - `exclude_prefixes`：不处理的上游目录前缀。
 

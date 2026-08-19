@@ -409,22 +409,26 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         isp_relative = isp_path.relative_to(project_root).as_posix()
         content = fetch(str(item["download_url"]), timeout, headers).decode("utf-8-sig")
         domains, ips, value_stats = extract_clash_ikuai_values(content)
-        generated_files.extend((domain_relative, isp_relative))
+        generated_files.append(domain_relative)
+        if ips:
+            generated_files.append(isp_relative)
         all_domains.update(domains)
         all_ips.update(ips)
         manifest_files.append({
             "source": source_path,
             "domain_output": domain_relative,
-            "isp_output": isp_relative,
+            "isp_output": isp_relative if ips else None,
             "domains": len(domains),
             "ips": len(ips),
             "skipped": value_stats["skipped"],
         })
         changed = write_text_if_changed(domain_path, "\n".join(domains) + ("\n" if domains else ""), dry_run) or changed
-        changed = write_text_if_changed(isp_path, "\n".join(ips) + ("\n" if ips else ""), dry_run) or changed
+        if ips:
+            changed = write_text_if_changed(isp_path, "\n".join(ips) + "\n", dry_run) or changed
         status = "would update" if dry_run else "updated"
         print(f"[{source['name']}] {status}: {domain_relative} ({len(domains)} domains)")
-        print(f"[{source['name']}] {status}: {isp_relative} ({len(ips)} IPv4/CIDR values)")
+        if ips:
+            print(f"[{source['name']}] {status}: {isp_relative} ({len(ips)} IPv4/CIDR values)")
 
     merged_domain_output = safe_relative_path(
         project_root,
@@ -438,11 +442,14 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         "merged_isp_output",
     )
     merged_isp_relative = merged_isp_output.relative_to(project_root).as_posix()
-    generated_files.extend((merged_domain_relative, merged_isp_relative))
+    generated_files.append(merged_domain_relative)
+    if all_ips:
+        generated_files.append(merged_isp_relative)
     merged_domains = sorted(all_domains)
     merged_ips = sorted(all_ips, key=lambda value: (":" in value, value))
     changed = write_text_if_changed(merged_domain_output, "\n".join(merged_domains) + ("\n" if merged_domains else ""), dry_run) or changed
-    changed = write_text_if_changed(merged_isp_output, "\n".join(merged_ips) + ("\n" if merged_ips else ""), dry_run) or changed
+    if merged_ips:
+        changed = write_text_if_changed(merged_isp_output, "\n".join(merged_ips) + "\n", dry_run) or changed
 
     manifest_path = output_dir / ".sync-manifest.json"
     generated_files.append(manifest_path.relative_to(project_root).as_posix())
@@ -490,10 +497,10 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
     output_dir = safe_relative_path(project_root, str(source["output_dir"]), "output_dir")
     domain_path = output_dir / f"{source['name']}_domain.txt"
     isp_path = output_dir / f"{source['name']}_isp.txt"
-    generated_files = [
-        domain_path.relative_to(project_root).as_posix(),
-        isp_path.relative_to(project_root).as_posix(),
-    ]
+    generated_files = [domain_path.relative_to(project_root).as_posix()]
+    isp_relative = isp_path.relative_to(project_root).as_posix()
+    if ips:
+        generated_files.append(isp_relative)
     manifest_name = str(source.get("manifest_name", f".sync-manifest-{source['name']}.json"))
     old_manifest_path = output_dir / manifest_name
     old_manifest: dict[str, Any] = {}
@@ -507,7 +514,8 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
 
     changed = False
     changed = write_text_if_changed(domain_path, "\n".join(domains) + ("\n" if domains else ""), dry_run) or changed
-    changed = write_text_if_changed(isp_path, "\n".join(ips) + ("\n" if ips else ""), dry_run) or changed
+    if ips:
+        changed = write_text_if_changed(isp_path, "\n".join(ips) + "\n", dry_run) or changed
 
     # Remove files produced by the previous split-output mode.
     for legacy_name in (f"{source['name']}_ip.txt", f"{source['name']}_regexp.txt"):
@@ -533,7 +541,8 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
     changed = write_text_if_changed(old_manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", dry_run) or changed
     status = "would update" if dry_run else ("updated" if changed else "unchanged")
     print(f"[{source['name']}] {status}: {generated_files[0]} ({len(domains)} domains; {stats['skipped']} skipped)")
-    print(f"[{source['name']}] {status}: {generated_files[1]} ({len(ips)} IPv4/CIDR values)")
+    if ips:
+        print(f"[{source['name']}] {status}: {isp_relative} ({len(ips)} IPv4/CIDR values)")
     return changed
 
 
