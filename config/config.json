@@ -1,39 +1,56 @@
 {
+  // 上游同步源列表，可继续在这里追加自定义链接。
   "sources": [
     {
+      // 源名称，同时用于生成文件名。
       "name": "acl4ssr-clash",
+      // github_directory 表示同步 GitHub 文件夹；rule_list 表示同步单个文本文件。
       "type": "github_directory",
+      // GitHub Contents API 地址，不是普通网页地址。
       "api_url": "https://api.github.com/repos/ACL4SSR/ACL4SSR/contents/Clash?ref=master",
+      // 去掉上游路径前缀后，保留其余文件夹结构。
       "path_prefix": "Clash",
+      // 是否递归同步子文件夹。
       "recursive": true,
+      // 只同步这些扩展名的文件。
       "include_extensions": [
         ".list",
         ".yaml",
         ".yml"
       ],
+      // 不同步这些目录前缀。
       "exclude_prefixes": [
         "Clash/config",
         "Clash/mrs"
       ],
+      // 不同步这些文件名。
       "exclude_names": [
         "GeneralClashConfig.yml"
       ],
+      // 生成文件的根目录。
       "output_dir": "data/acl4ssr",
+      // 所有文件合并后的域名总表；没有域名内容时不会生成。
       "merged_domain_output": "data/acl4ssr/all_domain.txt",
+      // 所有文件合并后的 IPv4/CIDR 总表；没有 ISP 内容时不会生成。
       "merged_isp_output": "data/acl4ssr/all_isp.txt",
+      // 单个请求的超时时间，单位为秒。
       "timeout_seconds": 30,
+      // 请求 GitHub API 时使用的请求头。
       "headers": {
         "Accept": "application/vnd.github+json"
       }
     },
     {
+      // Loyalsoldier 代理规则：域名写入 _domain.txt，IPv4/CIDR 写入 _isp.txt。
       "name": "proxy-list",
       "type": "rule_list",
       "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
+      // 多个文本源可以共用同一个输出目录。
       "output_dir": "data/v2ray-rules-dat",
       "timeout_seconds": 30
     },
     {
+      // Loyalsoldier Google CN 规则。
       "name": "google-cn",
       "type": "rule_list",
       "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt",

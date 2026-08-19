@@ -1,20 +1,32 @@
 {
+  // 上游同步源列表，可复制下面的对象添加新的链接。
   "sources": [
     {
+      // 源名称，同时用于生成文件名。
       "name": "acl4ssr-clash",
+      // github_directory 表示同步 GitHub 文件夹。
       "type": "github_directory",
+      // GitHub Contents API 地址，不是普通网页地址。
       "api_url": "https://api.github.com/repos/ACL4SSR/ACL4SSR/contents/Clash?ref=master",
+      // 去掉上游路径前缀后保留其余文件夹结构。
       "path_prefix": "Clash",
+      // 递归同步子文件夹。
       "recursive": true,
+      // 要处理的文件扩展名。
       "include_extensions": [".list", ".yaml", ".yml"],
+      // 排除的目录和文件。
       "exclude_prefixes": ["Clash/config", "Clash/mrs"],
       "exclude_names": ["GeneralClashConfig.yml"],
+      // 生成文件根目录。
       "output_dir": "data/acl4ssr",
+      // 域名总表，没有域名内容时不生成。
       "merged_domain_output": "data/acl4ssr/all_domain.txt",
+      // ISP 总表，没有 IPv4/CIDR 时不生成。
       "merged_isp_output": "data/acl4ssr/all_isp.txt",
       "timeout_seconds": 30
     },
     {
+      // 单个文本规则源。
       "name": "proxy-list",
       "type": "rule_list",
       "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
@@ -22,6 +34,7 @@
       "timeout_seconds": 30
     },
     {
+      // 另一个单个文本规则源。
       "name": "google-cn",
       "type": "rule_list",
       "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt",

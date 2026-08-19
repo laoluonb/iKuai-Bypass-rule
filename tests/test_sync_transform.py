@@ -12,6 +12,7 @@ from sync_transform import (
     format_csv,
     format_markdown,
     parse_xml_records,
+    strip_json_comments,
     transform_records,
 )
 
@@ -64,6 +65,18 @@ def test_json_output_is_utf8_friendly():
 
     result = json.loads(format_json([{"title": "中文"}], "source", "2026-08-19T00:00:00+00:00"))
     assert result["items"][0]["title"] == "中文"
+
+
+def test_jsonc_comments_are_removed_without_breaking_urls():
+    config = strip_json_comments(
+        '{\n'
+        '  // 中文注释\n'
+        '  "url": "https://example.com/rules//latest", /* 行内注释 */\n'
+        '  "name": "测试"\n'
+        '}\n'
+    )
+    parsed = json.loads(config)
+    assert parsed == {"url": "https://example.com/rules//latest", "name": "测试"}
 
 
 def test_extract_all_clash_values_from_yaml_and_ip_rules():

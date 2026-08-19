@@ -77,7 +77,7 @@ python src/sync_transform.py --dry-run
 
 ## 配置
 
-主要配置位于 `config/config.json`，当前已预置三个源：
+主要配置位于 `config/config.json`，支持 JSONC 格式，可以使用 `//` 和 `/* */` 中文注释。当前已预置三个源：
 
 - `acl4ssr-clash`：递归同步 ACL4SSR 的 Clash 规则目录。
 - `proxy-list`：同步 Loyalsoldier 的 `proxy-list.txt`。

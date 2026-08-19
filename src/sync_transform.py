@@ -31,9 +31,72 @@ class SyncError(Exception):
     """An expected configuration, network, parsing, or output error."""
 
 
+def strip_json_comments(text: str) -> str:
+    """Remove JSONC // and /* */ comments without touching quoted URLs."""
+    output: list[str] = []
+    index = 0
+    in_string = False
+    escaped = False
+    in_line_comment = False
+    in_block_comment = False
+
+    while index < len(text):
+        char = text[index]
+        next_char = text[index + 1] if index + 1 < len(text) else ""
+
+        if in_line_comment:
+            if char in "\r\n":
+                in_line_comment = False
+                output.append(char)
+            else:
+                output.append(" ")
+            index += 1
+            continue
+
+        if in_block_comment:
+            if char == "*" and next_char == "/":
+                in_block_comment = False
+                output.extend((" ", " "))
+                index += 2
+            else:
+                output.append("\n" if char in "\r\n" else " ")
+                index += 1
+            continue
+
+        if in_string:
+            output.append(char)
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+            index += 1
+            continue
+
+        if char == '"':
+            in_string = True
+            output.append(char)
+            index += 1
+        elif char == "/" and next_char == "/":
+            in_line_comment = True
+            output.extend((" ", " "))
+            index += 2
+        elif char == "/" and next_char == "*":
+            in_block_comment = True
+            output.extend((" ", " "))
+            index += 2
+        else:
+            output.append(char)
+            index += 1
+
+    return "".join(output)
+
+
 def load_config(path: Path) -> dict[str, Any]:
     try:
-        config = json.loads(path.read_text(encoding="utf-8"))
+        config_text = strip_json_comments(path.read_text(encoding="utf-8"))
+        config = json.loads(config_text)
     except FileNotFoundError as exc:
         raise SyncError(f"Config file not found: {path}") from exc
     except json.JSONDecodeError as exc:
