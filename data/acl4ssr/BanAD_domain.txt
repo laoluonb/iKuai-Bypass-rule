@@ -245,7 +245,6 @@ gentags.net
 gepush.com
 getui.com
 glispa.com
-go-mpulse
 go-mpulse.net
 go.10086.cn
 godloveme.cn

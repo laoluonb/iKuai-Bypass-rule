@@ -1,5 +1,4 @@
 bb-static.com
-bbc
 bbc-reporting-api.app
 bbc.co
 bbc.co.uk

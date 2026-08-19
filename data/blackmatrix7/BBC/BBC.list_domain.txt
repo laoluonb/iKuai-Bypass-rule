@@ -2,7 +2,6 @@ aod-dash-uk-live.akamaized.net
 aod-hls-uk-live.akamaized.net
 as-dash-uk-live.akamaized.net
 as-hls-uk-live.akamaized.net
-bbc
 bbc.co
 bbc.co.uk
 bbc.com

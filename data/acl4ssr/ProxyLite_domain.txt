@@ -85,7 +85,6 @@ edgekey.net
 edgesuite.net
 elastic.co
 elastic.com
-eu
 eurekavpt.com
 facebook.com
 fanatical.com
@@ -122,7 +121,6 @@ gvt0.com
 gvt1.com
 gvt2.com
 gvt3.com
-hk
 hockeyapp.net
 hoyolab.com
 hulu.com
@@ -138,7 +136,6 @@ issuu.com
 iwara.tv
 ixquick.com
 jitpack.io
-jp
 jtvnw.net
 kakao.co.kr
 kakao.com
@@ -147,7 +144,6 @@ kat.cr
 kik.com
 kobo.com
 kobobooks.com
-kr
 licdn.com
 lin.ee
 line-apps.com
@@ -210,7 +206,6 @@ redtube.com
 resilio.com
 sb-cd.com
 sfx.ms
-sg
 shadowsocks.org
 skydrive.wns.windows.com
 slack-edge.com
@@ -269,14 +264,12 @@ tumbex.com
 tumblr.co
 tumblr.com
 tvb.com
-tw
 twdvd.com
 twimg.co
 twimg.com
 twimg.org
 twitch.tv
 txmblr.com
-uk
 underlords.com
 unsplash.com
 v2ex.com

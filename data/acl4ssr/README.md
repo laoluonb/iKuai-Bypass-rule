@@ -22,7 +22,6 @@
 | `ChinaDomain` | [下载](ChinaDomain_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/ChinaDomain_domain.txt) | [下载](ChinaDomain_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/ChinaDomain_isp.txt) |
 | `ChinaIp` | - | [下载](ChinaIp_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/ChinaIp_isp.txt) |
 | `ChinaMedia` | [下载](ChinaMedia_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/ChinaMedia_domain.txt) | [下载](ChinaMedia_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/ChinaMedia_isp.txt) |
-| `Download` | [下载](Download_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Download_domain.txt) | - |
 | `GoogleCN` | [下载](GoogleCN_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/GoogleCN_domain.txt) | - |
 | `LocalAreaNetwork` | [下载](LocalAreaNetwork_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/LocalAreaNetwork_domain.txt) | [下载](LocalAreaNetwork_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/LocalAreaNetwork_isp.txt) |
 | `Microsoft` | [下载](Microsoft_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Microsoft_domain.txt) | - |

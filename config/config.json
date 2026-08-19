@@ -61,6 +61,14 @@
       "timeout_seconds": 30
     },
     {
+      // Loyalsoldier GFW 规则：每行一个完整域名。
+      "name": "gfw",
+      "type": "rule_list",
+      "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt",
+      "output_dir": "data/v2ray-rules-dat",
+      "timeout_seconds": 30
+    },
+    {
       // BlackMatrix7 Clash 规则目录，保留上游目录和文件扩展名，避免同名 .list/.yaml 覆盖。
       "name": "blackmatrix7-clash",
       "type": "github_directory",

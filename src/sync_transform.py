@@ -313,7 +313,12 @@ def normalize_for_domain_output(value: str, preserve_case: bool = False) -> str 
         return None
     if candidate.startswith(("||", "!", ".", "http://", "https://")):
         return None
-    return normalize_domain(candidate)
+    domain = normalize_domain(candidate)
+    # iKuai's domain split API accepts fully qualified domain names, not
+    # single-label hostnames such as localhost, google, or ca.
+    if not domain or "." not in domain:
+        return None
+    return domain
 
 
 def normalize_ikuai_isp_value(value: str) -> str | None:

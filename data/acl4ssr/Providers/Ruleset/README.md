@@ -42,7 +42,6 @@
 | `DisneyPlus` | [下载](DisneyPlus_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/DisneyPlus_domain.txt) | - |
 | `Docker` | [下载](Docker_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Docker_domain.txt) | - |
 | `Douyu` | [下载](Douyu_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Douyu_domain.txt) | - |
-| `Download` | [下载](Download_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Download_domain.txt) | - |
 | `Dubox` | [下载](Dubox_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Dubox_domain.txt) | - |
 | `EHGallery` | [下载](EHGallery_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/EHGallery_domain.txt) | - |
 | `EncoreTVB` | [下载](EncoreTVB_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/EncoreTVB_domain.txt) | - |

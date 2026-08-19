@@ -1425,7 +1425,6 @@ gizlen.net
 gjczz.com
 glarity.app
 glass8.eu
-gle
 global.bing.com
 global.ssl.fastly.net
 globaljihad.net
@@ -1469,8 +1468,6 @@ goodnewsnetwork.org
 goodreaders.com
 goodreads.com
 goofind.com
-goog
-google
 google.ac
 google.ad
 google.ae

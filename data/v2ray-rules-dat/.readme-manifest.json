@@ -4,6 +4,7 @@
   ],
   "sources": [
     "proxy-list",
-    "google-cn"
+    "google-cn",
+    "gfw"
   ]
 }

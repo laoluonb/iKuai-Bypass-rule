@@ -824,7 +824,6 @@ c-spanvideo.org
 c100tibet.org
 c2cx.com
 c3pool.com
-ca
 cableav.tv
 cablegatesearch.net
 cachefly.com
@@ -1694,7 +1693,6 @@ etowns.org
 etsy.com
 ettoday.net
 etvonline.hk
-eu
 eucasino.com
 eulam.com
 eurekavpt.com
@@ -2750,7 +2748,6 @@ hizb-ut-tahrir.org
 hizbuttahrir.org
 hjclub.info
 hjd2048.com
-hk
 hk-pub.com
 hk01.com
 hk32168.com
@@ -3240,7 +3237,6 @@ journalchretien.net
 journalofdemocracy.org
 joymiihub.com
 joyourself.com
-jp
 jpopforum.net
 jqueryui.com
 jsdelivr.net
@@ -3353,7 +3349,6 @@ korea.net
 korenan2.com
 kpkuang.org
 kqes.net
-kr
 kraken.com
 krtco.com.tw
 ksdl.org
@@ -4959,7 +4954,6 @@ sfileydy.com
 sfshibao.com
 sftindia.org
 sftuk.org
-sg
 sgwritings.com
 sgzhan.com
 shadeyouvpn.com
@@ -5834,7 +5828,6 @@ tvider.com
 tvmost.com.hk
 tvplayvideos.com
 tvunetworks.com
-tw
 tw-blog.com
 tw-npo.org
 tw01.org
@@ -5968,7 +5961,6 @@ uhdwallpapers.org
 uhrp.org
 uighur.nl
 uighurbiz.net
-uk
 ukcdp.co.uk
 ukliferadio.co.uk
 uku.im
@@ -6029,7 +6021,6 @@ urchin.com
 url.com.tw
 urlborg.com
 urlparser.com
-us
 us.to
 usacn.com
 usaip.eu

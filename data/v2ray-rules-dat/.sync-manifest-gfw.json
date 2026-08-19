@@ -1,0 +1,11 @@
+{
+  "source": "gfw",
+  "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt",
+  "generated_files": [
+    "data/v2ray-rules-dat/.sync-manifest-gfw.json",
+    "data/v2ray-rules-dat/gfw_domain.txt"
+  ],
+  "domains": 4376,
+  "ips": 0,
+  "skipped": 0
+}

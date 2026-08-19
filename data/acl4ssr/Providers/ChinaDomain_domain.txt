@@ -138,7 +138,6 @@ cloudxns.net
 cm.steampowered.com
 cmbchina.com
 cmpassport.com
-cn
 cn163.net
 cnblogs.com
 cnki.net
@@ -555,9 +554,6 @@ xip.io
 xitek.com
 xiumi.us
 xmcdn.com
-xn--55qx5d
-xn--fiqs8s
-xn--io0a7i
 xslb.net
 xueqiu.com
 xunlei.com

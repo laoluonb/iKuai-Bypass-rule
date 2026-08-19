@@ -22,7 +22,6 @@ aliapp-inc.com
 aliapp.com
 aliapp.org
 aliappcdn.com
-alibaba
 alibaba-inc.com
 alibaba.cn
 alibaba.com
@@ -1110,7 +1109,6 @@ tangping.com.cn
 tanx.com
 tanxlog.istreamsche.com
 tao123.com
-taobao
 taobao.cn
 taobao.com
 taobao.org
@@ -1146,7 +1144,6 @@ tianchi.com
 tianmao.cn
 tianmao.com
 titianshanfz.com
-tmall
 tmall.com
 tmall.hk
 tmall.ru

@@ -20,7 +20,6 @@
     "data/acl4ssr/ChinaIp_isp.txt",
     "data/acl4ssr/ChinaMedia_domain.txt",
     "data/acl4ssr/ChinaMedia_isp.txt",
-    "data/acl4ssr/Download_domain.txt",
     "data/acl4ssr/GoogleCN_domain.txt",
     "data/acl4ssr/LocalAreaNetwork_domain.txt",
     "data/acl4ssr/LocalAreaNetwork_isp.txt",
@@ -45,7 +44,6 @@
     "data/acl4ssr/Providers/ChinaIp_isp.txt",
     "data/acl4ssr/Providers/ChinaMedia_domain.txt",
     "data/acl4ssr/Providers/ChinaMedia_isp.txt",
-    "data/acl4ssr/Providers/Download_domain.txt",
     "data/acl4ssr/Providers/LocalAreaNetwork_domain.txt",
     "data/acl4ssr/Providers/LocalAreaNetwork_isp.txt",
     "data/acl4ssr/Providers/MJJ_domain.txt",
@@ -90,7 +88,6 @@
     "data/acl4ssr/Providers/Ruleset/DisneyPlus_domain.txt",
     "data/acl4ssr/Providers/Ruleset/Docker_domain.txt",
     "data/acl4ssr/Providers/Ruleset/Douyu_domain.txt",
-    "data/acl4ssr/Providers/Ruleset/Download_domain.txt",
     "data/acl4ssr/Providers/Ruleset/Dubox_domain.txt",
     "data/acl4ssr/Providers/Ruleset/EHGallery_domain.txt",
     "data/acl4ssr/Providers/Ruleset/EncoreTVB_domain.txt",
@@ -234,7 +231,6 @@
     "data/acl4ssr/Ruleset/Blizzard_domain.txt",
     "data/acl4ssr/Ruleset/ByteDance_domain.txt",
     "data/acl4ssr/Ruleset/CCTV_domain.txt",
-    "data/acl4ssr/Ruleset/CN_domain.txt",
     "data/acl4ssr/Ruleset/ChinaDNS_domain.txt",
     "data/acl4ssr/Ruleset/ChinaDNS_isp.txt",
     "data/acl4ssr/Ruleset/ChinaNet_domain.txt",
@@ -252,7 +248,6 @@
     "data/acl4ssr/Ruleset/Dmm_domain.txt",
     "data/acl4ssr/Ruleset/Docker_domain.txt",
     "data/acl4ssr/Ruleset/Douyu_domain.txt",
-    "data/acl4ssr/Ruleset/Download_domain.txt",
     "data/acl4ssr/Ruleset/Dubox_domain.txt",
     "data/acl4ssr/Ruleset/EHGallery_domain.txt",
     "data/acl4ssr/Ruleset/EncoreTVB_domain.txt",
@@ -398,9 +393,9 @@
       "source": "BanAD.list",
       "domain_output": "data/acl4ssr/BanAD_domain.txt",
       "isp_output": null,
-      "domains": 564,
+      "domains": 563,
       "ips": 0,
-      "skipped": 36
+      "skipped": 37
     },
     {
       "source": "BanEasyList.list",
@@ -454,9 +449,9 @@
       "source": "ChinaDomain.list",
       "domain_output": "data/acl4ssr/ChinaDomain_domain.txt",
       "isp_output": "data/acl4ssr/ChinaDomain_isp.txt",
-      "domains": 609,
+      "domains": 605,
       "ips": 5,
-      "skipped": 111
+      "skipped": 115
     },
     {
       "source": "ChinaIp.list",
@@ -484,11 +479,11 @@
     },
     {
       "source": "Download.list",
-      "domain_output": "data/acl4ssr/Download_domain.txt",
+      "domain_output": null,
       "isp_output": null,
-      "domains": 1,
+      "domains": 0,
       "ips": 0,
-      "skipped": 28
+      "skipped": 29
     },
     {
       "source": "GoogleCN.list",
@@ -502,9 +497,9 @@
       "source": "LocalAreaNetwork.list",
       "domain_output": "data/acl4ssr/LocalAreaNetwork_domain.txt",
       "isp_output": "data/acl4ssr/LocalAreaNetwork_isp.txt",
-      "domains": 24,
+      "domains": 18,
       "ips": 9,
-      "skipped": 12
+      "skipped": 18
     },
     {
       "source": "Microsoft.list",
@@ -542,9 +537,9 @@
       "source": "Providers/BanAD.yaml",
       "domain_output": "data/acl4ssr/Providers/BanAD_domain.txt",
       "isp_output": null,
-      "domains": 564,
+      "domains": 563,
       "ips": 0,
-      "skipped": 37
+      "skipped": 38
     },
     {
       "source": "Providers/BanEasyList.yaml",
@@ -590,9 +585,9 @@
       "source": "Providers/ChinaDomain.yaml",
       "domain_output": "data/acl4ssr/Providers/ChinaDomain_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ChinaDomain_isp.txt",
-      "domains": 609,
+      "domains": 605,
       "ips": 5,
-      "skipped": 112
+      "skipped": 116
     },
     {
       "source": "Providers/ChinaIp.yaml",
@@ -620,19 +615,19 @@
     },
     {
       "source": "Providers/Download.yaml",
-      "domain_output": "data/acl4ssr/Providers/Download_domain.txt",
+      "domain_output": null,
       "isp_output": null,
-      "domains": 1,
+      "domains": 0,
       "ips": 0,
-      "skipped": 29
+      "skipped": 30
     },
     {
       "source": "Providers/LocalAreaNetwork.yaml",
       "domain_output": "data/acl4ssr/Providers/LocalAreaNetwork_domain.txt",
       "isp_output": "data/acl4ssr/Providers/LocalAreaNetwork_isp.txt",
-      "domains": 24,
+      "domains": 18,
       "ips": 9,
-      "skipped": 13
+      "skipped": 19
     },
     {
       "source": "Providers/MJJ.yaml",
@@ -646,17 +641,17 @@
       "source": "Providers/ProxyGFWlist.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyGFWlist_domain.txt",
       "isp_output": null,
-      "domains": 4299,
+      "domains": 4296,
       "ips": 0,
-      "skipped": 13
+      "skipped": 16
     },
     {
       "source": "Providers/ProxyLite.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyLite_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ProxyLite_isp.txt",
-      "domains": 313,
+      "domains": 306,
       "ips": 80,
-      "skipped": 102
+      "skipped": 109
     },
     {
       "source": "Providers/ProxyMedia.yaml",
@@ -924,11 +919,11 @@
     },
     {
       "source": "Providers/Ruleset/Download.yaml",
-      "domain_output": "data/acl4ssr/Providers/Ruleset/Download_domain.txt",
+      "domain_output": null,
       "isp_output": null,
-      "domains": 1,
+      "domains": 0,
       "ips": 0,
-      "skipped": 24
+      "skipped": 25
     },
     {
       "source": "Providers/Ruleset/Dubox.yaml",
@@ -1710,17 +1705,17 @@
       "source": "ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/ProxyGFWlist_domain.txt",
       "isp_output": "data/acl4ssr/ProxyGFWlist_isp.txt",
-      "domains": 6775,
+      "domains": 6766,
       "ips": 80,
-      "skipped": 95
+      "skipped": 104
     },
     {
       "source": "ProxyLite.list",
       "domain_output": "data/acl4ssr/ProxyLite_domain.txt",
       "isp_output": "data/acl4ssr/ProxyLite_isp.txt",
-      "domains": 313,
+      "domains": 306,
       "ips": 80,
-      "skipped": 101
+      "skipped": 108
     },
     {
       "source": "ProxyMedia.list",
@@ -1940,11 +1935,11 @@
     },
     {
       "source": "Ruleset/CN.list",
-      "domain_output": "data/acl4ssr/Ruleset/CN_domain.txt",
+      "domain_output": null,
       "isp_output": null,
-      "domains": 4,
+      "domains": 0,
       "ips": 0,
-      "skipped": 2
+      "skipped": 6
     },
     {
       "source": "Ruleset/ChinaDNS.list",
@@ -2076,11 +2071,11 @@
     },
     {
       "source": "Ruleset/Download.list",
-      "domain_output": "data/acl4ssr/Ruleset/Download_domain.txt",
+      "domain_output": null,
       "isp_output": null,
-      "domains": 1,
+      "domains": 0,
       "ips": 0,
-      "skipped": 23
+      "skipped": 24
     },
     {
       "source": "Ruleset/Dubox.list",
@@ -2646,9 +2641,9 @@
       "source": "Ruleset/ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/Ruleset/ProxyGFWlist_domain.txt",
       "isp_output": null,
-      "domains": 4299,
+      "domains": 4296,
       "ips": 0,
-      "skipped": 14
+      "skipped": 17
     },
     {
       "source": "Ruleset/PublicDirectCDN.list",
@@ -3019,6 +3014,6 @@
       "skipped": 0
     }
   ],
-  "merged_domains": 96293,
+  "merged_domains": 96269,
   "merged_ips": 10437
 }

@@ -164,6 +164,19 @@ https://example.com/rules
     assert stats["skipped"] == 4
 
 
+def test_domain_outputs_reject_single_label_hostnames():
+    content = """localhost
+google
+ca
+example.com
+api.example.com
+"""
+    domains, ips, stats = extract_v2ray_ikuai_values(content)
+    assert domains == ["api.example.com", "example.com"]
+    assert ips == []
+    assert stats["skipped"] == 3
+
+
 def test_clash_domain_keyword_is_not_converted_to_domain():
     content = """DOMAIN,valid.example.com
 DOMAIN-SUFFIX,example.org

@@ -1,13 +1,7 @@
 acl4.ssr
 hiwifi.com
 instant.arubanetworks.com
-internal
-ip6-localhost
-ip6-loopback
-lan
 leike.cc
-local
-localhost
 miwifi.com
 my.router
 p.to

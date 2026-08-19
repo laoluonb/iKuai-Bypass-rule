@@ -41,7 +41,6 @@
 | `ChinaOneKeyLogin` | [下载](ChinaOneKeyLogin_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/ChinaOneKeyLogin_domain.txt) | - |
 | `Claude` | [下载](Claude_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Claude_domain.txt) | - |
 | `ClaudeAI` | [下载](ClaudeAI_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/ClaudeAI_domain.txt) | - |
-| `CN` | [下载](CN_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/CN_domain.txt) | - |
 | `Crypto` | [下载](Crypto_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Crypto_domain.txt) | - |
 | `DAZN` | [下载](DAZN_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/DAZN_domain.txt) | - |
 | `Deezer` | [下载](Deezer_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Deezer_domain.txt) | - |
@@ -53,7 +52,6 @@
 | `Dmm` | [下载](Dmm_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Dmm_domain.txt) | - |
 | `Docker` | [下载](Docker_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Docker_domain.txt) | - |
 | `Douyu` | [下载](Douyu_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Douyu_domain.txt) | - |
-| `Download` | [下载](Download_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Download_domain.txt) | - |
 | `Dubox` | [下载](Dubox_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/Dubox_domain.txt) | - |
 | `EHGallery` | [下载](EHGallery_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/EHGallery_domain.txt) | - |
 | `EncoreTVB` | [下载](EncoreTVB_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Ruleset/EncoreTVB_domain.txt) | - |

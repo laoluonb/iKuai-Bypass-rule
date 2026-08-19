@@ -942,7 +942,6 @@ cmf.ltd
 cmfchina.com
 cmfu.com
 cmpassport.com
-cn
 cn-east-2.myhuaweicloud.com
 cn-east-3.myhuaweicloud.com
 cn-north-1.myhuaweicloud.com
@@ -2351,7 +2350,6 @@ morethan.tv
 morganstanleyhuaxin.com
 moulem.com
 mpg.de
-ms
 msanjia.com
 msauth.net
 mscbsc.com

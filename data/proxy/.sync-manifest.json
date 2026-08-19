@@ -16,9 +16,9 @@
   "blocked_isp_urls": [
     "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt"
   ],
-  "raw_domains": 498810,
+  "raw_domains": 498675,
   "raw_ips": 32467,
-  "domains": 365657,
+  "domains": 365527,
   "ips": 11244,
-  "blocked_domains": 133153
+  "blocked_domains": 133148
 }

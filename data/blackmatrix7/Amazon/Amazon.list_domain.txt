@@ -20,7 +20,6 @@ alexa.com
 alexafund.cn
 alexafund.com.cn
 amaaozn.com
-amazon
 amazon-adsystem.com
 amazon-fashions.com
 amazon-jp-recruiting.com
@@ -102,7 +101,6 @@ assoc-amazon.cn
 associates-amazon.com
 audible.com
 avodmp4s3ww-a.akamaihd.net
-aws
 aws-iot-hackathon.com
 awsautopilot.com
 awsautoscaling.com
@@ -129,10 +127,8 @@ elasticbeanstalk.com
 gameon-masters.com
 gdansk-amazon.com
 images-amazon.com
-imdb
 imdb.com
 imdb.to
-kindle
 kindle.cn
 kindle.co.jp
 kindle.co.uk
@@ -177,10 +173,6 @@ wholefoodsmarket.co.uk
 wholefoodsmarket.com
 wholekidsfoundation.org
 wholeplanetfoundation.org
-xn--cckwcxetd
-xn--jlq480n2rg
-yamaxun
 yamaxun.cn
 yamaxun.com
 z.cn
-zappos
