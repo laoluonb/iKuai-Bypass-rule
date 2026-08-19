@@ -1,6 +1,6 @@
 # Rule List Sync
 
-每天从 ACL4SSR Clash 规则目录和 Loyalsoldier 的 v2ray 规则文本同步内容，并转换为爱快可直接使用的逐行列表：
+每天从 ACL4SSR Clash 规则目录和 Loyalsoldier 的 v2ray 规则文本同步内容，并转换为爱快Bypass可直接使用的逐行列表：
 
 - 每个上游文件保留原来的目录和文件对应关系。
 - 每个上游文件至少生成一个 `*_domain.txt`；只有包含 IPv4/CIDR 时才生成 `*_isp.txt`，不拆分批次。
