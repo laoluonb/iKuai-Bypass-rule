@@ -33,7 +33,7 @@ jobs:
 
       - name: Commit generated files
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain --untracked-files=all -- data/)" ]; then
             echo "No generated changes."
             exit 0
           fi
