@@ -1,0 +1,4 @@
+cloud.zoom.us
+zoom.us
+zoomgov.com
+zpns.zoom.us

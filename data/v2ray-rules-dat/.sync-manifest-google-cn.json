@@ -1,0 +1,10 @@
+{
+  "source": "google-cn",
+  "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt",
+  "generated_files": [
+    "data/v2ray-rules-dat/.sync-manifest-google-cn.json",
+    "data/v2ray-rules-dat/google-cn_domain.txt"
+  ],
+  "values": 112,
+  "skipped": 0
+}
