@@ -357,6 +357,13 @@ def write_text_if_changed(path: Path, content: str, dry_run: bool) -> bool:
     return write_if_changed(path, content, dry_run)
 
 
+def remove_file_if_exists(path: Path, dry_run: bool) -> bool:
+    if dry_run or not path.exists():
+        return False
+    path.unlink()
+    return True
+
+
 def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: bool) -> bool:
     """Sync GitHub directory files into one combined value list per source file."""
     api_url = str(source.get("api_url", ""))
@@ -409,24 +416,31 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         isp_relative = isp_path.relative_to(project_root).as_posix()
         content = fetch(str(item["download_url"]), timeout, headers).decode("utf-8-sig")
         domains, ips, value_stats = extract_clash_ikuai_values(content)
-        generated_files.append(domain_relative)
+        if domains:
+            generated_files.append(domain_relative)
         if ips:
             generated_files.append(isp_relative)
         all_domains.update(domains)
         all_ips.update(ips)
         manifest_files.append({
             "source": source_path,
-            "domain_output": domain_relative,
+            "domain_output": domain_relative if domains else None,
             "isp_output": isp_relative if ips else None,
             "domains": len(domains),
             "ips": len(ips),
             "skipped": value_stats["skipped"],
         })
-        changed = write_text_if_changed(domain_path, "\n".join(domains) + ("\n" if domains else ""), dry_run) or changed
+        if domains:
+            changed = write_text_if_changed(domain_path, "\n".join(domains) + "\n", dry_run) or changed
+        else:
+            changed = remove_file_if_exists(domain_path, dry_run) or changed
         if ips:
             changed = write_text_if_changed(isp_path, "\n".join(ips) + "\n", dry_run) or changed
+        else:
+            changed = remove_file_if_exists(isp_path, dry_run) or changed
         status = "would update" if dry_run else "updated"
-        print(f"[{source['name']}] {status}: {domain_relative} ({len(domains)} domains)")
+        if domains:
+            print(f"[{source['name']}] {status}: {domain_relative} ({len(domains)} domains)")
         if ips:
             print(f"[{source['name']}] {status}: {isp_relative} ({len(ips)} IPv4/CIDR values)")
 
@@ -442,14 +456,20 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         "merged_isp_output",
     )
     merged_isp_relative = merged_isp_output.relative_to(project_root).as_posix()
-    generated_files.append(merged_domain_relative)
+    if all_domains:
+        generated_files.append(merged_domain_relative)
     if all_ips:
         generated_files.append(merged_isp_relative)
     merged_domains = sorted(all_domains)
     merged_ips = sorted(all_ips, key=lambda value: (":" in value, value))
-    changed = write_text_if_changed(merged_domain_output, "\n".join(merged_domains) + ("\n" if merged_domains else ""), dry_run) or changed
+    if merged_domains:
+        changed = write_text_if_changed(merged_domain_output, "\n".join(merged_domains) + "\n", dry_run) or changed
+    else:
+        changed = remove_file_if_exists(merged_domain_output, dry_run) or changed
     if merged_ips:
         changed = write_text_if_changed(merged_isp_output, "\n".join(merged_ips) + "\n", dry_run) or changed
+    else:
+        changed = remove_file_if_exists(merged_isp_output, dry_run) or changed
 
     manifest_path = output_dir / ".sync-manifest.json"
     generated_files.append(manifest_path.relative_to(project_root).as_posix())
@@ -478,8 +498,10 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
     manifest_content = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     changed = write_text_if_changed(manifest_path, manifest_content, dry_run) or changed
     status = "would update" if dry_run else "updated"
-    print(f"[{source['name']}] {status}: {merged_domain_relative} ({len(merged_domains)} unique domains total)")
-    print(f"[{source['name']}] {status}: {merged_isp_relative} ({len(merged_ips)} unique IPv4/CIDR values total)")
+    if merged_domains:
+        print(f"[{source['name']}] {status}: {merged_domain_relative} ({len(merged_domains)} unique domains total)")
+    if merged_ips:
+        print(f"[{source['name']}] {status}: {merged_isp_relative} ({len(merged_ips)} unique IPv4/CIDR values total)")
     return changed
 
 
@@ -497,7 +519,10 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
     output_dir = safe_relative_path(project_root, str(source["output_dir"]), "output_dir")
     domain_path = output_dir / f"{source['name']}_domain.txt"
     isp_path = output_dir / f"{source['name']}_isp.txt"
-    generated_files = [domain_path.relative_to(project_root).as_posix()]
+    generated_files: list[str] = []
+    domain_relative = domain_path.relative_to(project_root).as_posix()
+    if domains:
+        generated_files.append(domain_relative)
     isp_relative = isp_path.relative_to(project_root).as_posix()
     if ips:
         generated_files.append(isp_relative)
@@ -513,9 +538,14 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
             pass
 
     changed = False
-    changed = write_text_if_changed(domain_path, "\n".join(domains) + ("\n" if domains else ""), dry_run) or changed
+    if domains:
+        changed = write_text_if_changed(domain_path, "\n".join(domains) + "\n", dry_run) or changed
+    else:
+        changed = remove_file_if_exists(domain_path, dry_run) or changed
     if ips:
         changed = write_text_if_changed(isp_path, "\n".join(ips) + "\n", dry_run) or changed
+    else:
+        changed = remove_file_if_exists(isp_path, dry_run) or changed
 
     # Remove files produced by the previous split-output mode.
     for legacy_name in (f"{source['name']}_ip.txt", f"{source['name']}_regexp.txt"):
@@ -540,7 +570,8 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
     }
     changed = write_text_if_changed(old_manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", dry_run) or changed
     status = "would update" if dry_run else ("updated" if changed else "unchanged")
-    print(f"[{source['name']}] {status}: {generated_files[0]} ({len(domains)} domains; {stats['skipped']} skipped)")
+    if domains:
+        print(f"[{source['name']}] {status}: {domain_relative} ({len(domains)} domains; {stats['skipped']} skipped)")
     if ips:
         print(f"[{source['name']}] {status}: {isp_relative} ({len(ips)} IPv4/CIDR values)")
     return changed

@@ -3,7 +3,7 @@
 每天从 ACL4SSR Clash 规则目录和 Loyalsoldier 的 v2ray 规则文本同步内容，并转换为爱快Bypass可直接使用的逐行列表：
 
 - 每个上游文件保留原来的目录和文件对应关系。
-- 每个上游文件至少生成一个 `*_domain.txt`；只有包含 IPv4/CIDR 时才生成 `*_isp.txt`，不拆分批次。
+- 只有包含域名内容时才生成 `*_domain.txt`；只有包含 IPv4/CIDR 时才生成 `*_isp.txt`，不拆分批次。
 - `*_domain.txt` 是纯文本规则，每行一条域名类内容。
 - `*_isp.txt` 是纯 IPv4/IP-CIDR 列表，每行一条，适合爱快 ISP/IP 分流。
 - 所有结果逐行输出、去重并排序。
