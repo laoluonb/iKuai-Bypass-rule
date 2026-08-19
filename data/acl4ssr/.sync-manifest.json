@@ -391,7 +391,7 @@
   ],
   "files": [
     {
-      "source": "Clash/Apple.list",
+      "source": "Apple.list",
       "domain_output": "data/acl4ssr/Apple_domain.txt",
       "isp_output": "data/acl4ssr/Apple_isp.txt",
       "domains": 19,
@@ -399,7 +399,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/BanAD.list",
+      "source": "BanAD.list",
       "domain_output": "data/acl4ssr/BanAD_domain.txt",
       "isp_output": null,
       "domains": 588,
@@ -407,7 +407,7 @@
       "skipped": 12
     },
     {
-      "source": "Clash/BanEasyList.list",
+      "source": "BanEasyList.list",
       "domain_output": "data/acl4ssr/BanEasyList_domain.txt",
       "isp_output": "data/acl4ssr/BanEasyList_isp.txt",
       "domains": 40873,
@@ -415,7 +415,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/BanEasyListChina.list",
+      "source": "BanEasyListChina.list",
       "domain_output": "data/acl4ssr/BanEasyListChina_domain.txt",
       "isp_output": "data/acl4ssr/BanEasyListChina_isp.txt",
       "domains": 5045,
@@ -423,7 +423,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/BanEasyPrivacy.list",
+      "source": "BanEasyPrivacy.list",
       "domain_output": "data/acl4ssr/BanEasyPrivacy_domain.txt",
       "isp_output": "data/acl4ssr/BanEasyPrivacy_isp.txt",
       "domains": 39843,
@@ -431,7 +431,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/BanProgramAD.list",
+      "source": "BanProgramAD.list",
       "domain_output": "data/acl4ssr/BanProgramAD_domain.txt",
       "isp_output": "data/acl4ssr/BanProgramAD_isp.txt",
       "domains": 991,
@@ -439,7 +439,7 @@
       "skipped": 118
     },
     {
-      "source": "Clash/Bing.list",
+      "source": "Bing.list",
       "domain_output": "data/acl4ssr/Bing_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -447,7 +447,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/ChinaCompanyIp.list",
+      "source": "ChinaCompanyIp.list",
       "domain_output": null,
       "isp_output": "data/acl4ssr/ChinaCompanyIp_isp.txt",
       "domains": 0,
@@ -455,7 +455,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/ChinaDomain.list",
+      "source": "ChinaDomain.list",
       "domain_output": "data/acl4ssr/ChinaDomain_domain.txt",
       "isp_output": "data/acl4ssr/ChinaDomain_isp.txt",
       "domains": 625,
@@ -463,7 +463,7 @@
       "skipped": 95
     },
     {
-      "source": "Clash/ChinaIp.list",
+      "source": "ChinaIp.list",
       "domain_output": null,
       "isp_output": "data/acl4ssr/ChinaIp_isp.txt",
       "domains": 0,
@@ -471,7 +471,7 @@
       "skipped": 5
     },
     {
-      "source": "Clash/ChinaIpV6.list",
+      "source": "ChinaIpV6.list",
       "domain_output": null,
       "isp_output": null,
       "domains": 0,
@@ -479,7 +479,7 @@
       "skipped": 1507
     },
     {
-      "source": "Clash/ChinaMedia.list",
+      "source": "ChinaMedia.list",
       "domain_output": "data/acl4ssr/ChinaMedia_domain.txt",
       "isp_output": "data/acl4ssr/ChinaMedia_isp.txt",
       "domains": 31,
@@ -487,7 +487,7 @@
       "skipped": 15
     },
     {
-      "source": "Clash/Download.list",
+      "source": "Download.list",
       "domain_output": "data/acl4ssr/Download_domain.txt",
       "isp_output": null,
       "domains": 22,
@@ -495,7 +495,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/GoogleCN.list",
+      "source": "GoogleCN.list",
       "domain_output": "data/acl4ssr/GoogleCN_domain.txt",
       "isp_output": null,
       "domains": 29,
@@ -503,7 +503,7 @@
       "skipped": 1
     },
     {
-      "source": "Clash/LocalAreaNetwork.list",
+      "source": "LocalAreaNetwork.list",
       "domain_output": "data/acl4ssr/LocalAreaNetwork_domain.txt",
       "isp_output": "data/acl4ssr/LocalAreaNetwork_isp.txt",
       "domains": 24,
@@ -511,7 +511,7 @@
       "skipped": 12
     },
     {
-      "source": "Clash/Microsoft.list",
+      "source": "Microsoft.list",
       "domain_output": "data/acl4ssr/Microsoft_domain.txt",
       "isp_output": null,
       "domains": 79,
@@ -519,7 +519,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Netflix.list",
+      "source": "Netflix.list",
       "domain_output": "data/acl4ssr/Netflix_domain.txt",
       "isp_output": "data/acl4ssr/Netflix_isp.txt",
       "domains": 18,
@@ -527,7 +527,7 @@
       "skipped": 1
     },
     {
-      "source": "Clash/OneDrive.list",
+      "source": "OneDrive.list",
       "domain_output": "data/acl4ssr/OneDrive_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -535,7 +535,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Providers/Apple.yaml",
+      "source": "Providers/Apple.yaml",
       "domain_output": "data/acl4ssr/Providers/Apple_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Apple_isp.txt",
       "domains": 19,
@@ -543,7 +543,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/BanAD.yaml",
+      "source": "Providers/BanAD.yaml",
       "domain_output": "data/acl4ssr/Providers/BanAD_domain.txt",
       "isp_output": null,
       "domains": 588,
@@ -551,7 +551,7 @@
       "skipped": 13
     },
     {
-      "source": "Clash/Providers/BanEasyList.yaml",
+      "source": "Providers/BanEasyList.yaml",
       "domain_output": "data/acl4ssr/Providers/BanEasyList_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanEasyList_isp.txt",
       "domains": 40873,
@@ -559,7 +559,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/Providers/BanEasyListChina.yaml",
+      "source": "Providers/BanEasyListChina.yaml",
       "domain_output": "data/acl4ssr/Providers/BanEasyListChina_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanEasyListChina_isp.txt",
       "domains": 5045,
@@ -567,7 +567,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/Providers/BanEasyPrivacy.yaml",
+      "source": "Providers/BanEasyPrivacy.yaml",
       "domain_output": "data/acl4ssr/Providers/BanEasyPrivacy_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanEasyPrivacy_isp.txt",
       "domains": 39843,
@@ -575,7 +575,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/Providers/BanProgramAD.yaml",
+      "source": "Providers/BanProgramAD.yaml",
       "domain_output": "data/acl4ssr/Providers/BanProgramAD_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanProgramAD_isp.txt",
       "domains": 991,
@@ -583,7 +583,7 @@
       "skipped": 119
     },
     {
-      "source": "Clash/Providers/ChinaCompanyIp.yaml",
+      "source": "Providers/ChinaCompanyIp.yaml",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Providers/ChinaCompanyIp_isp.txt",
       "domains": 0,
@@ -591,7 +591,7 @@
       "skipped": 8
     },
     {
-      "source": "Clash/Providers/ChinaDomain.yaml",
+      "source": "Providers/ChinaDomain.yaml",
       "domain_output": "data/acl4ssr/Providers/ChinaDomain_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ChinaDomain_isp.txt",
       "domains": 625,
@@ -599,7 +599,7 @@
       "skipped": 96
     },
     {
-      "source": "Clash/Providers/ChinaIp.yaml",
+      "source": "Providers/ChinaIp.yaml",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Providers/ChinaIp_isp.txt",
       "domains": 0,
@@ -607,7 +607,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/Providers/ChinaIpV6.yaml",
+      "source": "Providers/ChinaIpV6.yaml",
       "domain_output": null,
       "isp_output": null,
       "domains": 0,
@@ -615,7 +615,7 @@
       "skipped": 1508
     },
     {
-      "source": "Clash/Providers/ChinaMedia.yaml",
+      "source": "Providers/ChinaMedia.yaml",
       "domain_output": "data/acl4ssr/Providers/ChinaMedia_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ChinaMedia_isp.txt",
       "domains": 30,
@@ -623,7 +623,7 @@
       "skipped": 19
     },
     {
-      "source": "Clash/Providers/Download.yaml",
+      "source": "Providers/Download.yaml",
       "domain_output": "data/acl4ssr/Providers/Download_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -631,7 +631,7 @@
       "skipped": 28
     },
     {
-      "source": "Clash/Providers/LocalAreaNetwork.yaml",
+      "source": "Providers/LocalAreaNetwork.yaml",
       "domain_output": "data/acl4ssr/Providers/LocalAreaNetwork_domain.txt",
       "isp_output": "data/acl4ssr/Providers/LocalAreaNetwork_isp.txt",
       "domains": 24,
@@ -639,7 +639,7 @@
       "skipped": 13
     },
     {
-      "source": "Clash/Providers/MJJ.yaml",
+      "source": "Providers/MJJ.yaml",
       "domain_output": "data/acl4ssr/Providers/MJJ_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -647,7 +647,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/ProxyGFWlist.yaml",
+      "source": "Providers/ProxyGFWlist.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyGFWlist_domain.txt",
       "isp_output": null,
       "domains": 4311,
@@ -655,7 +655,7 @@
       "skipped": 1
     },
     {
-      "source": "Clash/Providers/ProxyLite.yaml",
+      "source": "Providers/ProxyLite.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyLite_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ProxyLite_isp.txt",
       "domains": 338,
@@ -663,7 +663,7 @@
       "skipped": 76
     },
     {
-      "source": "Clash/Providers/ProxyMedia.yaml",
+      "source": "Providers/ProxyMedia.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyMedia_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ProxyMedia_isp.txt",
       "domains": 326,
@@ -671,7 +671,7 @@
       "skipped": 135
     },
     {
-      "source": "Clash/Providers/Ruleset/AI.yaml",
+      "source": "Providers/Ruleset/AI.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/AI_domain.txt",
       "isp_output": null,
       "domains": 45,
@@ -679,7 +679,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/AbemaTV.yaml",
+      "source": "Providers/Ruleset/AbemaTV.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/AbemaTV_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -687,7 +687,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/AccelerateDirectSites.yaml",
+      "source": "Providers/Ruleset/AccelerateDirectSites.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/AccelerateDirectSites_domain.txt",
       "isp_output": null,
       "domains": 245,
@@ -695,7 +695,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Adobe.yaml",
+      "source": "Providers/Ruleset/Adobe.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Adobe_domain.txt",
       "isp_output": null,
       "domains": 34,
@@ -703,7 +703,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Alibaba.yaml",
+      "source": "Providers/Ruleset/Alibaba.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Alibaba_domain.txt",
       "isp_output": null,
       "domains": 41,
@@ -711,7 +711,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Amazon.yaml",
+      "source": "Providers/Ruleset/Amazon.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Amazon_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Amazon_isp.txt",
       "domains": 25,
@@ -719,7 +719,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/AmazonIp.yaml",
+      "source": "Providers/Ruleset/AmazonIp.yaml",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Providers/Ruleset/AmazonIp_isp.txt",
       "domains": 0,
@@ -727,7 +727,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Apple.yaml",
+      "source": "Providers/Ruleset/Apple.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Apple_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Apple_isp.txt",
       "domains": 19,
@@ -735,7 +735,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/AppleNews.yaml",
+      "source": "Providers/Ruleset/AppleNews.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/AppleNews_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -743,7 +743,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/AppleTV.yaml",
+      "source": "Providers/Ruleset/AppleTV.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/AppleTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -751,7 +751,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/BBCiPlayer.yaml",
+      "source": "Providers/Ruleset/BBCiPlayer.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/BBCiPlayer_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -759,7 +759,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Bahamut.yaml",
+      "source": "Providers/Ruleset/Bahamut.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Bahamut_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -767,7 +767,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Baidu.yaml",
+      "source": "Providers/Ruleset/Baidu.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Baidu_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -775,7 +775,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Bilibili.yaml",
+      "source": "Providers/Ruleset/Bilibili.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Bilibili_domain.txt",
       "isp_output": null,
       "domains": 20,
@@ -783,7 +783,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/BilibiliHMT.yaml",
+      "source": "Providers/Ruleset/BilibiliHMT.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/BilibiliHMT_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/BilibiliHMT_isp.txt",
       "domains": 8,
@@ -791,7 +791,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Binance.yaml",
+      "source": "Providers/Ruleset/Binance.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Binance_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -799,7 +799,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Bing.yaml",
+      "source": "Providers/Ruleset/Bing.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Bing_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -807,7 +807,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Blizzard.yaml",
+      "source": "Providers/Ruleset/Blizzard.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Blizzard_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -815,7 +815,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/ByteDance.yaml",
+      "source": "Providers/Ruleset/ByteDance.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/ByteDance_domain.txt",
       "isp_output": null,
       "domains": 44,
@@ -823,7 +823,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/ChinaDNS.yaml",
+      "source": "Providers/Ruleset/ChinaDNS.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/ChinaDNS_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/ChinaDNS_isp.txt",
       "domains": 3,
@@ -831,7 +831,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/ChinaNet.yaml",
+      "source": "Providers/Ruleset/ChinaNet.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/ChinaNet_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -839,7 +839,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/ChinaOneKeyLogin.yaml",
+      "source": "Providers/Ruleset/ChinaOneKeyLogin.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/ChinaOneKeyLogin_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -847,7 +847,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Claude.yaml",
+      "source": "Providers/Ruleset/Claude.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Claude_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -855,7 +855,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/ClaudeAI.yaml",
+      "source": "Providers/Ruleset/ClaudeAI.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/ClaudeAI_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -863,7 +863,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Crypto.yaml",
+      "source": "Providers/Ruleset/Crypto.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Crypto_domain.txt",
       "isp_output": null,
       "domains": 249,
@@ -871,7 +871,7 @@
       "skipped": 57
     },
     {
-      "source": "Clash/Providers/Ruleset/Deezer.yaml",
+      "source": "Providers/Ruleset/Deezer.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Deezer_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -879,7 +879,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Developer.yaml",
+      "source": "Providers/Ruleset/Developer.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Developer_domain.txt",
       "isp_output": null,
       "domains": 20,
@@ -887,7 +887,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Discord.yaml",
+      "source": "Providers/Ruleset/Discord.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Discord_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -895,7 +895,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/DiscoveryPlus.yaml",
+      "source": "Providers/Ruleset/DiscoveryPlus.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/DiscoveryPlus_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -903,7 +903,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/DisneyPlus.yaml",
+      "source": "Providers/Ruleset/DisneyPlus.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/DisneyPlus_domain.txt",
       "isp_output": null,
       "domains": 19,
@@ -911,7 +911,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Docker.yaml",
+      "source": "Providers/Ruleset/Docker.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Docker_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -919,7 +919,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Douyu.yaml",
+      "source": "Providers/Ruleset/Douyu.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Douyu_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -927,7 +927,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Download.yaml",
+      "source": "Providers/Ruleset/Download.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Download_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -935,7 +935,7 @@
       "skipped": 23
     },
     {
-      "source": "Clash/Providers/Ruleset/Dubox.yaml",
+      "source": "Providers/Ruleset/Dubox.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Dubox_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -943,7 +943,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/EHGallery.yaml",
+      "source": "Providers/Ruleset/EHGallery.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/EHGallery_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -951,7 +951,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/EncoreTVB.yaml",
+      "source": "Providers/Ruleset/EncoreTVB.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/EncoreTVB_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -959,7 +959,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Epic.yaml",
+      "source": "Providers/Ruleset/Epic.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Epic_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -967,7 +967,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Facebook.yaml",
+      "source": "Providers/Ruleset/Facebook.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Facebook_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Facebook_isp.txt",
       "domains": 7,
@@ -975,7 +975,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/FoxNow.yaml",
+      "source": "Providers/Ruleset/FoxNow.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/FoxNow_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -983,7 +983,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/GameDownload.yaml",
+      "source": "Providers/Ruleset/GameDownload.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/GameDownload_domain.txt",
       "isp_output": null,
       "domains": 20,
@@ -991,7 +991,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Gemini.yaml",
+      "source": "Providers/Ruleset/Gemini.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Gemini_domain.txt",
       "isp_output": null,
       "domains": 13,
@@ -999,7 +999,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Github.yaml",
+      "source": "Providers/Ruleset/Github.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Github_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -1007,7 +1007,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Google.yaml",
+      "source": "Providers/Ruleset/Google.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Google_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Google_isp.txt",
       "domains": 23,
@@ -1015,7 +1015,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/GoogleCN.yaml",
+      "source": "Providers/Ruleset/GoogleCN.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/GoogleCN_domain.txt",
       "isp_output": null,
       "domains": 48,
@@ -1023,7 +1023,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/GoogleCNProxyIP.yaml",
+      "source": "Providers/Ruleset/GoogleCNProxyIP.yaml",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Providers/Ruleset/GoogleCNProxyIP_isp.txt",
       "domains": 0,
@@ -1031,7 +1031,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/GoogleEarth.yaml",
+      "source": "Providers/Ruleset/GoogleEarth.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/GoogleEarth_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -1039,7 +1039,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/GoogleFCM.yaml",
+      "source": "Providers/Ruleset/GoogleFCM.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/GoogleFCM_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/GoogleFCM_isp.txt",
       "domains": 18,
@@ -1047,7 +1047,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/HBO.yaml",
+      "source": "Providers/Ruleset/HBO.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/HBO_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -1055,7 +1055,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/HBO_GO_HKG.yaml",
+      "source": "Providers/Ruleset/HBO_GO_HKG.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/HBO_GO_HKG_domain.txt",
       "isp_output": null,
       "domains": 19,
@@ -1063,7 +1063,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Heytap.yaml",
+      "source": "Providers/Ruleset/Heytap.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Heytap_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -1071,7 +1071,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/HuaWei.yaml",
+      "source": "Providers/Ruleset/HuaWei.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/HuaWei_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -1079,7 +1079,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/HuluJapan.yaml",
+      "source": "Providers/Ruleset/HuluJapan.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/HuluJapan_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -1087,7 +1087,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Iflytek.yaml",
+      "source": "Providers/Ruleset/Iflytek.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Iflytek_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1095,7 +1095,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Instagram.yaml",
+      "source": "Providers/Ruleset/Instagram.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Instagram_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1103,7 +1103,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Iqiyi.yaml",
+      "source": "Providers/Ruleset/Iqiyi.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Iqiyi_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Iqiyi_isp.txt",
       "domains": 16,
@@ -1111,7 +1111,7 @@
       "skipped": 5
     },
     {
-      "source": "Clash/Providers/Ruleset/IqiyiHMT.yaml",
+      "source": "Providers/Ruleset/IqiyiHMT.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/IqiyiHMT_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1119,7 +1119,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Iwara.yaml",
+      "source": "Providers/Ruleset/Iwara.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Iwara_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1127,7 +1127,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Japonx.yaml",
+      "source": "Providers/Ruleset/Japonx.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Japonx_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -1135,7 +1135,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/JetBrains.yaml",
+      "source": "Providers/Ruleset/JetBrains.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/JetBrains_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -1143,7 +1143,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/KKBOX.yaml",
+      "source": "Providers/Ruleset/KKBOX.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/KKBOX_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1151,7 +1151,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/KakaoTalk.yaml",
+      "source": "Providers/Ruleset/KakaoTalk.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/KakaoTalk_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/KakaoTalk_isp.txt",
       "domains": 3,
@@ -1159,7 +1159,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Kingsoft.yaml",
+      "source": "Providers/Ruleset/Kingsoft.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Kingsoft_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1167,7 +1167,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Kuaishou.yaml",
+      "source": "Providers/Ruleset/Kuaishou.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Kuaishou_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1175,7 +1175,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/LineTV.yaml",
+      "source": "Providers/Ruleset/LineTV.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/LineTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1183,7 +1183,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/MGTVTV.yaml",
+      "source": "Providers/Ruleset/MGTVTV.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/MGTVTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1191,7 +1191,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/MIUIPrivacy.yaml",
+      "source": "Providers/Ruleset/MIUIPrivacy.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/MIUIPrivacy_domain.txt",
       "isp_output": null,
       "domains": 29,
@@ -1199,7 +1199,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Marketing.yaml",
+      "source": "Providers/Ruleset/Marketing.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Marketing_domain.txt",
       "isp_output": null,
       "domains": 56,
@@ -1207,7 +1207,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Meitu.yaml",
+      "source": "Providers/Ruleset/Meitu.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Meitu_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1215,7 +1215,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Microsoft.yaml",
+      "source": "Providers/Ruleset/Microsoft.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Microsoft_domain.txt",
       "isp_output": null,
       "domains": 79,
@@ -1223,7 +1223,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/MyTVSuper.yaml",
+      "source": "Providers/Ruleset/MyTVSuper.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/MyTVSuper_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -1231,7 +1231,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/NaSDDNS.yaml",
+      "source": "Providers/Ruleset/NaSDDNS.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/NaSDDNS_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/NaSDDNS_isp.txt",
       "domains": 34,
@@ -1239,7 +1239,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/NetEase.yaml",
+      "source": "Providers/Ruleset/NetEase.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/NetEase_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -1247,7 +1247,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/NetEaseMusic.yaml",
+      "source": "Providers/Ruleset/NetEaseMusic.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/NetEaseMusic_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/NetEaseMusic_isp.txt",
       "domains": 6,
@@ -1255,7 +1255,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Netflix.yaml",
+      "source": "Providers/Ruleset/Netflix.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Netflix_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Netflix_isp.txt",
       "domains": 22,
@@ -1263,7 +1263,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/NetflixIP.yaml",
+      "source": "Providers/Ruleset/NetflixIP.yaml",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Providers/Ruleset/NetflixIP_isp.txt",
       "domains": 0,
@@ -1271,7 +1271,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Niconico.yaml",
+      "source": "Providers/Ruleset/Niconico.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Niconico_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1279,7 +1279,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Nintendo.yaml",
+      "source": "Providers/Ruleset/Nintendo.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Nintendo_domain.txt",
       "isp_output": null,
       "domains": 15,
@@ -1287,7 +1287,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/NivodTV.yaml",
+      "source": "Providers/Ruleset/NivodTV.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/NivodTV_domain.txt",
       "isp_output": null,
       "domains": 11,
@@ -1295,7 +1295,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Olevod.yaml",
+      "source": "Providers/Ruleset/Olevod.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Olevod_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -1303,7 +1303,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/OneDrive.yaml",
+      "source": "Providers/Ruleset/OneDrive.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/OneDrive_domain.txt",
       "isp_output": null,
       "domains": 15,
@@ -1311,7 +1311,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/Providers/Ruleset/OpenAi.yaml",
+      "source": "Providers/Ruleset/OpenAi.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/OpenAi_domain.txt",
       "isp_output": null,
       "domains": 17,
@@ -1319,7 +1319,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Origin.yaml",
+      "source": "Providers/Ruleset/Origin.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Origin_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -1327,7 +1327,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/PPTVPPLive.yaml",
+      "source": "Providers/Ruleset/PPTVPPLive.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/PPTVPPLive_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1335,7 +1335,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Pandora.yaml",
+      "source": "Providers/Ruleset/Pandora.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Pandora_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1343,7 +1343,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Pixiv.yaml",
+      "source": "Providers/Ruleset/Pixiv.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Pixiv_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1351,7 +1351,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Porn.yaml",
+      "source": "Providers/Ruleset/Porn.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Porn_domain.txt",
       "isp_output": null,
       "domains": 23,
@@ -1359,7 +1359,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/PornAsia.yaml",
+      "source": "Providers/Ruleset/PornAsia.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/PornAsia_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1367,7 +1367,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Pornhub.yaml",
+      "source": "Providers/Ruleset/Pornhub.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Pornhub_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1375,7 +1375,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/PrivateTracker.yaml",
+      "source": "Providers/Ruleset/PrivateTracker.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/PrivateTracker_domain.txt",
       "isp_output": null,
       "domains": 122,
@@ -1383,7 +1383,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/PublicDirectCDN.yaml",
+      "source": "Providers/Ruleset/PublicDirectCDN.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/PublicDirectCDN_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -1391,7 +1391,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Qobuz.yaml",
+      "source": "Providers/Ruleset/Qobuz.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Qobuz_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1399,7 +1399,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Reddit.yaml",
+      "source": "Providers/Ruleset/Reddit.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Reddit_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1407,7 +1407,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/RemoteDesktop.yaml",
+      "source": "Providers/Ruleset/RemoteDesktop.yaml",
       "domain_output": null,
       "isp_output": null,
       "domains": 0,
@@ -1415,7 +1415,7 @@
       "skipped": 22
     },
     {
-      "source": "Clash/Providers/Ruleset/Samsung.yaml",
+      "source": "Providers/Ruleset/Samsung.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Samsung_domain.txt",
       "isp_output": null,
       "domains": 21,
@@ -1423,7 +1423,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Scholar.yaml",
+      "source": "Providers/Ruleset/Scholar.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Scholar_domain.txt",
       "isp_output": null,
       "domains": 83,
@@ -1431,7 +1431,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/SohuSogo.yaml",
+      "source": "Providers/Ruleset/SohuSogo.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/SohuSogo_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -1439,7 +1439,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Sony.yaml",
+      "source": "Providers/Ruleset/Sony.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Sony_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -1447,7 +1447,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/SoundCloud.yaml",
+      "source": "Providers/Ruleset/SoundCloud.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/SoundCloud_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1455,7 +1455,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Spark.yaml",
+      "source": "Providers/Ruleset/Spark.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Spark_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -1463,7 +1463,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Spotify.yaml",
+      "source": "Providers/Ruleset/Spotify.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Spotify_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -1471,7 +1471,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Steam.yaml",
+      "source": "Providers/Ruleset/Steam.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Steam_domain.txt",
       "isp_output": null,
       "domains": 18,
@@ -1479,7 +1479,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/SteamCN.yaml",
+      "source": "Providers/Ruleset/SteamCN.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/SteamCN_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -1487,7 +1487,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/SteamRegionCheck.yaml",
+      "source": "Providers/Ruleset/SteamRegionCheck.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/SteamRegionCheck_domain.txt",
       "isp_output": null,
       "domains": 17,
@@ -1495,7 +1495,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/TIDAL.yaml",
+      "source": "Providers/Ruleset/TIDAL.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TIDAL_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1503,7 +1503,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/TaiWanGood.yaml",
+      "source": "Providers/Ruleset/TaiWanGood.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TaiWanGood_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1511,7 +1511,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/TapTap.yaml",
+      "source": "Providers/Ruleset/TapTap.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TapTap_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1519,7 +1519,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/TeamViewer.yaml",
+      "source": "Providers/Ruleset/TeamViewer.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TeamViewer_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/TeamViewer_isp.txt",
       "domains": 1,
@@ -1527,7 +1527,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/Providers/Ruleset/Telegram.yaml",
+      "source": "Providers/Ruleset/Telegram.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Telegram_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Telegram_isp.txt",
       "domains": 7,
@@ -1535,7 +1535,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/Providers/Ruleset/Tencent.yaml",
+      "source": "Providers/Ruleset/Tencent.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Tencent_domain.txt",
       "isp_output": null,
       "domains": 19,
@@ -1543,7 +1543,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/TencentLolm.yaml",
+      "source": "Providers/Ruleset/TencentLolm.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TencentLolm_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1551,7 +1551,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/TencentVideo.yaml",
+      "source": "Providers/Ruleset/TencentVideo.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TencentVideo_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1559,7 +1559,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/TeraBox.yaml",
+      "source": "Providers/Ruleset/TeraBox.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TeraBox_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1567,7 +1567,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/TikTok.yaml",
+      "source": "Providers/Ruleset/TikTok.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TikTok_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -1575,7 +1575,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/TopBlockedSites.yaml",
+      "source": "Providers/Ruleset/TopBlockedSites.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TopBlockedSites_domain.txt",
       "isp_output": null,
       "domains": 109,
@@ -1583,7 +1583,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Twitch.yaml",
+      "source": "Providers/Ruleset/Twitch.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Twitch_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -1591,7 +1591,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Twitter.yaml",
+      "source": "Providers/Ruleset/Twitter.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Twitter_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -1599,7 +1599,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/VikACG.yaml",
+      "source": "Providers/Ruleset/VikACG.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/VikACG_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1607,7 +1607,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/ViuTV.yaml",
+      "source": "Providers/Ruleset/ViuTV.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/ViuTV_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -1615,7 +1615,7 @@
       "skipped": 7
     },
     {
-      "source": "Clash/Providers/Ruleset/Wechat.yaml",
+      "source": "Providers/Ruleset/Wechat.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Wechat_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Wechat_isp.txt",
       "domains": 12,
@@ -1623,7 +1623,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Whatsapp.yaml",
+      "source": "Providers/Ruleset/Whatsapp.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Whatsapp_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Whatsapp_isp.txt",
       "domains": 1,
@@ -1631,7 +1631,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Wikipedia.yaml",
+      "source": "Providers/Ruleset/Wikipedia.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Wikipedia_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -1639,7 +1639,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Xbox.yaml",
+      "source": "Providers/Ruleset/Xbox.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Xbox_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -1647,7 +1647,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Ximalaya.yaml",
+      "source": "Providers/Ruleset/Ximalaya.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Ximalaya_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1655,7 +1655,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Xunlei.yaml",
+      "source": "Providers/Ruleset/Xunlei.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Xunlei_domain.txt",
       "isp_output": null,
       "domains": 8,
@@ -1663,7 +1663,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/YYeTs.yaml",
+      "source": "Providers/Ruleset/YYeTs.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/YYeTs_domain.txt",
       "isp_output": null,
       "domains": 15,
@@ -1671,7 +1671,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/YouTube.yaml",
+      "source": "Providers/Ruleset/YouTube.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/YouTube_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -1679,7 +1679,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/YouTubeMusic.yaml",
+      "source": "Providers/Ruleset/YouTubeMusic.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/YouTubeMusic_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1687,7 +1687,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/Ruleset/Youku.yaml",
+      "source": "Providers/Ruleset/Youku.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Youku_domain.txt",
       "isp_output": "data/acl4ssr/Providers/Ruleset/Youku_isp.txt",
       "domains": 1,
@@ -1695,7 +1695,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Providers/Ruleset/Zoom.yaml",
+      "source": "Providers/Ruleset/Zoom.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Zoom_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1703,7 +1703,7 @@
       "skipped": 4
     },
     {
-      "source": "Clash/Providers/UnBan.yaml",
+      "source": "Providers/UnBan.yaml",
       "domain_output": "data/acl4ssr/Providers/UnBan_domain.txt",
       "isp_output": null,
       "domains": 52,
@@ -1711,7 +1711,7 @@
       "skipped": 1
     },
     {
-      "source": "Clash/ProxyGFWlist.list",
+      "source": "ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/ProxyGFWlist_domain.txt",
       "isp_output": "data/acl4ssr/ProxyGFWlist_isp.txt",
       "domains": 6800,
@@ -1719,7 +1719,7 @@
       "skipped": 69
     },
     {
-      "source": "Clash/ProxyLite.list",
+      "source": "ProxyLite.list",
       "domain_output": "data/acl4ssr/ProxyLite_domain.txt",
       "isp_output": "data/acl4ssr/ProxyLite_isp.txt",
       "domains": 338,
@@ -1727,7 +1727,7 @@
       "skipped": 75
     },
     {
-      "source": "Clash/ProxyMedia.list",
+      "source": "ProxyMedia.list",
       "domain_output": "data/acl4ssr/ProxyMedia_domain.txt",
       "isp_output": "data/acl4ssr/ProxyMedia_isp.txt",
       "domains": 330,
@@ -1735,7 +1735,7 @@
       "skipped": 99
     },
     {
-      "source": "Clash/Ruleset/360.list",
+      "source": "Ruleset/360.list",
       "domain_output": "data/acl4ssr/Ruleset/360_domain.txt",
       "isp_output": null,
       "domains": 8,
@@ -1743,7 +1743,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/4399.list",
+      "source": "Ruleset/4399.list",
       "domain_output": "data/acl4ssr/Ruleset/4399_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1751,7 +1751,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/58.list",
+      "source": "Ruleset/58.list",
       "domain_output": "data/acl4ssr/Ruleset/58_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1759,7 +1759,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ABC.list",
+      "source": "Ruleset/ABC.list",
       "domain_output": "data/acl4ssr/Ruleset/ABC_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1767,7 +1767,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/AI.list",
+      "source": "Ruleset/AI.list",
       "domain_output": "data/acl4ssr/Ruleset/AI_domain.txt",
       "isp_output": null,
       "domains": 46,
@@ -1775,7 +1775,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/AbemaTV.list",
+      "source": "Ruleset/AbemaTV.list",
       "domain_output": "data/acl4ssr/Ruleset/AbemaTV_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -1783,7 +1783,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/AccelerateDirectSites.list",
+      "source": "Ruleset/AccelerateDirectSites.list",
       "domain_output": "data/acl4ssr/Ruleset/AccelerateDirectSites_domain.txt",
       "isp_output": null,
       "domains": 245,
@@ -1791,7 +1791,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Adobe.list",
+      "source": "Ruleset/Adobe.list",
       "domain_output": "data/acl4ssr/Ruleset/Adobe_domain.txt",
       "isp_output": null,
       "domains": 34,
@@ -1799,7 +1799,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Alibaba.list",
+      "source": "Ruleset/Alibaba.list",
       "domain_output": "data/acl4ssr/Ruleset/Alibaba_domain.txt",
       "isp_output": null,
       "domains": 41,
@@ -1807,7 +1807,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/All4.list",
+      "source": "Ruleset/All4.list",
       "domain_output": "data/acl4ssr/Ruleset/All4_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1815,7 +1815,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Amazon.list",
+      "source": "Ruleset/Amazon.list",
       "domain_output": "data/acl4ssr/Ruleset/Amazon_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Amazon_isp.txt",
       "domains": 26,
@@ -1823,7 +1823,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/AmazonIp.list",
+      "source": "Ruleset/AmazonIp.list",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Ruleset/AmazonIp_isp.txt",
       "domains": 0,
@@ -1831,7 +1831,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Apple.list",
+      "source": "Ruleset/Apple.list",
       "domain_output": "data/acl4ssr/Ruleset/Apple_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Apple_isp.txt",
       "domains": 19,
@@ -1839,7 +1839,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/AppleNews.list",
+      "source": "Ruleset/AppleNews.list",
       "domain_output": "data/acl4ssr/Ruleset/AppleNews_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1847,7 +1847,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/AppleTV.list",
+      "source": "Ruleset/AppleTV.list",
       "domain_output": "data/acl4ssr/Ruleset/AppleTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1855,7 +1855,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/BBC.list",
+      "source": "Ruleset/BBC.list",
       "domain_output": "data/acl4ssr/Ruleset/BBC_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1863,7 +1863,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/BBCiPlayer.list",
+      "source": "Ruleset/BBCiPlayer.list",
       "domain_output": "data/acl4ssr/Ruleset/BBCiPlayer_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -1871,7 +1871,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Bahamut.list",
+      "source": "Ruleset/Bahamut.list",
       "domain_output": "data/acl4ssr/Ruleset/Bahamut_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -1879,7 +1879,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Baidu.list",
+      "source": "Ruleset/Baidu.list",
       "domain_output": "data/acl4ssr/Ruleset/Baidu_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -1887,7 +1887,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Bilibili.list",
+      "source": "Ruleset/Bilibili.list",
       "domain_output": "data/acl4ssr/Ruleset/Bilibili_domain.txt",
       "isp_output": null,
       "domains": 20,
@@ -1895,7 +1895,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/BilibiliHMT.list",
+      "source": "Ruleset/BilibiliHMT.list",
       "domain_output": "data/acl4ssr/Ruleset/BilibiliHMT_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/BilibiliHMT_isp.txt",
       "domains": 8,
@@ -1903,7 +1903,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Binance.list",
+      "source": "Ruleset/Binance.list",
       "domain_output": "data/acl4ssr/Ruleset/Binance_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -1911,7 +1911,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Bing.list",
+      "source": "Ruleset/Bing.list",
       "domain_output": "data/acl4ssr/Ruleset/Bing_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1919,7 +1919,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Blizzard.list",
+      "source": "Ruleset/Blizzard.list",
       "domain_output": "data/acl4ssr/Ruleset/Blizzard_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1927,7 +1927,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ByteDance.list",
+      "source": "Ruleset/ByteDance.list",
       "domain_output": "data/acl4ssr/Ruleset/ByteDance_domain.txt",
       "isp_output": null,
       "domains": 44,
@@ -1935,7 +1935,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/CCTV.list",
+      "source": "Ruleset/CCTV.list",
       "domain_output": "data/acl4ssr/Ruleset/CCTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -1943,7 +1943,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/CN.list",
+      "source": "Ruleset/CN.list",
       "domain_output": "data/acl4ssr/Ruleset/CN_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -1951,7 +1951,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ChinaDNS.list",
+      "source": "Ruleset/ChinaDNS.list",
       "domain_output": "data/acl4ssr/Ruleset/ChinaDNS_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/ChinaDNS_isp.txt",
       "domains": 3,
@@ -1959,7 +1959,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ChinaNet.list",
+      "source": "Ruleset/ChinaNet.list",
       "domain_output": "data/acl4ssr/Ruleset/ChinaNet_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -1967,7 +1967,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ChinaOneKeyLogin.list",
+      "source": "Ruleset/ChinaOneKeyLogin.list",
       "domain_output": "data/acl4ssr/Ruleset/ChinaOneKeyLogin_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -1975,7 +1975,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Claude.list",
+      "source": "Ruleset/Claude.list",
       "domain_output": "data/acl4ssr/Ruleset/Claude_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1983,7 +1983,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ClaudeAI.list",
+      "source": "Ruleset/ClaudeAI.list",
       "domain_output": "data/acl4ssr/Ruleset/ClaudeAI_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -1991,7 +1991,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Crypto.list",
+      "source": "Ruleset/Crypto.list",
       "domain_output": "data/acl4ssr/Ruleset/Crypto_domain.txt",
       "isp_output": null,
       "domains": 252,
@@ -1999,7 +1999,7 @@
       "skipped": 53
     },
     {
-      "source": "Clash/Ruleset/DAZN.list",
+      "source": "Ruleset/DAZN.list",
       "domain_output": "data/acl4ssr/Ruleset/DAZN_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -2007,7 +2007,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Deezer.list",
+      "source": "Ruleset/Deezer.list",
       "domain_output": "data/acl4ssr/Ruleset/Deezer_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2015,7 +2015,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Developer.list",
+      "source": "Ruleset/Developer.list",
       "domain_output": "data/acl4ssr/Ruleset/Developer_domain.txt",
       "isp_output": null,
       "domains": 20,
@@ -2023,7 +2023,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/DiDi.list",
+      "source": "Ruleset/DiDi.list",
       "domain_output": "data/acl4ssr/Ruleset/DiDi_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2031,7 +2031,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Discord.list",
+      "source": "Ruleset/Discord.list",
       "domain_output": "data/acl4ssr/Ruleset/Discord_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -2039,7 +2039,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/DiscoveryPlus.list",
+      "source": "Ruleset/DiscoveryPlus.list",
       "domain_output": "data/acl4ssr/Ruleset/DiscoveryPlus_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2047,7 +2047,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/DisneyPlus.list",
+      "source": "Ruleset/DisneyPlus.list",
       "domain_output": "data/acl4ssr/Ruleset/DisneyPlus_domain.txt",
       "isp_output": null,
       "domains": 19,
@@ -2055,7 +2055,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Dmm.list",
+      "source": "Ruleset/Dmm.list",
       "domain_output": "data/acl4ssr/Ruleset/Dmm_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -2063,7 +2063,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Docker.list",
+      "source": "Ruleset/Docker.list",
       "domain_output": "data/acl4ssr/Ruleset/Docker_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2071,7 +2071,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Douyu.list",
+      "source": "Ruleset/Douyu.list",
       "domain_output": "data/acl4ssr/Ruleset/Douyu_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2079,7 +2079,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Download.list",
+      "source": "Ruleset/Download.list",
       "domain_output": "data/acl4ssr/Ruleset/Download_domain.txt",
       "isp_output": null,
       "domains": 22,
@@ -2087,7 +2087,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Dubox.list",
+      "source": "Ruleset/Dubox.list",
       "domain_output": "data/acl4ssr/Ruleset/Dubox_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2095,7 +2095,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/EHGallery.list",
+      "source": "Ruleset/EHGallery.list",
       "domain_output": "data/acl4ssr/Ruleset/EHGallery_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -2103,7 +2103,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/EncoreTVB.list",
+      "source": "Ruleset/EncoreTVB.list",
       "domain_output": "data/acl4ssr/Ruleset/EncoreTVB_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -2111,7 +2111,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Epic.list",
+      "source": "Ruleset/Epic.list",
       "domain_output": "data/acl4ssr/Ruleset/Epic_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -2119,7 +2119,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/F1.list",
+      "source": "Ruleset/F1.list",
       "domain_output": "data/acl4ssr/Ruleset/F1_domain.txt",
       "isp_output": null,
       "domains": 39,
@@ -2127,7 +2127,7 @@
       "skipped": 55
     },
     {
-      "source": "Clash/Ruleset/Facebook.list",
+      "source": "Ruleset/Facebook.list",
       "domain_output": "data/acl4ssr/Ruleset/Facebook_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Facebook_isp.txt",
       "domains": 7,
@@ -2135,7 +2135,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/FoxNow.list",
+      "source": "Ruleset/FoxNow.list",
       "domain_output": "data/acl4ssr/Ruleset/FoxNow_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2143,7 +2143,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/GameDownload.list",
+      "source": "Ruleset/GameDownload.list",
       "domain_output": "data/acl4ssr/Ruleset/GameDownload_domain.txt",
       "isp_output": null,
       "domains": 20,
@@ -2151,7 +2151,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Gemini.list",
+      "source": "Ruleset/Gemini.list",
       "domain_output": "data/acl4ssr/Ruleset/Gemini_domain.txt",
       "isp_output": null,
       "domains": 13,
@@ -2159,7 +2159,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Github.list",
+      "source": "Ruleset/Github.list",
       "domain_output": "data/acl4ssr/Ruleset/Github_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -2167,7 +2167,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Google.list",
+      "source": "Ruleset/Google.list",
       "domain_output": "data/acl4ssr/Ruleset/Google_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Google_isp.txt",
       "domains": 23,
@@ -2175,7 +2175,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/GoogleCN.list",
+      "source": "Ruleset/GoogleCN.list",
       "domain_output": "data/acl4ssr/Ruleset/GoogleCN_domain.txt",
       "isp_output": null,
       "domains": 48,
@@ -2183,7 +2183,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/GoogleCNProxyIP.list",
+      "source": "Ruleset/GoogleCNProxyIP.list",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Ruleset/GoogleCNProxyIP_isp.txt",
       "domains": 0,
@@ -2191,7 +2191,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/GoogleEarth.list",
+      "source": "Ruleset/GoogleEarth.list",
       "domain_output": "data/acl4ssr/Ruleset/GoogleEarth_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -2199,7 +2199,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/GoogleFCM.list",
+      "source": "Ruleset/GoogleFCM.list",
       "domain_output": "data/acl4ssr/Ruleset/GoogleFCM_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/GoogleFCM_isp.txt",
       "domains": 18,
@@ -2207,7 +2207,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/HBO.list",
+      "source": "Ruleset/HBO.list",
       "domain_output": "data/acl4ssr/Ruleset/HBO_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -2215,7 +2215,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/HBO_GO_HKG.list",
+      "source": "Ruleset/HBO_GO_HKG.list",
       "domain_output": "data/acl4ssr/Ruleset/HBO_GO_HKG_domain.txt",
       "isp_output": null,
       "domains": 19,
@@ -2223,7 +2223,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/HWTV.list",
+      "source": "Ruleset/HWTV.list",
       "domain_output": "data/acl4ssr/Ruleset/HWTV_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2231,7 +2231,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Heytap.list",
+      "source": "Ruleset/Heytap.list",
       "domain_output": "data/acl4ssr/Ruleset/Heytap_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -2239,7 +2239,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/HuaWei.list",
+      "source": "Ruleset/HuaWei.list",
       "domain_output": "data/acl4ssr/Ruleset/HuaWei_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -2247,7 +2247,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Hulu.list",
+      "source": "Ruleset/Hulu.list",
       "domain_output": "data/acl4ssr/Ruleset/Hulu_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2255,7 +2255,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/HuluJapan.list",
+      "source": "Ruleset/HuluJapan.list",
       "domain_output": "data/acl4ssr/Ruleset/HuluJapan_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -2263,7 +2263,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ITV.list",
+      "source": "Ruleset/ITV.list",
       "domain_output": "data/acl4ssr/Ruleset/ITV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2271,7 +2271,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Iflytek.list",
+      "source": "Ruleset/Iflytek.list",
       "domain_output": "data/acl4ssr/Ruleset/Iflytek_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2279,7 +2279,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Instagram.list",
+      "source": "Ruleset/Instagram.list",
       "domain_output": "data/acl4ssr/Ruleset/Instagram_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -2287,7 +2287,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Iqiyi.list",
+      "source": "Ruleset/Iqiyi.list",
       "domain_output": "data/acl4ssr/Ruleset/Iqiyi_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Iqiyi_isp.txt",
       "domains": 17,
@@ -2295,7 +2295,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/IqiyiHMT.list",
+      "source": "Ruleset/IqiyiHMT.list",
       "domain_output": "data/acl4ssr/Ruleset/IqiyiHMT_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2303,7 +2303,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Iwara.list",
+      "source": "Ruleset/Iwara.list",
       "domain_output": "data/acl4ssr/Ruleset/Iwara_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2311,7 +2311,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/JD.list",
+      "source": "Ruleset/JD.list",
       "domain_output": "data/acl4ssr/Ruleset/JD_domain.txt",
       "isp_output": null,
       "domains": 8,
@@ -2319,7 +2319,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/JOOX.list",
+      "source": "Ruleset/JOOX.list",
       "domain_output": "data/acl4ssr/Ruleset/JOOX_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2327,7 +2327,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Japonx.list",
+      "source": "Ruleset/Japonx.list",
       "domain_output": "data/acl4ssr/Ruleset/Japonx_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -2335,7 +2335,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/JetBrains.list",
+      "source": "Ruleset/JetBrains.list",
       "domain_output": "data/acl4ssr/Ruleset/JetBrains_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -2343,7 +2343,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Ruleset/KKBOX.list",
+      "source": "Ruleset/KKBOX.list",
       "domain_output": "data/acl4ssr/Ruleset/KKBOX_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2351,7 +2351,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/KKTV.list",
+      "source": "Ruleset/KKTV.list",
       "domain_output": "data/acl4ssr/Ruleset/KKTV_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -2359,7 +2359,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/KakaoTalk.list",
+      "source": "Ruleset/KakaoTalk.list",
       "domain_output": "data/acl4ssr/Ruleset/KakaoTalk_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/KakaoTalk_isp.txt",
       "domains": 3,
@@ -2367,7 +2367,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Kingsoft.list",
+      "source": "Ruleset/Kingsoft.list",
       "domain_output": "data/acl4ssr/Ruleset/Kingsoft_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2375,7 +2375,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Kuaishou.list",
+      "source": "Ruleset/Kuaishou.list",
       "domain_output": "data/acl4ssr/Ruleset/Kuaishou_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2383,7 +2383,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/LeTV.list",
+      "source": "Ruleset/LeTV.list",
       "domain_output": "data/acl4ssr/Ruleset/LeTV_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2391,7 +2391,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/LiTV.list",
+      "source": "Ruleset/LiTV.list",
       "domain_output": "data/acl4ssr/Ruleset/LiTV_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2399,7 +2399,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Line.list",
+      "source": "Ruleset/Line.list",
       "domain_output": "data/acl4ssr/Ruleset/Line_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Line_isp.txt",
       "domains": 7,
@@ -2407,7 +2407,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/LineTV.list",
+      "source": "Ruleset/LineTV.list",
       "domain_output": "data/acl4ssr/Ruleset/LineTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2415,7 +2415,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/MGTVTV.list",
+      "source": "Ruleset/MGTVTV.list",
       "domain_output": "data/acl4ssr/Ruleset/MGTVTV_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2423,7 +2423,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/MI.list",
+      "source": "Ruleset/MI.list",
       "domain_output": "data/acl4ssr/Ruleset/MI_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2431,7 +2431,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/MIUIPrivacy.list",
+      "source": "Ruleset/MIUIPrivacy.list",
       "domain_output": "data/acl4ssr/Ruleset/MIUIPrivacy_domain.txt",
       "isp_output": null,
       "domains": 29,
@@ -2439,7 +2439,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/MOO.list",
+      "source": "Ruleset/MOO.list",
       "domain_output": "data/acl4ssr/Ruleset/MOO_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2447,7 +2447,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Marketing.list",
+      "source": "Ruleset/Marketing.list",
       "domain_output": "data/acl4ssr/Ruleset/Marketing_domain.txt",
       "isp_output": null,
       "domains": 56,
@@ -2455,7 +2455,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Meitu.list",
+      "source": "Ruleset/Meitu.list",
       "domain_output": "data/acl4ssr/Ruleset/Meitu_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -2463,7 +2463,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Microsoft.list",
+      "source": "Ruleset/Microsoft.list",
       "domain_output": "data/acl4ssr/Ruleset/Microsoft_domain.txt",
       "isp_output": null,
       "domains": 79,
@@ -2471,7 +2471,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/My5.list",
+      "source": "Ruleset/My5.list",
       "domain_output": "data/acl4ssr/Ruleset/My5_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2479,7 +2479,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/MyTVSuper.list",
+      "source": "Ruleset/MyTVSuper.list",
       "domain_output": "data/acl4ssr/Ruleset/MyTVSuper_domain.txt",
       "isp_output": null,
       "domains": 6,
@@ -2487,7 +2487,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/NaSDDNS.list",
+      "source": "Ruleset/NaSDDNS.list",
       "domain_output": "data/acl4ssr/Ruleset/NaSDDNS_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/NaSDDNS_isp.txt",
       "domains": 34,
@@ -2495,7 +2495,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/NetEase.list",
+      "source": "Ruleset/NetEase.list",
       "domain_output": "data/acl4ssr/Ruleset/NetEase_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -2503,7 +2503,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/NetEaseMusic.list",
+      "source": "Ruleset/NetEaseMusic.list",
       "domain_output": "data/acl4ssr/Ruleset/NetEaseMusic_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/NetEaseMusic_isp.txt",
       "domains": 6,
@@ -2511,7 +2511,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Netflix.list",
+      "source": "Ruleset/Netflix.list",
       "domain_output": "data/acl4ssr/Ruleset/Netflix_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Netflix_isp.txt",
       "domains": 22,
@@ -2519,7 +2519,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/NetflixIP.list",
+      "source": "Ruleset/NetflixIP.list",
       "domain_output": null,
       "isp_output": "data/acl4ssr/Ruleset/NetflixIP_isp.txt",
       "domains": 0,
@@ -2527,7 +2527,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Niconico.list",
+      "source": "Ruleset/Niconico.list",
       "domain_output": "data/acl4ssr/Ruleset/Niconico_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2535,7 +2535,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Nintendo.list",
+      "source": "Ruleset/Nintendo.list",
       "domain_output": "data/acl4ssr/Ruleset/Nintendo_domain.txt",
       "isp_output": null,
       "domains": 15,
@@ -2543,7 +2543,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/NivodTV.list",
+      "source": "Ruleset/NivodTV.list",
       "domain_output": "data/acl4ssr/Ruleset/NivodTV_domain.txt",
       "isp_output": null,
       "domains": 11,
@@ -2551,7 +2551,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Olevod.list",
+      "source": "Ruleset/Olevod.list",
       "domain_output": "data/acl4ssr/Ruleset/Olevod_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -2559,7 +2559,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/OneDrive.list",
+      "source": "Ruleset/OneDrive.list",
       "domain_output": "data/acl4ssr/Ruleset/OneDrive_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -2567,7 +2567,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/OpenAi.list",
+      "source": "Ruleset/OpenAi.list",
       "domain_output": "data/acl4ssr/Ruleset/OpenAi_domain.txt",
       "isp_output": null,
       "domains": 17,
@@ -2575,7 +2575,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Origin.list",
+      "source": "Ruleset/Origin.list",
       "domain_output": "data/acl4ssr/Ruleset/Origin_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2583,7 +2583,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/PBS.list",
+      "source": "Ruleset/PBS.list",
       "domain_output": "data/acl4ssr/Ruleset/PBS_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2591,7 +2591,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/PDD.list",
+      "source": "Ruleset/PDD.list",
       "domain_output": "data/acl4ssr/Ruleset/PDD_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2599,7 +2599,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/PPTVPPLive.list",
+      "source": "Ruleset/PPTVPPLive.list",
       "domain_output": "data/acl4ssr/Ruleset/PPTVPPLive_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2607,7 +2607,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Pandora.list",
+      "source": "Ruleset/Pandora.list",
       "domain_output": "data/acl4ssr/Ruleset/Pandora_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2615,7 +2615,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Pixiv.list",
+      "source": "Ruleset/Pixiv.list",
       "domain_output": "data/acl4ssr/Ruleset/Pixiv_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2623,7 +2623,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Porn.list",
+      "source": "Ruleset/Porn.list",
       "domain_output": "data/acl4ssr/Ruleset/Porn_domain.txt",
       "isp_output": null,
       "domains": 23,
@@ -2631,7 +2631,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Pornhub.list",
+      "source": "Ruleset/Pornhub.list",
       "domain_output": "data/acl4ssr/Ruleset/Pornhub_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -2639,7 +2639,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/PrivateTracker.list",
+      "source": "Ruleset/PrivateTracker.list",
       "domain_output": "data/acl4ssr/Ruleset/PrivateTracker_domain.txt",
       "isp_output": null,
       "domains": 122,
@@ -2647,7 +2647,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ProxyGFWlist.list",
+      "source": "Ruleset/ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/Ruleset/ProxyGFWlist_domain.txt",
       "isp_output": null,
       "domains": 4311,
@@ -2655,7 +2655,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/PublicDirectCDN.list",
+      "source": "Ruleset/PublicDirectCDN.list",
       "domain_output": "data/acl4ssr/Ruleset/PublicDirectCDN_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -2663,7 +2663,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Qobuz.list",
+      "source": "Ruleset/Qobuz.list",
       "domain_output": "data/acl4ssr/Ruleset/Qobuz_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2671,7 +2671,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Reddit.list",
+      "source": "Ruleset/Reddit.list",
       "domain_output": "data/acl4ssr/Ruleset/Reddit_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -2679,7 +2679,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Ruleset/RemoteDesktop.list",
+      "source": "Ruleset/RemoteDesktop.list",
       "domain_output": "data/acl4ssr/Ruleset/RemoteDesktop_domain.txt",
       "isp_output": null,
       "domains": 9,
@@ -2687,7 +2687,7 @@
       "skipped": 12
     },
     {
-      "source": "Clash/Ruleset/Samsung.list",
+      "source": "Ruleset/Samsung.list",
       "domain_output": "data/acl4ssr/Ruleset/Samsung_domain.txt",
       "isp_output": null,
       "domains": 21,
@@ -2695,7 +2695,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Scholar.list",
+      "source": "Ruleset/Scholar.list",
       "domain_output": "data/acl4ssr/Ruleset/Scholar_domain.txt",
       "isp_output": null,
       "domains": 83,
@@ -2703,7 +2703,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Sina.list",
+      "source": "Ruleset/Sina.list",
       "domain_output": "data/acl4ssr/Ruleset/Sina_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -2711,7 +2711,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/SohuSogo.list",
+      "source": "Ruleset/SohuSogo.list",
       "domain_output": "data/acl4ssr/Ruleset/SohuSogo_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -2719,7 +2719,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Sony.list",
+      "source": "Ruleset/Sony.list",
       "domain_output": "data/acl4ssr/Ruleset/Sony_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -2727,7 +2727,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/SoundCloud.list",
+      "source": "Ruleset/SoundCloud.list",
       "domain_output": "data/acl4ssr/Ruleset/SoundCloud_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2735,7 +2735,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Spark.list",
+      "source": "Ruleset/Spark.list",
       "domain_output": "data/acl4ssr/Ruleset/Spark_domain.txt",
       "isp_output": null,
       "domains": 5,
@@ -2743,7 +2743,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Spotify.list",
+      "source": "Ruleset/Spotify.list",
       "domain_output": "data/acl4ssr/Ruleset/Spotify_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2751,7 +2751,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Steam.list",
+      "source": "Ruleset/Steam.list",
       "domain_output": "data/acl4ssr/Ruleset/Steam_domain.txt",
       "isp_output": null,
       "domains": 18,
@@ -2759,7 +2759,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/SteamCN.list",
+      "source": "Ruleset/SteamCN.list",
       "domain_output": "data/acl4ssr/Ruleset/SteamCN_domain.txt",
       "isp_output": null,
       "domains": 16,
@@ -2767,7 +2767,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/SteamRegionCheck.list",
+      "source": "Ruleset/SteamRegionCheck.list",
       "domain_output": "data/acl4ssr/Ruleset/SteamRegionCheck_domain.txt",
       "isp_output": null,
       "domains": 17,
@@ -2775,7 +2775,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Ruleset/TIDAL.list",
+      "source": "Ruleset/TIDAL.list",
       "domain_output": "data/acl4ssr/Ruleset/TIDAL_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2783,7 +2783,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TaiWanGood.list",
+      "source": "Ruleset/TaiWanGood.list",
       "domain_output": "data/acl4ssr/Ruleset/TaiWanGood_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2791,7 +2791,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TapTap.list",
+      "source": "Ruleset/TapTap.list",
       "domain_output": "data/acl4ssr/Ruleset/TapTap_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2799,7 +2799,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TeamViewer.list",
+      "source": "Ruleset/TeamViewer.list",
       "domain_output": "data/acl4ssr/Ruleset/TeamViewer_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/TeamViewer_isp.txt",
       "domains": 1,
@@ -2807,7 +2807,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/Ruleset/Telegram.list",
+      "source": "Ruleset/Telegram.list",
       "domain_output": "data/acl4ssr/Ruleset/Telegram_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Telegram_isp.txt",
       "domains": 7,
@@ -2815,7 +2815,7 @@
       "skipped": 5
     },
     {
-      "source": "Clash/Ruleset/Tencent.list",
+      "source": "Ruleset/Tencent.list",
       "domain_output": "data/acl4ssr/Ruleset/Tencent_domain.txt",
       "isp_output": null,
       "domains": 19,
@@ -2823,7 +2823,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TencentLolm.list",
+      "source": "Ruleset/TencentLolm.list",
       "domain_output": "data/acl4ssr/Ruleset/TencentLolm_domain.txt",
       "isp_output": null,
       "domains": 3,
@@ -2831,7 +2831,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TencentVideo.list",
+      "source": "Ruleset/TencentVideo.list",
       "domain_output": "data/acl4ssr/Ruleset/TencentVideo_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2839,7 +2839,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TeraBox.list",
+      "source": "Ruleset/TeraBox.list",
       "domain_output": "data/acl4ssr/Ruleset/TeraBox_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2847,7 +2847,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TikTok.list",
+      "source": "Ruleset/TikTok.list",
       "domain_output": "data/acl4ssr/Ruleset/TikTok_domain.txt",
       "isp_output": null,
       "domains": 10,
@@ -2855,7 +2855,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/TopBlockedSites.list",
+      "source": "Ruleset/TopBlockedSites.list",
       "domain_output": "data/acl4ssr/Ruleset/TopBlockedSites_domain.txt",
       "isp_output": null,
       "domains": 109,
@@ -2863,7 +2863,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Twitch.list",
+      "source": "Ruleset/Twitch.list",
       "domain_output": "data/acl4ssr/Ruleset/Twitch_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2871,7 +2871,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Twitter.list",
+      "source": "Ruleset/Twitter.list",
       "domain_output": "data/acl4ssr/Ruleset/Twitter_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -2879,7 +2879,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/UnBan.list",
+      "source": "Ruleset/UnBan.list",
       "domain_output": "data/acl4ssr/Ruleset/UnBan_domain.txt",
       "isp_output": null,
       "domains": 52,
@@ -2887,7 +2887,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/VikACG.list",
+      "source": "Ruleset/VikACG.list",
       "domain_output": "data/acl4ssr/Ruleset/VikACG_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2895,7 +2895,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Vip.list",
+      "source": "Ruleset/Vip.list",
       "domain_output": "data/acl4ssr/Ruleset/Vip_domain.txt",
       "isp_output": null,
       "domains": 4,
@@ -2903,7 +2903,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/ViuTV.list",
+      "source": "Ruleset/ViuTV.list",
       "domain_output": "data/acl4ssr/Ruleset/ViuTV_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -2911,7 +2911,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Wechat.list",
+      "source": "Ruleset/Wechat.list",
       "domain_output": "data/acl4ssr/Ruleset/Wechat_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Wechat_isp.txt",
       "domains": 12,
@@ -2919,7 +2919,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Whatsapp.list",
+      "source": "Ruleset/Whatsapp.list",
       "domain_output": "data/acl4ssr/Ruleset/Whatsapp_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Whatsapp_isp.txt",
       "domains": 1,
@@ -2927,7 +2927,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Wikipedia.list",
+      "source": "Ruleset/Wikipedia.list",
       "domain_output": "data/acl4ssr/Ruleset/Wikipedia_domain.txt",
       "isp_output": null,
       "domains": 12,
@@ -2935,7 +2935,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Xbox.list",
+      "source": "Ruleset/Xbox.list",
       "domain_output": "data/acl4ssr/Ruleset/Xbox_domain.txt",
       "isp_output": null,
       "domains": 7,
@@ -2943,7 +2943,7 @@
       "skipped": 3
     },
     {
-      "source": "Clash/Ruleset/Ximalaya.list",
+      "source": "Ruleset/Ximalaya.list",
       "domain_output": "data/acl4ssr/Ruleset/Ximalaya_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2951,7 +2951,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Xunlei.list",
+      "source": "Ruleset/Xunlei.list",
       "domain_output": "data/acl4ssr/Ruleset/Xunlei_domain.txt",
       "isp_output": null,
       "domains": 8,
@@ -2959,7 +2959,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/YYeTs.list",
+      "source": "Ruleset/YYeTs.list",
       "domain_output": "data/acl4ssr/Ruleset/YYeTs_domain.txt",
       "isp_output": null,
       "domains": 15,
@@ -2967,7 +2967,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/YouTube.list",
+      "source": "Ruleset/YouTube.list",
       "domain_output": "data/acl4ssr/Ruleset/YouTube_domain.txt",
       "isp_output": null,
       "domains": 14,
@@ -2975,7 +2975,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/YouTubeMusic.list",
+      "source": "Ruleset/YouTubeMusic.list",
       "domain_output": "data/acl4ssr/Ruleset/YouTubeMusic_domain.txt",
       "isp_output": null,
       "domains": 1,
@@ -2983,7 +2983,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Youku.list",
+      "source": "Ruleset/Youku.list",
       "domain_output": "data/acl4ssr/Ruleset/Youku_domain.txt",
       "isp_output": "data/acl4ssr/Ruleset/Youku_isp.txt",
       "domains": 1,
@@ -2991,7 +2991,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Ruleset/Zoom.list",
+      "source": "Ruleset/Zoom.list",
       "domain_output": "data/acl4ssr/Ruleset/Zoom_domain.txt",
       "isp_output": null,
       "domains": 2,
@@ -2999,7 +2999,7 @@
       "skipped": 2
     },
     {
-      "source": "Clash/Telegram.list",
+      "source": "Telegram.list",
       "domain_output": "data/acl4ssr/Telegram_domain.txt",
       "isp_output": "data/acl4ssr/Telegram_isp.txt",
       "domains": 6,
@@ -3007,7 +3007,7 @@
       "skipped": 6
     },
     {
-      "source": "Clash/UnBan.list",
+      "source": "UnBan.list",
       "domain_output": "data/acl4ssr/UnBan_domain.txt",
       "isp_output": null,
       "domains": 31,
@@ -3015,7 +3015,7 @@
       "skipped": 27
     },
     {
-      "source": "Clash/Xbox.list",
+      "source": "Xbox.list",
       "domain_output": "data/acl4ssr/Xbox_domain.txt",
       "isp_output": null,
       "domains": 7,
