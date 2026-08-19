@@ -6,7 +6,9 @@ sys.path.insert(0, str(Path(__file__).parents[1] / "src"))
 
 from sync_transform import (
     extract_clash_all_values,
+    extract_clash_ikuai_values,
     extract_v2ray_all_values,
+    extract_v2ray_ikuai_values,
     format_csv,
     format_markdown,
     parse_xml_records,
@@ -98,3 +100,33 @@ unknown:value
         "value",
     ]
     assert stats["accepted"] == 7
+
+
+def test_extract_clash_values_into_ikuai_domain_and_isp_lists():
+    content = """# comment
+payload:
+DOMAIN,Example.COM
+- DOMAIN-SUFFIX,example.org
+IP-CIDR,1.2.3.0/24
+IP,1.2.3.4
+IP-CIDR6,2001:db8::/32
+"""
+    domains, ips, stats = extract_clash_ikuai_values(content)
+    assert domains == ["example.com", "example.org"]
+    assert ips == ["1.2.3.0/24", "1.2.3.4"]
+    assert stats["domains"] == 2
+    assert stats["ips"] == 2
+
+
+def test_extract_v2ray_values_into_ikuai_domain_and_isp_lists():
+    content = """example.com
+full:api.example.com
+domain:cdn.example.com
+ip:1.2.3.4
+cidr:1.2.3.0/24
+regexp:(^|\\.)example\\.net$
+"""
+    domains, ips, stats = extract_v2ray_ikuai_values(content)
+    assert domains == ["(^|\\.)example\\.net$", "api.example.com", "cdn.example.com", "example.com"]
+    assert ips == ["1.2.3.0/24", "1.2.3.4"]
+    assert stats["accepted"] == 6

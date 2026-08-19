@@ -11,6 +11,7 @@
       "exclude_names": ["GeneralClashConfig.yml"],
       "output_dir": "data/acl4ssr",
       "merged_domain_output": "data/acl4ssr/all_domain.txt",
+      "merged_isp_output": "data/acl4ssr/all_isp.txt",
       "timeout_seconds": 30
     },
     {

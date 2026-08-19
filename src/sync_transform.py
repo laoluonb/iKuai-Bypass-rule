@@ -244,10 +244,60 @@ def normalize_for_domain_output(value: str, preserve_case: bool = False) -> str 
     return value if preserve_case else value.lower()
 
 
-def extract_clash_all_values(content: str) -> tuple[list[str], dict[str, int]]:
-    """Extract every Clash rule payload into one combined output list."""
-    values: set[str] = set()
-    stats = {"lines": 0, "accepted": 0, "skipped": 0, "duplicates": 0}
+def normalize_ikuai_isp_value(value: str) -> str | None:
+    """Return an iKuai-compatible IPv4 or IPv4/CIDR value."""
+    candidate = normalize_ip_cidr(value)
+    if not candidate:
+        return None
+    try:
+        version = ipaddress.ip_network(candidate, strict=False).version if "/" in candidate else ipaddress.ip_address(candidate).version
+    except ValueError:
+        return None
+    return candidate if version == 4 else None
+
+
+def _classify_rule_value(
+    candidate: str,
+    domains: set[str],
+    ips: set[str],
+    stats: dict[str, int],
+    preserve_case: bool = False,
+) -> None:
+    """Put one rule payload into the domain or IPv4/CIDR output set."""
+    isp_value = normalize_ikuai_isp_value(candidate)
+    if isp_value:
+        if isp_value in ips:
+            stats["duplicates"] += 1
+        else:
+            ips.add(isp_value)
+            stats["ips"] += 1
+            stats["accepted"] += 1
+        return
+
+    # IPv6 is not written to the iKuai ISP output file.
+    if normalize_ip_cidr(candidate):
+        stats["skipped"] += 1
+        return
+
+    value = normalize_for_domain_output(candidate, preserve_case=preserve_case)
+    if not value:
+        stats["skipped"] += 1
+        return
+    if value in domains:
+        stats["duplicates"] += 1
+    else:
+        domains.add(value)
+        stats["domains"] += 1
+        stats["accepted"] += 1
+
+
+def extract_clash_ikuai_values(
+    content: str,
+) -> tuple[list[str], list[str], dict[str, int]]:
+    """Extract Clash content into domain and IPv4/CIDR lists."""
+    domains: set[str] = set()
+    ips: set[str] = set()
+    stats = {"lines": 0, "accepted": 0, "domains": 0, "ips": 0, "skipped": 0, "duplicates": 0}
     for raw_line in content.splitlines():
         stats["lines"] += 1
         line = _clean_rule_line(raw_line)
@@ -260,45 +310,40 @@ def extract_clash_all_values(content: str) -> tuple[list[str], dict[str, int]]:
             stats["skipped"] += 1
             continue
         candidate = parts[1] if len(parts) >= 2 else parts[0]
-        value = normalize_for_domain_output(candidate)
-        if not value:
-            stats["skipped"] += 1
-            continue
-        if value in values:
-            stats["duplicates"] += 1
-            continue
-        values.add(value)
-        stats["accepted"] += 1
-    return sorted(values), stats
+        _classify_rule_value(candidate, domains, ips, stats)
+    return sorted(domains), sorted(ips, key=lambda value: (":" in value, value)), stats
 
 
-def extract_v2ray_all_values(content: str) -> tuple[list[str], dict[str, int]]:
-    """Extract all v2ray rule values into one combined output list."""
-    values: set[str] = set()
-    stats = {"lines": 0, "accepted": 0, "skipped": 0, "duplicates": 0}
+def extract_v2ray_ikuai_values(
+    content: str,
+) -> tuple[list[str], list[str], dict[str, int]]:
+    """Extract v2ray-rules-dat content into domain and IPv4/CIDR lists."""
+    domains: set[str] = set()
+    ips: set[str] = set()
+    stats = {"lines": 0, "accepted": 0, "domains": 0, "ips": 0, "skipped": 0, "duplicates": 0}
     for raw_line in content.splitlines():
         stats["lines"] += 1
         line = _clean_rule_line(raw_line)
         if not line or line.startswith("#"):
             stats["skipped"] += 1
             continue
+        line = line.split("#", 1)[0].strip()
         prefix, separator, payload = line.partition(":")
-        if separator and prefix.strip().replace("-", "").replace("_", "").isalnum():
-            candidate = payload.strip()
-            preserve_case = prefix.lower() == "regexp"
-        else:
-            candidate = line
-            preserve_case = False
-        value = normalize_for_domain_output(candidate, preserve_case=preserve_case)
-        if not value:
-            stats["skipped"] += 1
-            continue
-        if value in values:
-            stats["duplicates"] += 1
-            continue
-        values.add(value)
-        stats["accepted"] += 1
-    return sorted(values), stats
+        prefix = prefix.strip().lower() if separator else ""
+        candidate = payload.strip() if separator else line
+        _classify_rule_value(candidate, domains, ips, stats, preserve_case=prefix == "regexp")
+    return sorted(domains), sorted(ips, key=lambda value: (":" in value, value)), stats
+
+
+# Backwards-compatible helpers for callers of the earlier API.
+def extract_clash_all_values(content: str) -> tuple[list[str], dict[str, int]]:
+    domains, ips, stats = extract_clash_ikuai_values(content)
+    return sorted(domains + ips), stats
+
+
+def extract_v2ray_all_values(content: str) -> tuple[list[str], dict[str, int]]:
+    domains, ips, stats = extract_v2ray_ikuai_values(content)
+    return sorted(domains + ips), stats
 
 
 def safe_relative_path(project_root: Path, configured: str, label: str) -> Path:
@@ -345,7 +390,8 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
     directory_files = sorted(filtered_files, key=lambda item: str(item.get("path", "")))
 
     generated_files: list[str] = []
-    all_values: set[str] = set()
+    all_domains: set[str] = set()
+    all_ips: set[str] = set()
     manifest_files: list[dict[str, Any]] = []
     changed = False
     path_prefix = str(source.get("path_prefix", "")).rstrip("/")
@@ -358,20 +404,27 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         relative_parent = source_relative_path.parent
         output_stem = source_relative_path.stem
         domain_path = output_dir / relative_parent / f"{output_stem}_domain.txt"
+        isp_path = output_dir / relative_parent / f"{output_stem}_isp.txt"
         domain_relative = domain_path.relative_to(project_root).as_posix()
+        isp_relative = isp_path.relative_to(project_root).as_posix()
         content = fetch(str(item["download_url"]), timeout, headers).decode("utf-8-sig")
-        values, value_stats = extract_clash_all_values(content)
-        generated_files.append(domain_relative)
-        all_values.update(values)
+        domains, ips, value_stats = extract_clash_ikuai_values(content)
+        generated_files.extend((domain_relative, isp_relative))
+        all_domains.update(domains)
+        all_ips.update(ips)
         manifest_files.append({
             "source": source_path,
-            "output": domain_relative,
-            "values": len(values),
+            "domain_output": domain_relative,
+            "isp_output": isp_relative,
+            "domains": len(domains),
+            "ips": len(ips),
             "skipped": value_stats["skipped"],
         })
-        changed = write_text_if_changed(domain_path, "\n".join(values) + ("\n" if values else ""), dry_run) or changed
+        changed = write_text_if_changed(domain_path, "\n".join(domains) + ("\n" if domains else ""), dry_run) or changed
+        changed = write_text_if_changed(isp_path, "\n".join(ips) + ("\n" if ips else ""), dry_run) or changed
         status = "would update" if dry_run else "updated"
-        print(f"[{source['name']}] {status}: {domain_relative} ({len(values)} values)")
+        print(f"[{source['name']}] {status}: {domain_relative} ({len(domains)} domains)")
+        print(f"[{source['name']}] {status}: {isp_relative} ({len(ips)} IPv4/CIDR values)")
 
     merged_domain_output = safe_relative_path(
         project_root,
@@ -379,9 +432,17 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         "merged_domain_output",
     )
     merged_domain_relative = merged_domain_output.relative_to(project_root).as_posix()
-    generated_files.append(merged_domain_relative)
-    merged_values = sorted(all_values)
-    changed = write_text_if_changed(merged_domain_output, "\n".join(merged_values) + ("\n" if merged_values else ""), dry_run) or changed
+    merged_isp_output = safe_relative_path(
+        project_root,
+        str(source.get("merged_isp_output", str(output_dir.relative_to(project_root) / "all_isp.txt"))),
+        "merged_isp_output",
+    )
+    merged_isp_relative = merged_isp_output.relative_to(project_root).as_posix()
+    generated_files.extend((merged_domain_relative, merged_isp_relative))
+    merged_domains = sorted(all_domains)
+    merged_ips = sorted(all_ips, key=lambda value: (":" in value, value))
+    changed = write_text_if_changed(merged_domain_output, "\n".join(merged_domains) + ("\n" if merged_domains else ""), dry_run) or changed
+    changed = write_text_if_changed(merged_isp_output, "\n".join(merged_ips) + ("\n" if merged_ips else ""), dry_run) or changed
 
     manifest_path = output_dir / ".sync-manifest.json"
     generated_files.append(manifest_path.relative_to(project_root).as_posix())
@@ -404,17 +465,19 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         "source": str(source["name"]),
         "generated_files": sorted(generated_files),
         "files": manifest_files,
-        "merged_values": len(merged_values),
+        "merged_domains": len(merged_domains),
+        "merged_ips": len(merged_ips),
     }
     manifest_content = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     changed = write_text_if_changed(manifest_path, manifest_content, dry_run) or changed
     status = "would update" if dry_run else "updated"
-    print(f"[{source['name']}] {status}: {merged_domain_relative} ({len(merged_values)} unique values total)")
+    print(f"[{source['name']}] {status}: {merged_domain_relative} ({len(merged_domains)} unique domains total)")
+    print(f"[{source['name']}] {status}: {merged_isp_relative} ({len(merged_ips)} unique IPv4/CIDR values total)")
     return changed
 
 
 def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) -> bool:
-    """Sync a single text rule list into one combined domain output file."""
+    """Sync a single text rule list into iKuai domain and ISP output files."""
     for required in ("name", "url", "output_dir"):
         if not source.get(required):
             raise SyncError(f"rule_list sources require '{required}'")
@@ -423,10 +486,14 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
     headers = {"User-Agent": "upstream-sync-transformer/0.1"}
     headers.update({str(k): str(v) for k, v in source.get("headers", {}).items()})
     content = fetch(str(source["url"]), timeout, headers).decode("utf-8-sig")
-    values, stats = extract_v2ray_all_values(content)
+    domains, ips, stats = extract_v2ray_ikuai_values(content)
     output_dir = safe_relative_path(project_root, str(source["output_dir"]), "output_dir")
-    output_path = output_dir / f"{source['name']}_domain.txt"
-    generated_files = [output_path.relative_to(project_root).as_posix()]
+    domain_path = output_dir / f"{source['name']}_domain.txt"
+    isp_path = output_dir / f"{source['name']}_isp.txt"
+    generated_files = [
+        domain_path.relative_to(project_root).as_posix(),
+        isp_path.relative_to(project_root).as_posix(),
+    ]
     manifest_name = str(source.get("manifest_name", f".sync-manifest-{source['name']}.json"))
     old_manifest_path = output_dir / manifest_name
     old_manifest: dict[str, Any] = {}
@@ -439,7 +506,8 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
             pass
 
     changed = False
-    changed = write_text_if_changed(output_path, "\n".join(values) + ("\n" if values else ""), dry_run) or changed
+    changed = write_text_if_changed(domain_path, "\n".join(domains) + ("\n" if domains else ""), dry_run) or changed
+    changed = write_text_if_changed(isp_path, "\n".join(ips) + ("\n" if ips else ""), dry_run) or changed
 
     # Remove files produced by the previous split-output mode.
     for legacy_name in (f"{source['name']}_ip.txt", f"{source['name']}_regexp.txt"):
@@ -458,12 +526,14 @@ def sync_rule_list(source: dict[str, Any], project_root: Path, dry_run: bool) ->
         "source": str(source["name"]),
         "url": str(source["url"]),
         "generated_files": sorted(generated_files + [old_manifest_path.relative_to(project_root).as_posix()]),
-        "values": len(values),
+        "domains": len(domains),
+        "ips": len(ips),
         "skipped": stats["skipped"],
     }
     changed = write_text_if_changed(old_manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", dry_run) or changed
     status = "would update" if dry_run else ("updated" if changed else "unchanged")
-    print(f"[{source['name']}] {status}: {generated_files[0]} ({len(values)} values; {stats['skipped']} skipped)")
+    print(f"[{source['name']}] {status}: {generated_files[0]} ({len(domains)} domains; {stats['skipped']} skipped)")
+    print(f"[{source['name']}] {status}: {generated_files[1]} ({len(ips)} IPv4/CIDR values)")
     return changed
 
 
