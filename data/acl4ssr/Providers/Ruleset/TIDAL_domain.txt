@@ -1,0 +1,3 @@
+tidal-cms.s3.amazonaws.com
+tidal.com
+tidalhifi.com

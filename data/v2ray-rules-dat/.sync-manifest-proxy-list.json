@@ -1,0 +1,10 @@
+{
+  "source": "proxy-list",
+  "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
+  "generated_files": [
+    "data/v2ray-rules-dat/.sync-manifest-proxy-list.json",
+    "data/v2ray-rules-dat/proxy-list_domain.txt"
+  ],
+  "values": 27194,
+  "skipped": 0
+}
