@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from bisect import bisect_right
 import csv
 import io
 import ipaddress
@@ -14,9 +15,12 @@ import sys
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
+from urllib.parse import urlparse
 
 
 DOMAIN_LABEL_RE = re.compile(r"^[a-z0-9_](?:[a-z0-9_-]{0,61}[a-z0-9_])?$", re.IGNORECASE)
@@ -427,6 +431,430 @@ def remove_file_if_exists(path: Path, dry_run: bool) -> bool:
     return True
 
 
+def _relative_markdown_path(target: Path, base: Path) -> str:
+    """Return a portable relative link for a Markdown file."""
+    return Path(os.path.relpath(target, base)).as_posix()
+
+
+def _read_json_object(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        loaded = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return loaded if isinstance(loaded, dict) else {}
+
+
+def _repository_raw_url(config: dict[str, Any], relative_path: str) -> str | None:
+    repository_url = str(config.get("repository_url", "")).rstrip("/")
+    if not repository_url:
+        server = os.getenv("GITHUB_SERVER_URL", "https://github.com").rstrip("/")
+        repository = os.getenv("GITHUB_REPOSITORY", "").strip("/")
+        if repository:
+            repository_url = f"{server}/{repository}"
+    if not repository_url:
+        return None
+    branch = str(config.get("repository_branch", "main"))
+    encoded_path = quote(relative_path.replace("\\", "/"), safe="/")
+    parsed = urlparse(repository_url)
+    if parsed.hostname == "github.com":
+        parts = [part for part in parsed.path.split("/") if part]
+        if len(parts) >= 2:
+            owner, repository = parts[0], parts[1]
+            return (
+                f"https://raw.githubusercontent.com/{quote(owner, safe='')}/"
+                f"{quote(repository, safe='')}/{quote(branch, safe='')}/{encoded_path}"
+            )
+    return f"{repository_url}/raw/refs/heads/{quote(branch, safe='')}/{encoded_path}"
+
+
+def _source_upstream_url(source: dict[str, Any]) -> str:
+    return str(source.get("upstream_url") or source.get("url") or source.get("api_url") or "")
+
+
+def _readme_source_lines(sources: list[dict[str, Any]]) -> list[str]:
+    lines: list[str] = []
+    seen: set[tuple[str, str]] = set()
+    for source in sources:
+        name = str(source.get("name", "同步源"))
+        url = _source_upstream_url(source)
+        key = (name, url)
+        if key in seen:
+            continue
+        seen.add(key)
+        if url:
+            lines.append(f"- [{name}]({url})")
+        elif source.get("description"):
+            lines.append(f"- {name}：{source['description']}")
+        else:
+            lines.append(f"- {name}")
+    return lines
+
+
+def _manifest_source_relative_path(source_path: str, sources: list[dict[str, Any]]) -> str:
+    """Normalize old manifests that still include a GitHub directory prefix."""
+    normalized = source_path.replace("\\", "/").lstrip("/")
+    for source in sources:
+        prefix = str(source.get("path_prefix", "")).strip("/")
+        if prefix and (normalized == prefix or normalized.startswith(prefix + "/")):
+            return normalized[len(prefix):].lstrip("/")
+    return normalized
+
+
+def _render_directory_readme(
+    directory: Path,
+    output_root: Path,
+    project_root: Path,
+    sources: list[dict[str, Any]],
+    config: dict[str, Any],
+) -> str:
+    entries: dict[str, dict[str, Path]] = {}
+    for path in sorted(directory.glob("*_domain.txt")) + sorted(directory.glob("*_isp.txt")):
+        if path.name.endswith("_domain.txt"):
+            base = path.name[: -len("_domain.txt")]
+            entries.setdefault(base, {})["domain"] = path
+        elif path.name.endswith("_isp.txt"):
+            base = path.name[: -len("_isp.txt")]
+            entries.setdefault(base, {})["isp"] = path
+
+    title = directory.name or output_root.name
+    lines = [
+        f"# {title}",
+        "",
+        "本目录由 `upstream-sync-transformer` 自动同步上游规则，并转换为爱快可用的逐行格式。",
+        "",
+        "## 上游",
+        "",
+    ]
+    upstream_lines = _readme_source_lines(sources)
+    lines.extend(upstream_lines or ["- 未配置上游链接"])
+    lines.extend([
+        "",
+        "## 规则文件",
+        "",
+        "| 规则名称 | 域名格式 | ISP/IP 格式 |",
+        "| --- | --- | --- |",
+    ])
+
+    if not entries:
+        lines.append("| 暂无有效规则 | - | - |")
+    else:
+        for base, paths in sorted(entries.items(), key=lambda item: item[0].lower()):
+            domain_path = paths.get("domain")
+            isp_path = paths.get("isp")
+            domain_link = "-"
+            isp_link = "-"
+            if domain_path:
+                relative = domain_path.relative_to(project_root).as_posix()
+                local_link = _relative_markdown_path(domain_path, directory)
+                raw_url = _repository_raw_url(config, relative)
+                domain_link = f"[下载]({local_link})"
+                if raw_url:
+                    domain_link += f" / [Raw]({raw_url})"
+            if isp_path:
+                relative = isp_path.relative_to(project_root).as_posix()
+                local_link = _relative_markdown_path(isp_path, directory)
+                raw_url = _repository_raw_url(config, relative)
+                isp_link = f"[下载]({local_link})"
+                if raw_url:
+                    isp_link += f" / [Raw]({raw_url})"
+            lines.append(f"| `{base}` | {domain_link} | {isp_link} |")
+
+    lines.extend([
+        "",
+        "## 格式说明",
+        "",
+        "- 域名文件：每行一条域名或可用的域名规则值。",
+        "- ISP/IP 文件：每行一条 IPv4 或 IPv4/CIDR；没有有效内容时不生成。",
+        "- 同一文件内及合并文件均已去重并排序。",
+        "",
+        "本文件由 GitHub Actions 每日自动更新。",
+        "",
+    ])
+    return "\n".join(lines)
+
+
+def generate_directory_readmes(
+    source_specs: list[dict[str, Any]],
+    project_root: Path,
+    config: dict[str, Any],
+    dry_run: bool,
+) -> bool:
+    """Create an index README in every generated output directory."""
+    grouped: dict[Path, list[dict[str, Any]]] = {}
+    for source in source_specs:
+        configured = source.get("output_dir")
+        if not configured:
+            continue
+        output_root = safe_relative_path(project_root, str(configured), "README output_dir")
+        grouped.setdefault(output_root, []).append(source)
+
+    changed = False
+    for output_root, sources in grouped.items():
+        generated_dirs: set[Path] = {output_root}
+        if output_root.exists():
+            generated_dirs.update(path.parent for path in output_root.rglob("*_domain.txt"))
+            generated_dirs.update(path.parent for path in output_root.rglob("*_isp.txt"))
+            for manifest_path in output_root.glob(".sync-manifest*.json"):
+                manifest = _read_json_object(manifest_path)
+                for item in manifest.get("files", []):
+                    source_path = str(item.get("source", "")) if isinstance(item, dict) else ""
+                    source_path = _manifest_source_relative_path(source_path, sources)
+                    if source_path:
+                        generated_dirs.add(output_root / Path(source_path).parent)
+        readme_manifest_path = output_root / ".readme-manifest.json"
+        old_manifest = _read_json_object(readme_manifest_path)
+        old_readmes = {str(path) for path in old_manifest.get("generated_readmes", [])}
+        new_readmes: set[str] = set()
+        for directory in sorted(generated_dirs, key=lambda path: path.as_posix()):
+            readme_path = directory / "README.md"
+            content = _render_directory_readme(
+                directory, output_root, project_root, sources, config
+            )
+            changed = write_text_if_changed(readme_path, content, dry_run) or changed
+            new_readmes.add(readme_path.relative_to(project_root).as_posix())
+
+        for stale in old_readmes - new_readmes:
+            stale_path = safe_relative_path(project_root, stale, "managed README")
+            changed = remove_file_if_exists(stale_path, dry_run) or changed
+
+        readme_manifest = {
+            "generated_readmes": sorted(new_readmes),
+            "sources": [str(source.get("name", "")) for source in sources],
+        }
+        changed = write_text_if_changed(
+            readme_manifest_path,
+            json.dumps(readme_manifest, ensure_ascii=False, indent=2) + "\n",
+            dry_run,
+        ) or changed
+    return changed
+
+
+def _read_nonempty_lines(path: Path) -> list[str]:
+    if not path.exists() or not path.is_file():
+        return []
+    lines: list[str] = []
+    for raw_line in path.read_text(encoding="utf-8-sig").splitlines():
+        line = _clean_rule_line(raw_line).split("#", 1)[0].strip()
+        if line:
+            lines.append(line)
+    return lines
+
+
+def fetch_china_exclusions(
+    aggregate: dict[str, Any],
+) -> tuple[set[str], list[ipaddress.IPv4Network]]:
+    """Fetch configured Chinese domain and IPv4 exclusion lists."""
+    timeout = int(aggregate.get("timeout_seconds", 60))
+    headers = {"User-Agent": "upstream-sync-transformer/0.1"}
+    headers.update({str(k): str(v) for k, v in aggregate.get("headers", {}).items()})
+    blocked_domains: set[str] = set()
+    blocked_ips: list[ipaddress.IPv4Network] = []
+
+    for url in aggregate.get("china_domain_urls", []):
+        content = fetch(str(url), timeout, headers).decode("utf-8-sig")
+        for raw_line in content.splitlines():
+            line = _clean_rule_line(raw_line).split("#", 1)[0].strip()
+            if not line:
+                continue
+            prefix, separator, payload = line.partition(":")
+            candidate = payload.strip() if separator and prefix.lower() in V2RAY_DOMAIN_PREFIXES else line
+            domain = normalize_domain(candidate)
+            if domain:
+                blocked_domains.add(domain)
+
+    for url in aggregate.get("china_isp_urls", []):
+        content = fetch(str(url), timeout, headers).decode("utf-8-sig")
+        for raw_line in content.splitlines():
+            line = _clean_rule_line(raw_line).split("#", 1)[0].strip()
+            if not line:
+                continue
+            prefix, separator, payload = line.partition(":")
+            candidate = payload.strip() if separator else line
+            if separator and prefix.lower() in V2RAY_IP_PREFIXES:
+                line = candidate
+            value = normalize_ip_cidr(line)
+            if not value:
+                continue
+            network = ipaddress.ip_network(value, strict=False)
+            if network.version == 4:
+                blocked_ips.append(network)
+
+    return blocked_domains, list(ipaddress.collapse_addresses(blocked_ips))
+
+
+def is_china_domain(value: str, blocked_domains: set[str]) -> bool:
+    """Match an exact Chinese domain or any subdomain of one."""
+    domain = normalize_domain(value)
+    if not domain:
+        return False
+    labels = domain.split(".")
+    return any(".".join(labels[index:]) in blocked_domains for index in range(len(labels)))
+
+
+def subtract_china_network(
+    candidate: ipaddress.IPv4Network,
+    blocked: list[ipaddress.IPv4Network],
+    blocked_starts: list[int],
+) -> list[ipaddress.IPv4Network]:
+    """Remove blocked IPv4 ranges from one candidate network."""
+    start = int(candidate.network_address)
+    end = int(candidate.broadcast_address)
+    index = max(0, bisect_right(blocked_starts, start) - 1)
+    while index < len(blocked) and int(blocked[index].broadcast_address) < start:
+        index += 1
+
+    result: list[ipaddress.IPv4Network] = []
+    cursor = start
+    while index < len(blocked):
+        blocked_start = int(blocked[index].network_address)
+        blocked_end = int(blocked[index].broadcast_address)
+        if blocked_start > end:
+            break
+        if blocked_end < cursor:
+            index += 1
+            continue
+        if blocked_start > cursor:
+            result.extend(
+                ipaddress.summarize_address_range(
+                    ipaddress.ip_address(cursor),
+                    ipaddress.ip_address(min(end, blocked_start - 1)),
+                )
+            )
+        cursor = max(cursor, blocked_end + 1)
+        if cursor > end:
+            break
+        index += 1
+
+    if cursor <= end:
+        result.extend(
+            ipaddress.summarize_address_range(
+                ipaddress.ip_address(cursor), ipaddress.ip_address(end)
+            )
+        )
+    return result
+
+
+def format_ikuai_network(network: ipaddress.IPv4Network) -> str:
+    """Keep host IPs compact while retaining CIDR notation for networks."""
+    if network.prefixlen == network.max_prefixlen:
+        return str(network.network_address)
+    return str(network)
+
+
+def collect_proxy_outputs(
+    project_root: Path,
+    input_dirs: list[str],
+    blocked_domains: set[str],
+    blocked_ips: list[ipaddress.IPv4Network],
+) -> tuple[list[str], list[str], dict[str, int]]:
+    """Collect, deduplicate, and filter all generated source outputs."""
+    raw_domains: set[str] = set()
+    raw_ips: set[str] = set()
+    for configured_dir in input_dirs:
+        root = safe_relative_path(project_root, str(configured_dir), "proxy input_dir")
+        if not root.exists():
+            continue
+        for path in root.rglob("*_domain.txt"):
+            raw_domains.update(_read_nonempty_lines(path))
+        for path in root.rglob("*_isp.txt"):
+            raw_ips.update(_read_nonempty_lines(path))
+
+    domains = sorted(value for value in raw_domains if not is_china_domain(value, blocked_domains))
+    blocked_starts = [int(network.network_address) for network in blocked_ips]
+    filtered_networks: list[ipaddress.IPv4Network] = []
+    for value in raw_ips:
+        normalized = normalize_ip_cidr(value)
+        if not normalized:
+            continue
+        candidate = ipaddress.ip_network(normalized, strict=False)
+        if candidate.version != 4:
+            continue
+        filtered_networks.extend(
+            subtract_china_network(candidate, blocked_ips, blocked_starts)
+        )
+
+    ips = sorted(
+        {format_ikuai_network(network) for network in ipaddress.collapse_addresses(filtered_networks)},
+        key=lambda value: (":" in value, value),
+    )
+    stats = {
+        "raw_domains": len(raw_domains),
+        "raw_ips": len(raw_ips),
+        "domains": len(domains),
+        "ips": len(ips),
+        "blocked_domains": len(raw_domains) - len(domains),
+    }
+    return domains, ips, stats
+
+
+def sync_proxy_aggregate(
+    aggregate: dict[str, Any],
+    project_root: Path,
+    dry_run: bool,
+) -> bool:
+    """Generate complete deduplicated proxy-only domain and IPv4 lists."""
+    if not aggregate.get("enabled", True):
+        return False
+    required = ("output_dir", "domain_output", "isp_output")
+    for key in required:
+        if not aggregate.get(key):
+            raise SyncError(f"proxy_aggregate requires '{key}'")
+
+    blocked_domains, blocked_ips = fetch_china_exclusions(aggregate)
+    domains, ips, stats = collect_proxy_outputs(
+        project_root,
+        [str(value) for value in aggregate.get("input_dirs", [])],
+        blocked_domains,
+        blocked_ips,
+    )
+    domain_path = safe_relative_path(project_root, str(aggregate["domain_output"]), "domain_output")
+    isp_path = safe_relative_path(project_root, str(aggregate["isp_output"]), "isp_output")
+    changed = False
+    if domains:
+        changed = write_text_if_changed(domain_path, "\n".join(domains) + "\n", dry_run) or changed
+    else:
+        changed = remove_file_if_exists(domain_path, dry_run) or changed
+    if ips:
+        changed = write_text_if_changed(isp_path, "\n".join(ips) + "\n", dry_run) or changed
+    else:
+        changed = remove_file_if_exists(isp_path, dry_run) or changed
+
+    manifest_path = safe_relative_path(
+        project_root,
+        str(aggregate.get("manifest", "data/proxy/.sync-manifest.json")),
+        "proxy manifest",
+    )
+    generated_files: list[str] = []
+    if domains:
+        generated_files.append(domain_path.relative_to(project_root).as_posix())
+    if ips:
+        generated_files.append(isp_path.relative_to(project_root).as_posix())
+    generated_files.append(manifest_path.relative_to(project_root).as_posix())
+    manifest = {
+        "source": "proxy-aggregate",
+        "input_dirs": [str(value) for value in aggregate.get("input_dirs", [])],
+        "generated_files": sorted(generated_files),
+        "blocked_domain_urls": [str(value) for value in aggregate.get("china_domain_urls", [])],
+        "blocked_isp_urls": [str(value) for value in aggregate.get("china_isp_urls", [])],
+        "raw_domains": stats["raw_domains"],
+        "raw_ips": stats["raw_ips"],
+        "domains": stats["domains"],
+        "ips": stats["ips"],
+        "blocked_domains": stats["blocked_domains"],
+    }
+    changed = write_text_if_changed(
+        manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", dry_run
+    ) or changed
+    status = "would update" if dry_run else ("updated" if changed else "unchanged")
+    print(
+        f"[proxy-aggregate] {status}: domains={len(domains)}, IPv4/CIDR={len(ips)}, "
+        f"deduplicated from domains={stats['raw_domains']}, IPs={stats['raw_ips']}"
+    )
+    return changed
+
+
 def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: bool) -> bool:
     """Sync GitHub directory files into one combined value list per source file."""
     api_url = str(source.get("api_url", ""))
@@ -441,7 +869,17 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         headers["Authorization"] = f"Bearer {token}"
     extensions = {str(value).lower() for value in source.get("include_extensions", [".list"])}
     recursive = bool(source.get("recursive", False))
-    directory_files = list_github_files(api_url, timeout, headers, recursive)
+    archive_contents: dict[str, bytes] = {}
+    archive_url = str(source.get("archive_url", ""))
+    if archive_url:
+        directory_files, archive_contents = list_github_archive_files(
+            archive_url,
+            str(source.get("path_prefix", "")),
+            timeout,
+            headers,
+        )
+    else:
+        directory_files = list_github_files(api_url, timeout, headers, recursive)
     filtered_files: list[dict[str, Any]] = []
     exclude_prefixes = tuple(str(value).rstrip("/") + "/" for value in source.get("exclude_prefixes", []))
     exclude_names = {str(value) for value in source.get("exclude_names", [])}
@@ -454,7 +892,7 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
             continue
         if name in exclude_names or any(path.startswith(prefix) for prefix in exclude_prefixes):
             continue
-        if not item.get("download_url"):
+        if not item.get("download_url") and not item.get("archive_member"):
             continue
         filtered_files.append(item)
     directory_files = sorted(filtered_files, key=lambda item: str(item.get("path", "")))
@@ -473,11 +911,21 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         source_relative_path = Path(source_relative)
         relative_parent = source_relative_path.parent
         output_stem = source_relative_path.stem
-        domain_path = output_dir / relative_parent / f"{output_stem}_domain.txt"
-        isp_path = output_dir / relative_parent / f"{output_stem}_isp.txt"
+        output_basename = (
+            source_relative_path.name
+            if bool(source.get("include_source_extension", False))
+            else output_stem
+        )
+        domain_path = output_dir / relative_parent / f"{output_basename}_domain.txt"
+        isp_path = output_dir / relative_parent / f"{output_basename}_isp.txt"
         domain_relative = domain_path.relative_to(project_root).as_posix()
         isp_relative = isp_path.relative_to(project_root).as_posix()
-        content = fetch(str(item["download_url"]), timeout, headers).decode("utf-8-sig")
+        archive_member = str(item.get("archive_member", ""))
+        if archive_member:
+            raw_content = archive_contents[archive_member]
+        else:
+            raw_content = fetch(str(item["download_url"]), timeout, headers)
+        content = raw_content.decode("utf-8-sig")
         domains, ips, value_stats = extract_clash_ikuai_values(content)
         if domains:
             generated_files.append(domain_relative)
@@ -486,7 +934,7 @@ def sync_github_directory(source: dict[str, Any], project_root: Path, dry_run: b
         all_domains.update(domains)
         all_ips.update(ips)
         manifest_files.append({
-            "source": source_path,
+            "source": source_relative,
             "domain_output": domain_relative if domains else None,
             "isp_output": isp_relative if ips else None,
             "domains": len(domains),
@@ -659,6 +1107,41 @@ def list_github_files(
         elif recursive and item_type == "dir" and item.get("url"):
             files.extend(list_github_files(str(item["url"]), timeout, headers, True))
     return files
+
+
+def list_github_archive_files(
+    archive_url: str,
+    path_prefix: str,
+    timeout: int,
+    headers: dict[str, str],
+) -> tuple[list[dict[str, Any]], dict[str, bytes]]:
+    """Read a GitHub ZIP archive once and expose files below path_prefix."""
+    archive = zipfile.ZipFile(io.BytesIO(fetch(archive_url, timeout, headers)))
+    normalized_prefix = path_prefix.strip("/")
+    files: list[dict[str, Any]] = []
+    contents: dict[str, bytes] = {}
+    for member in archive.infolist():
+        if member.is_dir():
+            continue
+        member_name = member.filename.replace("\\", "/").lstrip("/")
+        marker = f"/{normalized_prefix}/" if normalized_prefix else "/"
+        marker_index = member_name.find(marker)
+        if normalized_prefix:
+            if marker_index < 0:
+                continue
+            source_path = member_name[marker_index + 1 :]
+        else:
+            source_path = member_name.split("/", 1)[-1]
+        contents[member_name] = archive.read(member)
+        files.append(
+            {
+                "type": "file",
+                "name": Path(source_path).name,
+                "path": source_path,
+                "archive_member": member_name,
+            }
+        )
+    return sorted(files, key=lambda item: str(item.get("path", ""))), contents
 
 
 def _local_name(tag: str) -> str:
@@ -865,6 +1348,21 @@ def run(config_path: Path, project_root: Path, only: set[str] | None, dry_run: b
 
     for source in selected:
         sync_source(source, project_root, dry_run)
+
+    aggregate = config.get("proxy_aggregate")
+    if not only and isinstance(aggregate, dict):
+        sync_proxy_aggregate(aggregate, project_root, dry_run)
+
+    readme_sources = list(sources)
+    if isinstance(aggregate, dict) and aggregate.get("enabled", True):
+        readme_sources.append(
+            {
+                "name": "proxy-aggregate",
+                "output_dir": aggregate.get("output_dir", "data/proxy"),
+                "description": "汇总全部同步源，去重并排除中国域名和中国 IPv4/CIDR",
+            }
+        )
+    generate_directory_readmes(readme_sources, project_root, config, dry_run)
     return 0
 
 

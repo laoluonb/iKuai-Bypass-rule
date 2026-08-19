@@ -1,0 +1,6 @@
+account.synology.com
+download.synology.com
+global.quickconnect.cn
+quickconnect.com
+quickconnect.to
+sns.synology.com

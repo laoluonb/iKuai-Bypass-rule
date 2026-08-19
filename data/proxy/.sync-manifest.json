@@ -1,0 +1,24 @@
+{
+  "source": "proxy-aggregate",
+  "input_dirs": [
+    "data/acl4ssr",
+    "data/v2ray-rules-dat",
+    "data/blackmatrix7"
+  ],
+  "generated_files": [
+    "data/proxy/.sync-manifest.json",
+    "data/proxy/proxy_domain.txt",
+    "data/proxy/proxy_isp.txt"
+  ],
+  "blocked_domain_urls": [
+    "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/china-list.txt"
+  ],
+  "blocked_isp_urls": [
+    "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt"
+  ],
+  "raw_domains": 975337,
+  "raw_ips": 32467,
+  "domains": 842078,
+  "ips": 11244,
+  "blocked_domains": 133259
+}

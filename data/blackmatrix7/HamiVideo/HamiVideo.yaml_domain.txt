@@ -1,0 +1,4 @@
+hamivideo.cdn.hinet.net
+hamivideo.hinet.net
+hls-hichannel.cdn.hinet.net
+ott.hinet.net

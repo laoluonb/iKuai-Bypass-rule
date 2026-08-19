@@ -1,0 +1,11 @@
+{
+  "generated_readmes": [
+    "data/acl4ssr/Providers/README.md",
+    "data/acl4ssr/Providers/Ruleset/README.md",
+    "data/acl4ssr/README.md",
+    "data/acl4ssr/Ruleset/README.md"
+  ],
+  "sources": [
+    "acl4ssr-clash"
+  ]
+}

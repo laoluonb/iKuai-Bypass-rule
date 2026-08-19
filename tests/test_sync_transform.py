@@ -1,5 +1,9 @@
 import json
+import ipaddress
+import io
 import sys
+import tempfile
+import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "src"))
@@ -9,8 +13,11 @@ from sync_transform import (
     extract_clash_ikuai_values,
     extract_v2ray_all_values,
     extract_v2ray_ikuai_values,
+    collect_proxy_outputs,
     format_csv,
     format_markdown,
+    list_github_archive_files,
+    _render_directory_readme,
     parse_xml_records,
     strip_json_comments,
     transform_records,
@@ -143,3 +150,71 @@ regexp:(^|\\.)example\\.net$
     assert domains == ["(^|\\.)example\\.net$", "api.example.com", "cdn.example.com", "example.com"]
     assert ips == ["1.2.3.0/24", "1.2.3.4"]
     assert stats["accepted"] == 6
+
+
+def test_collect_proxy_outputs_deduplicates_and_removes_china_values():
+    with tempfile.TemporaryDirectory() as temporary_dir:
+        tmp_path = Path(temporary_dir)
+        source_dir = tmp_path / "data" / "source"
+        source_dir.mkdir(parents=True)
+        (source_dir / "a_domain.txt").write_text(
+            "example.com\ncn.example\nexample.com\n", encoding="utf-8"
+        )
+        (source_dir / "a_isp.txt").write_text(
+            "1.2.3.0/24\n1.2.3.4\n10.0.0.0/8\n", encoding="utf-8"
+        )
+        domains, ips, stats = collect_proxy_outputs(
+            tmp_path,
+            ["data/source"],
+            {"cn.example"},
+            [ipaddress.ip_network("10.0.0.0/8")],
+        )
+        assert domains == ["example.com"]
+        assert ips == ["1.2.3.0/24"]
+        assert stats["raw_domains"] == 2
+        assert stats["raw_ips"] == 3
+
+
+def test_directory_readme_lists_available_outputs_and_raw_links():
+    with tempfile.TemporaryDirectory() as temporary_dir:
+        output_root = Path(temporary_dir) / "data" / "source"
+        output_root.mkdir(parents=True)
+        (output_root / "rules_domain.txt").write_text("example.com\n", encoding="utf-8")
+        (output_root / "rules_isp.txt").write_text("1.2.3.0/24\n", encoding="utf-8")
+        readme = _render_directory_readme(
+            output_root,
+            output_root,
+            Path(temporary_dir),
+            [{"name": "demo", "upstream_url": "https://example.com/rules"}],
+            {
+                "repository_url": "https://github.com/example/repo",
+                "repository_branch": "main",
+            },
+        )
+        assert "[demo](https://example.com/rules)" in readme
+        assert "rules_domain.txt" in readme
+        assert "rules_isp.txt" in readme
+        assert "https://raw.githubusercontent.com/example/repo/main/data/source/rules_domain.txt" in readme
+
+
+def test_github_archive_listing_keeps_nested_paths():
+    archive_buffer = io.BytesIO()
+    with zipfile.ZipFile(archive_buffer, "w") as archive:
+        archive.writestr("repo-main/rule/Clash/App/App.list", "DOMAIN,app.example")
+        archive.writestr("repo-main/rule/Other/ignored.list", "DOMAIN,ignored.example")
+
+    import sync_transform
+
+    original_fetch = sync_transform.fetch
+    sync_transform.fetch = lambda *args, **kwargs: archive_buffer.getvalue()
+    try:
+        files, contents = list_github_archive_files(
+            "https://example.com/archive.zip",
+            "rule/Clash",
+            30,
+            {},
+        )
+    finally:
+        sync_transform.fetch = original_fetch
+    assert [item["path"] for item in files] == ["rule/Clash/App/App.list"]
+    assert contents["repo-main/rule/Clash/App/App.list"] == b"DOMAIN,app.example"

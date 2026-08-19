@@ -6,8 +6,11 @@
       "name": "acl4ssr-clash",
       // github_directory 表示同步 GitHub 文件夹；rule_list 表示同步单个文本文件。
       "type": "github_directory",
+      "upstream_url": "https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash",
       // GitHub Contents API 地址，不是普通网页地址。
       "api_url": "https://api.github.com/repos/ACL4SSR/ACL4SSR/contents/Clash?ref=master",
+      // 使用一次性 ZIP，减少递归 Contents API 请求并避免 GitHub API 限流。
+      "archive_url": "https://github.com/ACL4SSR/ACL4SSR/archive/refs/heads/master.zip",
       // 去掉上游路径前缀后，保留其余文件夹结构。
       "path_prefix": "Clash",
       // 是否递归同步子文件夹。
@@ -56,6 +59,52 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt",
       "output_dir": "data/v2ray-rules-dat",
       "timeout_seconds": 30
+    },
+    {
+      // BlackMatrix7 Clash 规则目录，保留上游目录和文件扩展名，避免同名 .list/.yaml 覆盖。
+      "name": "blackmatrix7-clash",
+      "type": "github_directory",
+      "upstream_url": "https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash",
+      "api_url": "https://api.github.com/repos/blackmatrix7/ios_rule_script/contents/rule/Clash?ref=master",
+      "archive_url": "https://github.com/blackmatrix7/ios_rule_script/archive/refs/heads/master.zip",
+      "path_prefix": "rule/Clash",
+      "recursive": true,
+      "include_extensions": [
+        ".list",
+        ".yaml",
+        ".yml"
+      ],
+      "include_source_extension": true,
+      "output_dir": "data/blackmatrix7",
+      "merged_domain_output": "data/blackmatrix7/all_domain.txt",
+      "merged_isp_output": "data/blackmatrix7/all_isp.txt",
+      "timeout_seconds": 30,
+      "headers": {
+        "Accept": "application/vnd.github+json"
+      }
     }
-  ]
+  ],
+  // 生成所有同步源合并后的代理专用列表，并排除中国域名和中国 IPv4/CIDR。
+  "proxy_aggregate": {
+    "enabled": true,
+    "input_dirs": [
+      "data/acl4ssr",
+      "data/v2ray-rules-dat",
+      "data/blackmatrix7"
+    ],
+    "output_dir": "data/proxy",
+    "domain_output": "data/proxy/proxy_domain.txt",
+    "isp_output": "data/proxy/proxy_isp.txt",
+    "manifest": "data/proxy/.sync-manifest.json",
+    "china_domain_urls": [
+      "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/china-list.txt"
+    ],
+    "china_isp_urls": [
+      "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt"
+    ],
+    "timeout_seconds": 60
+  },
+  // README 中生成订阅 Raw 链接所使用的仓库地址和分支。
+  "repository_url": "https://github.com/laoluonb/iKuai-Bypass-rule",
+  "repository_branch": "main"
 }
