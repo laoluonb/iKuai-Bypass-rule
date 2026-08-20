@@ -1,0 +1,11 @@
+{
+  "source": "direct-list",
+  "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt",
+  "generated_files": [
+    "data/v2ray-rules-dat/.sync-manifest-direct-list.json",
+    "data/v2ray-rules-dat/direct-list_domain.txt"
+  ],
+  "domains": 111393,
+  "ips": 0,
+  "skipped": 58
+}

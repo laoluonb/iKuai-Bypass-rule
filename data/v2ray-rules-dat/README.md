@@ -7,11 +7,13 @@
 - [proxy-list](https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt)
 - [google-cn](https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/google-cn.txt)
 - [gfw](https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt)
+- [direct-list](https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt)
 
 ## 规则文件
 
 | 规则名称 | 域名格式 | ISP/IP 格式 |
 | --- | --- | --- |
+| `direct-list` | [下载](direct-list_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/v2ray-rules-dat/direct-list_domain.txt) | - |
 | `gfw` | [下载](gfw_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/v2ray-rules-dat/gfw_domain.txt) | - |
 | `google-cn` | [下载](google-cn_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/v2ray-rules-dat/google-cn_domain.txt) | - |
 | `proxy-list` | [下载](proxy-list_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/v2ray-rules-dat/proxy-list_domain.txt) | - |
