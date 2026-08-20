@@ -120,6 +120,42 @@
     ],
     "timeout_seconds": 60
   },
+  // 生成 SmartDNS 可直接使用的去广告纯域名总表。
+  "adblock_aggregate": {
+    "enabled": true,
+    // 只选每个上游的代表性广告规则，避免把同一规则的 list/yaml 副本重复读取。
+    "input_files": [
+      "data/acl4ssr/BanAD_domain.txt",
+      "data/acl4ssr/BanEasyList_domain.txt",
+      "data/acl4ssr/BanEasyListChina_domain.txt",
+      "data/acl4ssr/BanEasyPrivacy_domain.txt",
+      "data/acl4ssr/BanProgramAD_domain.txt",
+      "data/blackmatrix7/Advertising/Advertising.list_domain.txt"
+    ],
+    // 放行规则中的域名及其子域名不会进入广告总表。
+    "exclude_files": [
+      "data/acl4ssr/UnBan_domain.txt"
+    ],
+    "output_dir": "data/adblock",
+    "domain_output": "data/adblock/ad_domain.txt",
+    "manifest": "data/adblock/.sync-manifest.json",
+    // 以下名称和链接会写入广告目录 README。
+    "included_rule_names": [
+      "ACL4SSR BanAD",
+      "ACL4SSR BanEasyList",
+      "ACL4SSR BanEasyListChina",
+      "ACL4SSR BanEasyPrivacy",
+      "ACL4SSR BanProgramAD",
+      "BlackMatrix7 Advertising"
+    ],
+    "excluded_rule_names": [
+      "ACL4SSR UnBan"
+    ],
+    "source_urls": [
+      "https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash",
+      "https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Advertising"
+    ]
+  },
   // README 中生成订阅 Raw 链接所使用的仓库地址和分支。
   "repository_url": "https://github.com/laoluonb/iKuai-Bypass-rule",
   "repository_branch": "main"

@@ -1,0 +1,22 @@
+{
+  "source": "adblock-aggregate",
+  "input_files": [
+    "data/acl4ssr/BanAD_domain.txt",
+    "data/acl4ssr/BanEasyList_domain.txt",
+    "data/acl4ssr/BanEasyListChina_domain.txt",
+    "data/acl4ssr/BanEasyPrivacy_domain.txt",
+    "data/acl4ssr/BanProgramAD_domain.txt",
+    "data/blackmatrix7/Advertising/Advertising.list_domain.txt"
+  ],
+  "exclude_files": [
+    "data/acl4ssr/UnBan_domain.txt"
+  ],
+  "generated_files": [
+    "data/adblock/.sync-manifest.json",
+    "data/adblock/ad_domain.txt"
+  ],
+  "raw_domains": 287774,
+  "excluded_domains": 4,
+  "domains": 287770,
+  "allowlist_domains": 31
+}

@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 
 
 DOMAIN_LABEL_RE = re.compile(r"^[a-z0-9_](?:[a-z0-9_-]{0,61}[a-z0-9_])?$", re.IGNORECASE)
@@ -495,6 +496,24 @@ def _repository_raw_url(config: dict[str, Any], relative_path: str) -> str | Non
     return f"{repository_url}/raw/refs/heads/{quote(branch, safe='')}/{encoded_path}"
 
 
+def _repository_cdn_url(config: dict[str, Any], relative_path: str) -> str | None:
+    """Return a jsDelivr URL for a file in a configured GitHub repository."""
+    repository_url = str(config.get("repository_url", "")).rstrip("/")
+    parsed = urlparse(repository_url)
+    if parsed.hostname != "github.com":
+        return None
+    parts = [part for part in parsed.path.split("/") if part]
+    if len(parts) < 2:
+        return None
+    owner, repository = parts[0], parts[1]
+    branch = str(config.get("repository_branch", "main"))
+    encoded_path = quote(relative_path.replace("\\", "/"), safe="/")
+    return (
+        f"https://cdn.jsdelivr.net/gh/{quote(owner, safe='')}/"
+        f"{quote(repository, safe='')}@{quote(branch, safe='')}/{encoded_path}"
+    )
+
+
 def _source_upstream_url(source: dict[str, Any]) -> str:
     return str(source.get("upstream_url") or source.get("url") or source.get("api_url") or "")
 
@@ -601,6 +620,106 @@ def _render_directory_readme(
     return "\n".join(lines)
 
 
+def _render_adblock_readme(
+    output_root: Path,
+    project_root: Path,
+    aggregate: dict[str, Any],
+    config: dict[str, Any],
+) -> str:
+    """Render a detailed SmartDNS ad-blocking README."""
+    output_path = safe_relative_path(
+        project_root, str(aggregate["domain_output"]), "adblock domain_output"
+    )
+    domains = _read_nonempty_lines(output_path)
+    relative_output = output_path.relative_to(project_root).as_posix()
+    local_link = _relative_markdown_path(output_path, output_root)
+    raw_url = _repository_raw_url(config, relative_output)
+    cdn_url = _repository_cdn_url(config, relative_output)
+    updated_at = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S")
+
+    lines = [
+        "# 去广告",
+        "",
+        "## 前言",
+        "",
+        "去广告规则由本项目每日自动同步、转换和去重生成。",
+        "",
+        "规则数据来自互联网公开项目，仅用于 SmartDNS 域名级广告、跟踪和劫持拦截。",
+        "",
+        "## 规则说明",
+        "",
+        "- 输出只包含合法完整域名，每行一条，不包含 Clash 类型前缀、IP、CIDR、正则或通配符。",
+        "- 多个上游规则会合并、去重，并排除配置的直连和放行域名。",
+        "- DNS 去广告无法处理与正常内容共用同一域名的广告，且可能存在误拦截。",
+        "",
+        "## 规则统计",
+        "",
+        f"最后更新时间：`{updated_at}`（北京时间）",
+        "",
+        "| 类型 | 数量（条） |",
+        "| --- | ---: |",
+        f"| DOMAIN | {len(domains)} |",
+        f"| TOTAL | {len(domains)} |",
+        "",
+        "## SmartDNS",
+        "",
+        "### 下载设置",
+        "",
+        "```text",
+        "文件名：ad_domain.txt",
+        "保存目录：/etc/smartdns/domain-set",
+        f"下载地址：{raw_url or relative_output}",
+        "```",
+        "",
+        "### 自定义配置",
+        "",
+        "```conf",
+        "# 加载广告域名集",
+        "domain-set -name adblock -type list -file /etc/smartdns/domain-set/ad_domain.txt",
+        "",
+        "# 命中广告域名后返回空地址，同时阻止 A 和 AAAA 解析",
+        "address /domain-set:adblock/#",
+        "```",
+        "",
+        "广告拦截规则应与代理规则同时保留；`address` 负责拦截广告域名，代理域名仍使用 `nameserver /domain-set:proxylist/proxy` 转发到 OpenClash。",
+        "",
+        "## 规则链接",
+        "",
+        "### MAIN 分支（每日更新）",
+        "",
+        f"- [下载规则]({local_link})",
+    ]
+    if raw_url:
+        lines.append(f"- [Raw 订阅]({raw_url})")
+    if cdn_url:
+        lines.extend(["", "### MAIN 分支 CDN", "", f"- [jsDelivr 订阅]({cdn_url})"])
+
+    lines.extend(["", "## 包含规则", ""])
+    included_names = [str(value) for value in aggregate.get("included_rule_names", [])]
+    lines.extend(f"- `{name}`" for name in included_names)
+    if not included_names:
+        lines.append("- 以配置文件中的输入规则为准")
+
+    lines.extend(["", "## 排除规则", ""])
+    excluded_names = [str(value) for value in aggregate.get("excluded_rule_names", [])]
+    lines.extend(f"- `{name}`" for name in excluded_names)
+    if not excluded_names:
+        lines.append("- 未配置额外排除规则")
+
+    lines.extend(["", "## 数据来源", ""])
+    source_urls = [str(value) for value in aggregate.get("source_urls", [])]
+    lines.extend(f"- {url}" for url in source_urls)
+    if not source_urls:
+        lines.append("- 以 `config/config.json` 中的输入文件为准")
+
+    lines.extend([
+        "",
+        "感谢各上游规则维护者的持续更新。规则由 GitHub Actions 每天北京时间 `03:00` 自动生成。",
+        "",
+    ])
+    return "\n".join(lines)
+
+
 def generate_directory_readmes(
     source_specs: list[dict[str, Any]],
     project_root: Path,
@@ -635,9 +754,18 @@ def generate_directory_readmes(
         new_readmes: set[str] = set()
         for directory in sorted(generated_dirs, key=lambda path: path.as_posix()):
             readme_path = directory / "README.md"
-            content = _render_directory_readme(
-                directory, output_root, project_root, sources, config
+            adblock_source = next(
+                (source for source in sources if source.get("readme_style") == "adblock"),
+                None,
             )
+            if directory == output_root and adblock_source:
+                content = _render_adblock_readme(
+                    output_root, project_root, adblock_source, config
+                )
+            else:
+                content = _render_directory_readme(
+                    directory, output_root, project_root, sources, config
+                )
             changed = write_text_if_changed(readme_path, content, dry_run) or changed
             new_readmes.add(readme_path.relative_to(project_root).as_posix())
 
@@ -813,6 +941,96 @@ def collect_proxy_outputs(
         "blocked_domains": len(raw_domains) - len(domains),
     }
     return domains, ips, stats
+
+
+def collect_adblock_outputs(
+    project_root: Path,
+    input_files: list[str],
+    exclude_files: list[str],
+) -> tuple[list[str], dict[str, int]]:
+    """Collect and deduplicate ad domains while honoring allow-list files."""
+    raw_domains: set[str] = set()
+    excluded_domains: set[str] = set()
+
+    for configured_file in input_files:
+        path = safe_relative_path(project_root, configured_file, "adblock input_file")
+        for value in _read_nonempty_lines(path):
+            domain = normalize_for_domain_output(value)
+            if domain:
+                raw_domains.add(domain)
+
+    for configured_file in exclude_files:
+        path = safe_relative_path(project_root, configured_file, "adblock exclude_file")
+        for value in _read_nonempty_lines(path):
+            domain = normalize_for_domain_output(value)
+            if domain:
+                excluded_domains.add(domain)
+
+    domains = sorted(
+        domain for domain in raw_domains if not is_china_domain(domain, excluded_domains)
+    )
+    return domains, {
+        "raw_domains": len(raw_domains),
+        "excluded_domains": len(raw_domains) - len(domains),
+        "domains": len(domains),
+        "allowlist_domains": len(excluded_domains),
+    }
+
+
+def sync_adblock_aggregate(
+    aggregate: dict[str, Any],
+    project_root: Path,
+    dry_run: bool,
+) -> bool:
+    """Generate one SmartDNS-compatible, deduplicated advertising domain list."""
+    if not aggregate.get("enabled", True):
+        return False
+    for key in ("output_dir", "domain_output"):
+        if not aggregate.get(key):
+            raise SyncError(f"adblock_aggregate requires '{key}'")
+
+    domains, stats = collect_adblock_outputs(
+        project_root,
+        [str(value) for value in aggregate.get("input_files", [])],
+        [str(value) for value in aggregate.get("exclude_files", [])],
+    )
+    domain_path = safe_relative_path(
+        project_root, str(aggregate["domain_output"]), "adblock domain_output"
+    )
+    changed = False
+    if domains:
+        changed = write_text_if_changed(
+            domain_path, "\n".join(domains) + "\n", dry_run
+        ) or changed
+    else:
+        changed = remove_file_if_exists(domain_path, dry_run) or changed
+
+    manifest_path = safe_relative_path(
+        project_root,
+        str(aggregate.get("manifest", "data/adblock/.sync-manifest.json")),
+        "adblock manifest",
+    )
+    generated_files = [manifest_path.relative_to(project_root).as_posix()]
+    if domains:
+        generated_files.append(domain_path.relative_to(project_root).as_posix())
+    manifest = {
+        "source": "adblock-aggregate",
+        "input_files": [str(value) for value in aggregate.get("input_files", [])],
+        "exclude_files": [str(value) for value in aggregate.get("exclude_files", [])],
+        "generated_files": sorted(generated_files),
+        **stats,
+    }
+    changed = write_text_if_changed(
+        manifest_path,
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        dry_run,
+    ) or changed
+    status = "would update" if dry_run else ("updated" if changed else "unchanged")
+    print(
+        f"[adblock-aggregate] {status}: domains={len(domains)}, "
+        f"deduplicated from {stats['raw_domains']}, excluded={stats['excluded_domains']}"
+    )
+    return changed
 
 
 def sync_proxy_aggregate(
@@ -1379,6 +1597,10 @@ def run(config_path: Path, project_root: Path, only: set[str] | None, dry_run: b
     if not only and isinstance(aggregate, dict):
         sync_proxy_aggregate(aggregate, project_root, dry_run)
 
+    adblock_aggregate = config.get("adblock_aggregate")
+    if not only and isinstance(adblock_aggregate, dict):
+        sync_adblock_aggregate(adblock_aggregate, project_root, dry_run)
+
     readme_sources = list(sources)
     if isinstance(aggregate, dict) and aggregate.get("enabled", True):
         readme_sources.append(
@@ -1386,6 +1608,15 @@ def run(config_path: Path, project_root: Path, only: set[str] | None, dry_run: b
                 "name": "proxy-aggregate",
                 "output_dir": aggregate.get("output_dir", "data/proxy"),
                 "description": "汇总全部同步源，去重并排除中国域名和中国 IPv4/CIDR",
+            }
+        )
+    if isinstance(adblock_aggregate, dict) and adblock_aggregate.get("enabled", True):
+        readme_sources.append(
+            {
+                **adblock_aggregate,
+                "name": "adblock-aggregate",
+                "readme_style": "adblock",
+                "description": "汇总广告、隐私和劫持域名，去重并排除直连放行规则",
             }
         )
     generate_directory_readmes(readme_sources, project_root, config, dry_run)

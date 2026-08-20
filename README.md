@@ -9,6 +9,7 @@
 - 所有结果逐行输出、去重并排序。
 - 自动生成每个同步目录的 `README.md`，列出上游地址、可用文件和 Raw 订阅地址。
 - 生成 `data/proxy/` 下的代理总表，自动排除中国域名和中国 IPv4/CIDR，并进行跨源去重。
+- 生成 `data/adblock/ad_domain.txt` 去广告总表，合并广告、隐私和劫持域名，去重并排除放行规则。
 
 ## 快速开始
 
@@ -57,6 +58,10 @@ data/proxy/
 ├── README.md
 ├── proxy_domain.txt
 └── proxy_isp.txt
+
+data/adblock/
+├── README.md
+└── ad_domain.txt
 ```
 
 每个文件都保留上游相对目录。
@@ -196,6 +201,27 @@ GitHub 网页地址需要转换成 `api.github.com/repos/.../contents/...` 的 A
 ```
 
 它会把所有输入目录中的 `*_domain.txt` 和 `*_isp.txt` 合并，去重排序后过滤中国内容；输出为空时自动删除对应文件。
+
+### 去广告总表配置
+
+`adblock_aggregate` 从指定的广告规则文件中生成一份 SmartDNS 可直接读取的纯域名列表：
+
+```jsonc
+{
+  "adblock_aggregate": {
+    "enabled": true,
+    "input_files": [
+      "data/acl4ssr/BanAD_domain.txt",
+      "data/blackmatrix7/Advertising/Advertising.list_domain.txt"
+    ],
+    "exclude_files": ["data/acl4ssr/UnBan_domain.txt"],
+    "output_dir": "data/adblock",
+    "domain_output": "data/adblock/ad_domain.txt"
+  }
+}
+```
+
+生成的 `data/adblock/README.md` 包含北京时间更新时间、规则数量、Raw/CDN 订阅链接、SmartDNS 下载设置和自定义配置。
 
 ## 安全与限制
 

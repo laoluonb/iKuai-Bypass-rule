@@ -77,6 +77,31 @@
     ],
     "timeout_seconds": 60
   },
+  // 可选：生成 SmartDNS 使用的一份去广告纯域名总表。
+  "adblock_aggregate": {
+    "enabled": true,
+    "input_files": [
+      "data/acl4ssr/BanAD_domain.txt",
+      "data/acl4ssr/BanEasyList_domain.txt",
+      "data/acl4ssr/BanEasyListChina_domain.txt",
+      "data/acl4ssr/BanEasyPrivacy_domain.txt",
+      "data/acl4ssr/BanProgramAD_domain.txt",
+      "data/blackmatrix7/Advertising/Advertising.list_domain.txt"
+    ],
+    "exclude_files": ["data/acl4ssr/UnBan_domain.txt"],
+    "output_dir": "data/adblock",
+    "domain_output": "data/adblock/ad_domain.txt",
+    "manifest": "data/adblock/.sync-manifest.json",
+    "included_rule_names": [
+      "ACL4SSR advertising rules",
+      "BlackMatrix7 Advertising"
+    ],
+    "excluded_rule_names": ["ACL4SSR UnBan"],
+    "source_urls": [
+      "https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash",
+      "https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Advertising"
+    ]
+  },
   "repository_url": "https://github.com/laoluonb/iKuai-Bypass-rule",
   "repository_branch": "main"
 }

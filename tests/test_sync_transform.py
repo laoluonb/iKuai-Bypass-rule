@@ -13,11 +13,13 @@ from sync_transform import (
     extract_clash_ikuai_values,
     extract_v2ray_all_values,
     extract_v2ray_ikuai_values,
+    collect_adblock_outputs,
     collect_proxy_outputs,
     format_csv,
     format_markdown,
     list_github_archive_files,
     _render_directory_readme,
+    _render_adblock_readme,
     parse_xml_records,
     strip_json_comments,
     transform_records,
@@ -213,6 +215,32 @@ def test_collect_proxy_outputs_deduplicates_and_removes_china_values():
         assert stats["raw_ips"] == 3
 
 
+def test_collect_adblock_outputs_deduplicates_and_applies_allowlist_suffixes():
+    with tempfile.TemporaryDirectory() as temporary_dir:
+        tmp_path = Path(temporary_dir)
+        source_dir = tmp_path / "data" / "source"
+        source_dir.mkdir(parents=True)
+        (source_dir / "ads_domain.txt").write_text(
+            "ads.example.com\ntracker.example.net\nads.example.com\ninvalid\n",
+            encoding="utf-8",
+        )
+        (source_dir / "allow_domain.txt").write_text(
+            "example.com\n", encoding="utf-8"
+        )
+        domains, stats = collect_adblock_outputs(
+            tmp_path,
+            ["data/source/ads_domain.txt"],
+            ["data/source/allow_domain.txt"],
+        )
+        assert domains == ["tracker.example.net"]
+        assert stats == {
+            "raw_domains": 2,
+            "excluded_domains": 1,
+            "domains": 1,
+            "allowlist_domains": 1,
+        }
+
+
 def test_directory_readme_lists_available_outputs_and_raw_links():
     with tempfile.TemporaryDirectory() as temporary_dir:
         output_root = Path(temporary_dir) / "data" / "source"
@@ -233,6 +261,35 @@ def test_directory_readme_lists_available_outputs_and_raw_links():
         assert "rules_domain.txt" in readme
         assert "rules_isp.txt" in readme
         assert "https://raw.githubusercontent.com/example/repo/main/data/source/rules_domain.txt" in readme
+
+
+def test_adblock_readme_contains_statistics_links_and_smartdns_config():
+    with tempfile.TemporaryDirectory() as temporary_dir:
+        tmp_path = Path(temporary_dir)
+        output_root = tmp_path / "data" / "adblock"
+        output_root.mkdir(parents=True)
+        (output_root / "ad_domain.txt").write_text(
+            "ads.example.com\ntracker.example.net\n", encoding="utf-8"
+        )
+        readme = _render_adblock_readme(
+            output_root,
+            tmp_path,
+            {
+                "domain_output": "data/adblock/ad_domain.txt",
+                "included_rule_names": ["Advertising"],
+                "excluded_rule_names": ["Direct"],
+                "source_urls": ["https://example.com/advertising"],
+            },
+            {
+                "repository_url": "https://github.com/example/repo",
+                "repository_branch": "main",
+            },
+        )
+        assert "| DOMAIN | 2 |" in readme
+        assert "domain-set -name adblock" in readme
+        assert "address /domain-set:adblock/#" in readme
+        assert "https://raw.githubusercontent.com/example/repo/main/data/adblock/ad_domain.txt" in readme
+        assert "https://cdn.jsdelivr.net/gh/example/repo@main/data/adblock/ad_domain.txt" in readme
 
 
 def test_github_archive_listing_keeps_nested_paths():
