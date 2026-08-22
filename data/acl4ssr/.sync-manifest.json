@@ -641,7 +641,7 @@
       "source": "Providers/ProxyGFWlist.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyGFWlist_domain.txt",
       "isp_output": null,
-      "domains": 4297,
+      "domains": 4299,
       "ips": 0,
       "skipped": 16
     },
@@ -2641,7 +2641,7 @@
       "source": "Ruleset/ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/Ruleset/ProxyGFWlist_domain.txt",
       "isp_output": null,
-      "domains": 4297,
+      "domains": 4299,
       "ips": 0,
       "skipped": 17
     },
@@ -3014,6 +3014,6 @@
       "skipped": 0
     }
   ],
-  "merged_domains": 96270,
+  "merged_domains": 96272,
   "merged_ips": 10437
 }
