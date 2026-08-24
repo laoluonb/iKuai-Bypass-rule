@@ -30898,6 +30898,7 @@ api.shinybirdwhispered.com
 api.shirtival.de
 api.shopcarpe.com.br
 api.shopliix.com
+api.shuaiapi.com
 api.shubunk.com
 api.shuris.com.br
 api.sibionics.com.br
@@ -348465,6 +348466,7 @@ x7weiubb2f.com
 x7xirtzmot.com
 x8.cho-chin.com
 x822.mrt.com
+x86.fr
 x888x.myserver.org
 x88s.pandasuite.io
 x8ad.com

@@ -5,7 +5,7 @@
     "data/v2ray-rules-dat/.sync-manifest-gfw.json",
     "data/v2ray-rules-dat/gfw_domain.txt"
   ],
-  "domains": 4383,
+  "domains": 4385,
   "ips": 0,
   "skipped": 0
 }
