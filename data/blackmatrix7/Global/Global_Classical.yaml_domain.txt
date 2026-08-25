@@ -2205,6 +2205,7 @@ api.mixpanel.com
 api.moomoobull.com
 api.nebula-emby.com
 api.news
+api.shuaiapi.com
 api.waqi.info
 apiary.io
 apiauto.ru
@@ -14807,7 +14808,6 @@ hp-invent.info
 hp-mns.com
 hp-printing.com
 hp-webplatform.com
-hp-ww.com
 hp.company
 hp.io
 hp3d.com
@@ -33227,6 +33227,7 @@ x365x.com
 x3guide.com
 x3vid.com
 x6av.com
+x86.fr
 x99av.com
 x9wang.com
 xacmbq.xyz

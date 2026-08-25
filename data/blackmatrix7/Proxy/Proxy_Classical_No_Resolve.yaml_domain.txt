@@ -380,6 +380,7 @@ api.amplitude.com
 api.mixpanel.com
 api.moomoobull.com
 api.proxlet.com
+api.shuaiapi.com
 api.termius.com
 api.waqi.info
 apiary.io
@@ -6473,6 +6474,7 @@ x1949x.com
 x24hr.com
 x365x.com
 x3guide.com
+x86.fr
 xanga.com
 xbabe.com
 xbookcn.com
