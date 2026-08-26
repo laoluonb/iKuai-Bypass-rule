@@ -17673,6 +17673,7 @@ adguard.info
 adguard.io
 adguard.org
 adguardaccount.com
+adguardaccount.net
 adguardcdn.com
 adguardvpn.com
 adgup.com
@@ -216497,6 +216498,7 @@ ourtshipanditlas.info
 ourtshipanditlast.info
 ourtv.hk
 ourwebcdnvip.com
+ouryahoo.com
 ouryretyequire.info
 ouryretyequirem.info
 ourzjibwnnpet.site
@@ -354016,6 +354018,7 @@ yahoodns.net
 yahoofinance-localnow.amagi.tv
 yahoofinance.com
 yahoohealth.com
+yahooinc.com
 yahoolock.com
 yahoomusic.com
 yahoosandbox.com
