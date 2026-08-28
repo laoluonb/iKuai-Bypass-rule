@@ -23,7 +23,6 @@ amdlive-ch03.ctnd.com.edgesuite.net
 amdlive.ctnd.com.edgesuite.net
 analytics.strava.com
 antvlive.ab5c6921.cdnviet.com
-api.blipsandchitz.me
 app-analytics-services.com
 app-measurement-cn.com
 app-measurement.com
