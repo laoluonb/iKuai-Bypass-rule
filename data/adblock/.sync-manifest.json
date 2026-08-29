@@ -15,8 +15,8 @@
     "data/adblock/.sync-manifest.json",
     "data/adblock/ad_domain.txt"
   ],
-  "raw_domains": 289500,
+  "raw_domains": 290109,
   "excluded_domains": 4,
-  "domains": 289496,
+  "domains": 290105,
   "allowlist_domains": 31
 }

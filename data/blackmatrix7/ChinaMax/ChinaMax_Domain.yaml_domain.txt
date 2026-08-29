@@ -52,6 +52,7 @@ clickserve.cc-dt.com
 client.amplifi.com
 cn.download.nvidia.com
 cn.widevine.com
+cn.windowssearch.com
 cpro.baidustatic.com
 crl.pki.goog
 crls.pki.goog

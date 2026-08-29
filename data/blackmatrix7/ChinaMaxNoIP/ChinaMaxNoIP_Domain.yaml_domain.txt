@@ -52,6 +52,7 @@ clickserve.cc-dt.com
 client.amplifi.com
 cn.download.nvidia.com
 cn.widevine.com
+cn.windowssearch.com
 crl.pki.goog
 crls.pki.goog
 d9af5a60.edmonst.net
