@@ -5,7 +5,7 @@
     "data/v2ray-rules-dat/.sync-manifest-direct-list.json",
     "data/v2ray-rules-dat/direct-list_domain.txt"
   ],
-  "domains": 111044,
+  "domains": 111061,
   "ips": 0,
   "skipped": 58
 }
