@@ -10381,7 +10381,6 @@ api-analytics-prd.pelcro.com
 api-deal.kechenggezi.com
 api-flow.meizu.com
 api-game.meizu.com
-api-gl.lbkrs.com
 api-hotmart-tracking-manager.hotmart.com
 api-metric.gosweb.gosuslugi.ru
 api-push.meizu.com
@@ -10402,7 +10401,6 @@ api.digitalpiloten.org
 api.elliehuxtable.com
 api.fastmoonclimbed.com
 api.fuck.education
-api.futunn.com
 api.fw.tv
 api.githubcopilot.com
 api.groq.com
@@ -10412,7 +10410,6 @@ api.iplay.163.com
 api.itaoxiaoshuo.com
 api.jr.mi.com
 api.june.so
-api.lbkrs.com
 api.mob.app.letv.com
 api.mobula.sdk.duapps.com
 api.moomoobull.com
@@ -10432,7 +10429,6 @@ api.together.xyz
 api.viu.now.com
 api.wipmania.com
 api168168.com
-api5.futunn.com
 api9str.cfd
 apiary.io
 apidata.info
@@ -17482,7 +17478,6 @@ cdn.arstechnica.net
 cdn.biff.travel
 cdn.csyndication.com
 cdn.ftwpcn.com
-cdn.futustatic.com
 cdn.hamwo.cloud
 cdn.haocaa.com
 cdn.house
@@ -19180,7 +19175,6 @@ cn.mywd.com
 cn.sandscotaicentral.com
 cn.shafaqna.com
 cn.theaustralian.com.au
-cn.uptodown.com
 cn1.stadiumgoods.com
 cn163.net
 cn2.stadiumgoods.com
@@ -24926,7 +24920,6 @@ download.dappcdn.com
 download.dnv.com
 download.epicgames.com
 download.frolit.io
-download.futunn.com
 download.getneema.com
 download.gravitus.com
 download.headhelp.io
@@ -48145,7 +48138,6 @@ m.go4.io
 m.happ.social
 m.history.com
 m.historyvault.com
-m.hkgalden.com
 m.ioicommunity.com.my
 m.irl.com
 m.irlmail.org
@@ -58499,12 +58491,8 @@ openaiapi-site.azureedge.net
 openallweb.com
 openapi-news.meizu.com
 openapi-quote.longbridge.cn
-openapi-quote.longbridge.com
 openapi-trade.longbridge.cn
-openapi-trade.longbridge.com
-openapi.futunn.com
 openapi.longbridge.cn
-openapi.longbridge.com
 openart.ai
 openbase.com
 opencan.net
@@ -64406,8 +64394,6 @@ qt5jl7r111h7.allesvoormijnvakantie.nl
 qtbaye.mona.ch
 qtbo.cn
 qtbqqrypghmme.store
-qtcard.futunn.com
-qtcardfthk.futufin.com
 qtcpvgdluotko.website
 qtdkfh.beautywelt.de
 qtdkxs.travellink.dk
@@ -64448,6 +64434,7 @@ quagfa.com
 quaintbitter.com
 quaizoa.xyz
 quakedevastatedprinter.com
+quakemachinex.com
 quakilyporite.cfd
 qualiclicks.com
 qualificationgarland.com
@@ -78505,7 +78492,6 @@ supplerbeaufin.cyou
 suppliesfloored.com
 supply.upjers.com
 support.flex.com
-support.futunn.com
 support.panasonic.eu
 support.ricoh.de
 support.ricoh.fr
@@ -84398,8 +84384,6 @@ tracot.com
 tractorspeiled.cyou
 tracyspb.com
 tradbypass.com
-trade.futunn.com
-trade.longportapp.com
 tradeadexchange.com
 tradeblock.com
 traderjoexyz.com
