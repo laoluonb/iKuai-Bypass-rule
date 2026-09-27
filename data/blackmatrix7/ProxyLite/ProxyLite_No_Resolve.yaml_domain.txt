@@ -278,6 +278,10 @@ gfw.report
 ghostnoteapp.com
 gitbook.com
 githack.com
+github-api.arkoselabs.com
+github.ai
+github.career
+githubsupport.com
 gitlab.com
 gitlab.io
 globalsign.com
@@ -288,6 +292,7 @@ godaddy.com
 gongm.in
 goodreaders.com
 goodreads.com
+googlezip.net
 gosetsuden.jp
 graphql.org
 gravatar.com

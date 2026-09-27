@@ -3485,7 +3485,7 @@
       "source": "Advertising/Advertising.list",
       "domain_output": "data/blackmatrix7/Advertising/Advertising.list_domain.txt",
       "isp_output": "data/blackmatrix7/Advertising/Advertising.list_isp.txt",
-      "domains": 285263,
+      "domains": 285899,
       "ips": 693,
       "skipped": 291
     },
@@ -3501,7 +3501,7 @@
       "source": "Advertising/Advertising_Classical.yaml",
       "domain_output": "data/blackmatrix7/Advertising/Advertising_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/Advertising/Advertising_Classical.yaml_isp.txt",
-      "domains": 285263,
+      "domains": 285899,
       "ips": 693,
       "skipped": 292
     },
@@ -3509,7 +3509,7 @@
       "source": "Advertising/Advertising_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/Advertising/Advertising_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/Advertising/Advertising_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 285263,
+      "domains": 285899,
       "ips": 693,
       "skipped": 292
     },
@@ -3519,7 +3519,7 @@
       "isp_output": "data/blackmatrix7/Advertising/Advertising_Domain.yaml_isp.txt",
       "domains": 16234,
       "ips": 207,
-      "skipped": 269040
+      "skipped": 269676
     },
     {
       "source": "Advertising/Advertising_No_Resolve.yaml",
@@ -3605,7 +3605,7 @@
       "source": "AdvertisingTest/AdvertisingTest.list",
       "domain_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest.list_domain.txt",
       "isp_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest.list_isp.txt",
-      "domains": 309761,
+      "domains": 310393,
       "ips": 793,
       "skipped": 293
     },
@@ -3621,7 +3621,7 @@
       "source": "AdvertisingTest/AdvertisingTest_Classical.yaml",
       "domain_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest_Classical.yaml_isp.txt",
-      "domains": 309761,
+      "domains": 310393,
       "ips": 793,
       "skipped": 294
     },
@@ -3629,7 +3629,7 @@
       "source": "AdvertisingTest/AdvertisingTest_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 309761,
+      "domains": 310393,
       "ips": 793,
       "skipped": 294
     },
@@ -3639,7 +3639,7 @@
       "isp_output": "data/blackmatrix7/AdvertisingTest/AdvertisingTest_Domain.yaml_isp.txt",
       "domains": 12878,
       "ips": 285,
-      "skipped": 296894
+      "skipped": 297526
     },
     {
       "source": "AdvertisingTest/AdvertisingTest_No_Resolve.yaml",
@@ -6238,31 +6238,31 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs.list_isp.txt",
       "domains": 0,
-      "ips": 17526,
-      "skipped": 5602
+      "ips": 13629,
+      "skipped": 5601
     },
     {
       "source": "ChinaIPs/ChinaIPsTest/ChinaIPsTest.list",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest.list_isp.txt",
       "domains": 0,
-      "ips": 19683,
-      "skipped": 6766
+      "ips": 15984,
+      "skipped": 6773
     },
     {
       "source": "ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical.yaml_isp.txt",
       "domains": 0,
-      "ips": 19683,
-      "skipped": 6767
+      "ips": 15984,
+      "skipped": 6774
     },
     {
       "source": "ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical_No_IPv6.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical_No_IPv6.yaml_isp.txt",
       "domains": 0,
-      "ips": 19683,
+      "ips": 15984,
       "skipped": 8
     },
     {
@@ -6270,7 +6270,7 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical_No_IPv6_No_Resolve.yaml_isp.txt",
       "domains": 0,
-      "ips": 19683,
+      "ips": 15984,
       "skipped": 8
     },
     {
@@ -6278,23 +6278,23 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical_No_Resolve.yaml_isp.txt",
       "domains": 0,
-      "ips": 19683,
-      "skipped": 6767
+      "ips": 15984,
+      "skipped": 6774
     },
     {
       "source": "ChinaIPs/ChinaIPsTest/ChinaIPsTest_IP.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest_IP.yaml_isp.txt",
       "domains": 0,
-      "ips": 19683,
-      "skipped": 6767
+      "ips": 15984,
+      "skipped": 6774
     },
     {
       "source": "ChinaIPs/ChinaIPsTest/ChinaIPsTest_IP_No_IPv6.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPsTest/ChinaIPsTest_IP_No_IPv6.yaml_isp.txt",
       "domains": 0,
-      "ips": 19683,
+      "ips": 15984,
       "skipped": 8
     },
     {
@@ -6302,15 +6302,15 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs_Classical.yaml_isp.txt",
       "domains": 0,
-      "ips": 17526,
-      "skipped": 5603
+      "ips": 13629,
+      "skipped": 5602
     },
     {
       "source": "ChinaIPs/ChinaIPs_Classical_No_IPv6.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs_Classical_No_IPv6.yaml_isp.txt",
       "domains": 0,
-      "ips": 17526,
+      "ips": 13629,
       "skipped": 8
     },
     {
@@ -6318,7 +6318,7 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs_Classical_No_IPv6_No_Resolve.yaml_isp.txt",
       "domains": 0,
-      "ips": 17526,
+      "ips": 13629,
       "skipped": 8
     },
     {
@@ -6326,23 +6326,23 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs_Classical_No_Resolve.yaml_isp.txt",
       "domains": 0,
-      "ips": 17526,
-      "skipped": 5603
+      "ips": 13629,
+      "skipped": 5602
     },
     {
       "source": "ChinaIPs/ChinaIPs_IP.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs_IP.yaml_isp.txt",
       "domains": 0,
-      "ips": 17526,
-      "skipped": 5603
+      "ips": 13629,
+      "skipped": 5602
     },
     {
       "source": "ChinaIPs/ChinaIPs_IP_No_IPv6.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/ChinaIPs/ChinaIPs_IP_No_IPv6.yaml_isp.txt",
       "domains": 0,
-      "ips": 17526,
+      "ips": 13629,
       "skipped": 8
     },
     {
@@ -6381,7 +6381,7 @@
       "source": "ChinaMax/ChinaMax.list",
       "domain_output": "data/blackmatrix7/ChinaMax/ChinaMax.list_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMax/ChinaMax.list_isp.txt",
-      "domains": 111521,
+      "domains": 111471,
       "ips": 8244,
       "skipped": 4303
     },
@@ -6397,7 +6397,7 @@
       "source": "ChinaMax/ChinaMax_Classical.yaml",
       "domain_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical.yaml_isp.txt",
-      "domains": 111521,
+      "domains": 111471,
       "ips": 8244,
       "skipped": 4304
     },
@@ -6405,7 +6405,7 @@
       "source": "ChinaMax/ChinaMax_Classical_No_IPv6.yaml",
       "domain_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical_No_IPv6.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical_No_IPv6.yaml_isp.txt",
-      "domains": 111521,
+      "domains": 111471,
       "ips": 8244,
       "skipped": 92
     },
@@ -6413,7 +6413,7 @@
       "source": "ChinaMax/ChinaMax_Classical_No_IPv6_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical_No_IPv6_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical_No_IPv6_No_Resolve.yaml_isp.txt",
-      "domains": 111521,
+      "domains": 111471,
       "ips": 8244,
       "skipped": 92
     },
@@ -6421,7 +6421,7 @@
       "source": "ChinaMax/ChinaMax_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMax/ChinaMax_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 111521,
+      "domains": 111471,
       "ips": 8244,
       "skipped": 4304
     },
@@ -6431,7 +6431,7 @@
       "isp_output": null,
       "domains": 268,
       "ips": 0,
-      "skipped": 111317
+      "skipped": 111267
     },
     {
       "source": "ChinaMax/ChinaMax_IP.yaml",
@@ -6461,7 +6461,7 @@
       "source": "ChinaMaxNoIP/ChinaMaxNoIP.list",
       "domain_output": "data/blackmatrix7/ChinaMaxNoIP/ChinaMaxNoIP.list_domain.txt",
       "isp_output": null,
-      "domains": 111198,
+      "domains": 111148,
       "ips": 0,
       "skipped": 83
     },
@@ -6477,7 +6477,7 @@
       "source": "ChinaMaxNoIP/ChinaMaxNoIP_Classical.yaml",
       "domain_output": "data/blackmatrix7/ChinaMaxNoIP/ChinaMaxNoIP_Classical.yaml_domain.txt",
       "isp_output": null,
-      "domains": 111198,
+      "domains": 111148,
       "ips": 0,
       "skipped": 84
     },
@@ -6485,7 +6485,7 @@
       "source": "ChinaMaxNoIP/ChinaMaxNoIP_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/ChinaMaxNoIP/ChinaMaxNoIP_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": null,
-      "domains": 111198,
+      "domains": 111148,
       "ips": 0,
       "skipped": 84
     },
@@ -6495,7 +6495,7 @@
       "isp_output": null,
       "domains": 267,
       "ips": 0,
-      "skipped": 110988
+      "skipped": 110938
     },
     {
       "source": "ChinaMaxNoIP/ChinaMaxNoIP_No_Resolve.yaml",
@@ -6509,7 +6509,7 @@
       "source": "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
       "domain_output": "data/blackmatrix7/ChinaMaxNoMedia/ChinaMaxNoMedia.list_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMaxNoMedia/ChinaMaxNoMedia.list_isp.txt",
-      "domains": 111090,
+      "domains": 111040,
       "ips": 8244,
       "skipped": 4297
     },
@@ -6525,7 +6525,7 @@
       "source": "ChinaMaxNoMedia/ChinaMaxNoMedia_Classical.yaml",
       "domain_output": "data/blackmatrix7/ChinaMaxNoMedia/ChinaMaxNoMedia_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMaxNoMedia/ChinaMaxNoMedia_Classical.yaml_isp.txt",
-      "domains": 111090,
+      "domains": 111040,
       "ips": 8244,
       "skipped": 4298
     },
@@ -6533,7 +6533,7 @@
       "source": "ChinaMaxNoMedia/ChinaMaxNoMedia_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/ChinaMaxNoMedia/ChinaMaxNoMedia_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaMaxNoMedia/ChinaMaxNoMedia_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 111090,
+      "domains": 111040,
       "ips": 8244,
       "skipped": 4298
     },
@@ -6543,7 +6543,7 @@
       "isp_output": null,
       "domains": 267,
       "ips": 0,
-      "skipped": 110883
+      "skipped": 110833
     },
     {
       "source": "ChinaMaxNoMedia/ChinaMaxNoMedia_IP.yaml",
@@ -6709,7 +6709,7 @@
       "source": "ChinaTest/ChinaTest.list",
       "domain_output": "data/blackmatrix7/ChinaTest/ChinaTest.list_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaTest/ChinaTest.list_isp.txt",
-      "domains": 111137,
+      "domains": 111083,
       "ips": 11,
       "skipped": 74
     },
@@ -6725,7 +6725,7 @@
       "source": "ChinaTest/ChinaTest_Classical.yaml",
       "domain_output": "data/blackmatrix7/ChinaTest/ChinaTest_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaTest/ChinaTest_Classical.yaml_isp.txt",
-      "domains": 111137,
+      "domains": 111083,
       "ips": 11,
       "skipped": 75
     },
@@ -6733,7 +6733,7 @@
       "source": "ChinaTest/ChinaTest_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/ChinaTest/ChinaTest_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ChinaTest/ChinaTest_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 111137,
+      "domains": 111083,
       "ips": 11,
       "skipped": 75
     },
@@ -6743,7 +6743,7 @@
       "isp_output": null,
       "domains": 90,
       "ips": 0,
-      "skipped": 111109
+      "skipped": 111055
     },
     {
       "source": "ChinaTest/ChinaTest_No_Resolve.yaml",
@@ -9821,8 +9821,8 @@
       "source": "Global/Global.list",
       "domain_output": "data/blackmatrix7/Global/Global.list_domain.txt",
       "isp_output": "data/blackmatrix7/Global/Global.list_isp.txt",
-      "domains": 34901,
-      "ips": 112,
+      "domains": 34903,
+      "ips": 115,
       "skipped": 52
     },
     {
@@ -9830,23 +9830,23 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/Global/Global.yaml_isp.txt",
       "domains": 0,
-      "ips": 112,
+      "ips": 115,
       "skipped": 53
     },
     {
       "source": "Global/Global_Classical.yaml",
       "domain_output": "data/blackmatrix7/Global/Global_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/Global/Global_Classical.yaml_isp.txt",
-      "domains": 34901,
-      "ips": 112,
+      "domains": 34903,
+      "ips": 115,
       "skipped": 53
     },
     {
       "source": "Global/Global_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/Global/Global_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/Global/Global_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 34901,
-      "ips": 112,
+      "domains": 34903,
+      "ips": 115,
       "skipped": 53
     },
     {
@@ -9855,14 +9855,14 @@
       "isp_output": null,
       "domains": 128,
       "ips": 0,
-      "skipped": 34785
+      "skipped": 34787
     },
     {
       "source": "Global/Global_No_Resolve.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/Global/Global_No_Resolve.yaml_isp.txt",
       "domains": 0,
-      "ips": 112,
+      "ips": 115,
       "skipped": 53
     },
     {
@@ -14613,8 +14613,8 @@
       "source": "Proxy/Proxy.list",
       "domain_output": "data/blackmatrix7/Proxy/Proxy.list_domain.txt",
       "isp_output": "data/blackmatrix7/Proxy/Proxy.list_isp.txt",
-      "domains": 6795,
-      "ips": 93,
+      "domains": 6798,
+      "ips": 96,
       "skipped": 40
     },
     {
@@ -14622,23 +14622,23 @@
       "domain_output": null,
       "isp_output": "data/blackmatrix7/Proxy/Proxy.yaml_isp.txt",
       "domains": 0,
-      "ips": 93,
+      "ips": 96,
       "skipped": 41
     },
     {
       "source": "Proxy/Proxy_Classical.yaml",
       "domain_output": "data/blackmatrix7/Proxy/Proxy_Classical.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/Proxy/Proxy_Classical.yaml_isp.txt",
-      "domains": 6795,
-      "ips": 93,
+      "domains": 6798,
+      "ips": 96,
       "skipped": 41
     },
     {
       "source": "Proxy/Proxy_Classical_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/Proxy/Proxy_Classical_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/Proxy/Proxy_Classical_No_Resolve.yaml_isp.txt",
-      "domains": 6795,
-      "ips": 93,
+      "domains": 6798,
+      "ips": 96,
       "skipped": 41
     },
     {
@@ -14647,39 +14647,39 @@
       "isp_output": null,
       "domains": 9,
       "ips": 0,
-      "skipped": 6797
+      "skipped": 6800
     },
     {
       "source": "Proxy/Proxy_No_Resolve.yaml",
       "domain_output": null,
       "isp_output": "data/blackmatrix7/Proxy/Proxy_No_Resolve.yaml_isp.txt",
       "domains": 0,
-      "ips": 93,
+      "ips": 96,
       "skipped": 41
     },
     {
       "source": "ProxyLite/ProxyLite.list",
       "domain_output": "data/blackmatrix7/ProxyLite/ProxyLite.list_domain.txt",
       "isp_output": "data/blackmatrix7/ProxyLite/ProxyLite.list_isp.txt",
-      "domains": 866,
-      "ips": 86,
-      "skipped": 34
+      "domains": 871,
+      "ips": 89,
+      "skipped": 35
     },
     {
       "source": "ProxyLite/ProxyLite.yaml",
       "domain_output": "data/blackmatrix7/ProxyLite/ProxyLite.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ProxyLite/ProxyLite.yaml_isp.txt",
-      "domains": 866,
-      "ips": 86,
-      "skipped": 35
+      "domains": 871,
+      "ips": 89,
+      "skipped": 36
     },
     {
       "source": "ProxyLite/ProxyLite_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/ProxyLite/ProxyLite_No_Resolve.yaml_domain.txt",
       "isp_output": "data/blackmatrix7/ProxyLite/ProxyLite_No_Resolve.yaml_isp.txt",
-      "domains": 866,
-      "ips": 86,
-      "skipped": 35
+      "domains": 871,
+      "ips": 89,
+      "skipped": 36
     },
     {
       "source": "Pubmatic/Pubmatic.list",
@@ -15885,7 +15885,7 @@
       "source": "Speedtest/Speedtest.list",
       "domain_output": "data/blackmatrix7/Speedtest/Speedtest.list_domain.txt",
       "isp_output": null,
-      "domains": 4,
+      "domains": 7,
       "ips": 0,
       "skipped": 8
     },
@@ -15893,7 +15893,7 @@
       "source": "Speedtest/Speedtest.yaml",
       "domain_output": "data/blackmatrix7/Speedtest/Speedtest.yaml_domain.txt",
       "isp_output": null,
-      "domains": 4,
+      "domains": 7,
       "ips": 0,
       "skipped": 9
     },
@@ -15901,7 +15901,7 @@
       "source": "Speedtest/Speedtest_No_Resolve.yaml",
       "domain_output": "data/blackmatrix7/Speedtest/Speedtest_No_Resolve.yaml_domain.txt",
       "isp_output": null,
-      "domains": 4,
+      "domains": 7,
       "ips": 0,
       "skipped": 9
     },
@@ -19506,6 +19506,6 @@
       "skipped": 7
     }
   ],
-  "merged_domains": 500594,
-  "merged_ips": 28642
+  "merged_domains": 501182,
+  "merged_ips": 24922
 }
