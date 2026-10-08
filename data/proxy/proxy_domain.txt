@@ -6764,7 +6764,6 @@
 70yst.com
 71-177.net.jumia.ma
 71.100.in-addr.arpa
-71.am
 71.am.com
 710070.com
 7116966.com
@@ -67995,6 +67994,7 @@ copieranewcaller.com
 copiercarriage.com
 copilot-proxy.githubusercontent.com
 copilot-stg.com
+copilot-telemetry-service.githubusercontent.com
 copilot-telemetry.githubusercontent.com
 copilot-workspace.githubnext.com
 copilot.cloud.microsoft
@@ -199852,7 +199852,6 @@ msftnet.org
 msfunction.online
 msfvwi.sieuthiyte.com.vn
 msg-2.me
-msg.71.am
 msg.cocamobile.com
 msg.ettoday.net
 msg.ikonpass.com
@@ -199860,7 +199859,6 @@ msg.simeji.baidu.jp
 msg.simeji.me
 msg.sqz.app
 msg.vg
-msga.71.am
 msgamesresearch.com
 msgamestudios.com
 msgapp.com
@@ -233192,7 +233190,6 @@ prtlth.xyz
 prtord.com
 prtracker.com
 prtrackings.com
-prts.plus
 prtsc.livom.de
 prtydqs.com
 prtzddevcthbc.space
@@ -238014,7 +238011,6 @@ qorvoxejr.com
 qorxfipape.com
 qorzcljgqldwr.website
 qosbbzw.cyou
-qosp.msg.71.am
 qotank.com
 qotctehoza.com
 qotms.aestheticmanagementpartners.com

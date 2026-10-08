@@ -5969,6 +5969,8 @@ coova.net
 coova.org
 copilot-proxy.githubusercontent.com
 copilot-stg.com
+copilot-telemetry-service.githubusercontent.com
+copilot-telemetry.githubusercontent.com
 copilot-workspace.githubnext.com
 copilot.com
 copilotprodattachments.blob.core.windows.net
@@ -12479,6 +12481,8 @@ incestvidz.com
 incezt.net
 incloak.com
 inclusivegrowthscore.com
+incoming-telemetry.thunderbird.net
+incoming.telemetry.mozilla.org
 incommon-rsa.org
 incredibox.fr
 incy.cc
