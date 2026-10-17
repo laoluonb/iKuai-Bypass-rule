@@ -33,6 +33,7 @@ developer.microsoft.com
 doubleclick-cn.net
 doubleclick.net
 download.jetbrains.com
+download.microsoft.com
 end-api.shallow.ink
 end.shallow.ink
 firebase-settings.crashlytics.com

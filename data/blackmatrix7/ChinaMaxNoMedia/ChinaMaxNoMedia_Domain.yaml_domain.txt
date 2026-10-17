@@ -62,6 +62,7 @@ developer.microsoft.com
 doubleclick-cn.net
 doubleclick.net
 download.jetbrains.com
+download.microsoft.com
 e1.vdowowza.vip.hk1.tvb.com
 edge.music-choice-play-chaina1.top.comcast.net
 end-api.shallow.ink
