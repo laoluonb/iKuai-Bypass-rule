@@ -6519,7 +6519,6 @@ metrics.kone.co.za
 metrics.kone.com.au
 metrics.kone.com.tr
 metrics.professionnels.roche.fr
-metrics.sbs.com.au
 metrics.sgic.com.au
 metrics.whimn.com.au
 metrocuadro.com.ve
@@ -8861,7 +8860,6 @@ rvswxrjkmjou.com
 rvtqbxawlkbq.com
 rvttrack.com
 rvwhtjxnn.com
-rw.net.rewe.de
 rwalomjwgyljqj.com
 rwfqhbwkxpewc.com
 rwgvulisul.com
