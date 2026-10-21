@@ -30059,6 +30059,7 @@ answysztidlal.website
 ant.b13.com
 ant.conversive.nl
 ant.dampsoft.de
+ant.dev
 ant.prefinery.com
 ant.september.digital
 antafu.com
@@ -30146,6 +30147,7 @@ anthonypush.com
 anthraxeyeliketyphlon.qpon
 anthrolsonsier.com
 anthropic.com
+anthropic.team
 anthropology.ac.uk
 anti-adblock.herokuapp.com
 anti-cheat.info
@@ -30249,6 +30251,7 @@ antpool.com
 antralhokier.shop
 antreshappify.cfd
 ants.vn
+antspace.dev
 antvietnam.com
 antvlive.ab5c6921.cdnviet.com
 antvoice.com
@@ -60954,6 +60957,7 @@ chatbot-cdn.czso.cz
 chatbot.akbank.com
 chatbot.com
 chatbot.lifecell.ua
+chatbotclaude.com
 chatbox-static.botbanhang.vn
 chatbox-tracking.botbanhang.vn
 chatbox-widget.botbanhang.vn
@@ -63460,10 +63464,16 @@ clattydevelin.cfd
 clau.de
 claubercupels.com
 claude.ai
+claude.app
 claude.com
 claude.dev
+claude.new
+claude.site
+claudeacademy.com
 claudemcpclient.com
 claudemcpcontent.com
+claudepages.dev
+claudestudio.com
 claudeusercontent.com
 claudfront.net
 claudio.pkfinder.ch
@@ -76896,6 +76906,7 @@ d3sdg6egu48sqx.cloudfront.net
 d3skqyr7uryv9z.cloudfront.net
 d3sof4x9nlmbgy.cloudfront.net
 d3srxd2wvksmqd.cloudfront.net
+d3stzm2eumvgb4.cloudfront.net
 d3svwuchx5fp62.cloudfront.net
 d3t16rotvvsanj.cloudfront.net
 d3t3bxixsojwre.cloudfront.net
@@ -114541,6 +114552,17 @@ flux-g.com
 flux.gameboost.com
 flux16.com
 fluxads.com
+fluxer.app
+fluxer.com
+fluxer.dev
+fluxer.gg
+fluxer.gift
+fluxer.media
+fluxer.tools
+fluxerapp.com
+fluxerstatic.com
+fluxerstatus.com
+fluxerusercontent.com
 fluxfade-ss.offeroshop.com
 fluxingdirely.help
 fluxiontabific.shop
