@@ -10,9 +10,9 @@
 
 | 规则名称 | 域名格式 | ISP/IP 格式 |
 | --- | --- | --- |
-| `Steam.list` | [下载](Steam.list_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam.list_domain.txt) | - |
-| `Steam.yaml` | [下载](Steam.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam.yaml_domain.txt) | - |
-| `Steam_No_Resolve.yaml` | [下载](Steam_No_Resolve.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam_No_Resolve.yaml_domain.txt) | - |
+| `Steam.list` | [下载](Steam.list_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam.list_domain.txt) | [下载](Steam.list_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam.list_isp.txt) |
+| `Steam.yaml` | [下载](Steam.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam.yaml_domain.txt) | [下载](Steam.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam.yaml_isp.txt) |
+| `Steam_No_Resolve.yaml` | [下载](Steam_No_Resolve.yaml_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam_No_Resolve.yaml_domain.txt) | [下载](Steam_No_Resolve.yaml_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/blackmatrix7/Steam/Steam_No_Resolve.yaml_isp.txt) |
 
 ## 格式说明
 

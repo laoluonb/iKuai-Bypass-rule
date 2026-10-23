@@ -8681,7 +8681,6 @@ metrics.kone.co.za
 metrics.kone.com.au
 metrics.kone.com.tr
 metrics.professionnels.roche.fr
-metrics.sbs.com.au
 metrics.sgic.com.au
 metrics.whimn.com.au
 metricscollector.lp.xcal.tv
@@ -9218,7 +9217,6 @@ ncmcbufifgcu.com
 ncnmi.cn
 ncno1.playno1.com
 ncoibhdzttozh.com
-nct1.logging.nextsmarty.com
 ncvperjurh.com
 ncyemedcazdnol.com
 ncz.yeepay.com
@@ -11461,7 +11459,6 @@ rvttrack.com
 rvwhtjxnn.com
 rw-yieldmo-com-1673518954.ap-southeast-1.elb.amazonaws.com
 rw-yieldmo-com-1857737650.us-west-2.elb.amazonaws.com
-rw.net.rewe.de
 rwalomjwgyljqj.com
 rwfqhbwkxpewc.com
 rwgvulisul.com
