@@ -20039,6 +20039,7 @@ considerice.com
 consistencyjacksonwasteful.com
 console-telemetry.oci.oraclecloud.com
 console.groq.com
+console.typesafe.ai
 console.uxlens.com
 consolevolcano.com
 consomminchest.qpon
@@ -31976,6 +31977,7 @@ g9qnk89pd5ic.com
 ga-beacon.appspot.com
 ga-tracker-dot-detmir-bonus.appspot.com
 ga.groc.press
+ga.jspm.io
 ga.nsimg.net
 ga.tubepork.com
 ga.webdigi.co.uk
