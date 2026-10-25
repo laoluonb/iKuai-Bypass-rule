@@ -116,6 +116,7 @@ ksn-url.geoksn.kaspersky.com
 ksn-verdict.geoksn.kaspersky.com
 kut-hls.streamguys1.com
 kwmu-flash.streamguys1.com
+l2.weihai.tv
 lb.streaming.sk
 live-350k.streamingfast.net
 live-echotv.cdnvideo.ru
