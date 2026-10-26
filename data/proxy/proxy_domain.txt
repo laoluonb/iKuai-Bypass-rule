@@ -18166,6 +18166,7 @@ addthis.fr
 addthiscdn.com
 addthisedge.com
 addtoany.com
+addtodropbox.com
 addtop.trangvangvietnam.com
 addvantagetechnology.com
 addweb.ru
@@ -34411,6 +34412,9 @@ appsfire.net
 appsflayer.com
 appsflybeta.biz
 appsflyer.com
+appsgenaiserver-pa.clients.google.com
+appsgenaiserver-pa.clients6.google.com
+appsgenaiserver-pa.googleapis.com
 appsget.monster
 appsha5.space
 appshelf.ttpsdk.info
@@ -78660,6 +78664,7 @@ dasfdasfasdf.no-ip.info
 dasfelynsaterr.win
 dasg.ac.uk
 dash-1.ac.uk
+dash.ai
 dash.getsitecontrol.com
 dash.tmearn.com
 dash.zintrack.com
@@ -85272,6 +85277,7 @@ dc.ads.linkedin.com
 dc.allianz-vertrieb.de
 dc.allianzgegenschmerz.de
 dc.allianzpp.com
+dc.applicationinsights.azure.com
 dc.areacliente.repsolluzygas.com
 dc.audi.com
 dc.banggood.com
@@ -85316,6 +85322,7 @@ dc.reiseversicherung.de
 dc.repsol.com
 dc.repsol.es
 dc.schibsted.io
+dc.services.visualstudio.com
 dc.stenaline.co.uk
 dc.stenaline.com
 dc.stenaline.cz
@@ -92213,6 +92220,7 @@ docs.rs
 docs.rw
 docs.tsrv1.ws
 docs.ukr.net.ssl2.in
+docsend.com
 doct-umb.org
 doctor-videos.com
 doctorenticeflashlights.com
@@ -94164,13 +94172,16 @@ dropbox.zendesk.com
 dropboxapi.com
 dropboxbusiness.com
 dropboxcaptcha.com
+dropboxexperiment.com
 dropboxfingerprintjs.com
 dropboxforum.com
 dropboxforums.com
 dropboxinsiders.com
+dropboxlegal.com
 dropboxmail.com
 dropboxpartners.com
 dropboxstatic.com
+dropboxteam.com
 dropboxusercontent.com
 dropdeadgems.org
 dropdoneraining.com
@@ -113019,6 +113030,7 @@ filmicwiwi.cfd
 filmingfortibet.org
 filmmkt.inmueblesanzuz.com
 filmoljupci.com
+filmorigin.com
 filmplus.ru
 filmporno.it
 filmreklam.livebahispartners.com
@@ -141319,6 +141331,7 @@ helloandroid.com
 helloavgirls.com
 hellobar.com
 hellobody.online
+hellofax.com
 hellofuture.ac.uk
 hellogain.actonservice.com
 hellohang.love
@@ -141329,6 +141342,7 @@ hellomoto.com
 helloqueer.com
 helloreverb.com
 hellosherpa.com
+hellosign.com
 hellosmartbook.com
 hellospur.com
 helloss.pw
@@ -166021,6 +166035,7 @@ kakaostyle.com
 kakaotalk.jp
 kakaovx.com
 kakappp.com
+kakaxing.com
 kakayy.com
 kakdgmn.com
 kake.images.worldnow.com
@@ -175719,6 +175734,7 @@ librateam.net
 librato-collector.genius.com
 libredd.it
 libreriamedina.com
+librewolf.dev
 librewolf.net
 libridwhitier.cyou
 libriluger.qpon
@@ -177884,6 +177900,7 @@ live.alsace20.fr
 live.amplifo.com
 live.apollon.tv
 live.apostoltv.hu
+live.applicationinsights.azure.com
 live.arkumedia.com
 live.atameken.cdnvideo.ru
 live.azstartv.com
@@ -258159,6 +258176,7 @@ rt.saudebrasileira.com
 rt.savemaxauto.com
 rt.savingprograms.net
 rt.sellhousefast.com
+rt.services.visualstudio.com
 rt.smartsavingtips.org
 rt.songs2u.com
 rt.start.eternalblackout.com
