@@ -942,6 +942,7 @@ addison-wesley.ch
 addison.ac.uk
 addthiscdn.com
 addtoany.com
+addtodropbox.com
 addyoutube.com
 adelaidebbs.com
 adelaidenow.com.au
@@ -8136,6 +8137,7 @@ darwinsourcecode.com
 dasaob.online
 dasg.ac.uk
 dash-1.ac.uk
+dash.ai
 dashlane.com
 dashly.app
 dashly.help
@@ -8204,6 +8206,7 @@ dbc.hk
 dbgjd.com
 dbmoscow.ru
 dbo-dengi.online
+dc.services.visualstudio.com
 dca.ac.uk
 dcapital.ru
 dcard.cc
@@ -9072,6 +9075,7 @@ docs.com
 docs.new
 docs.rs
 docs.rw
+docsend.com
 doctor-videos.com
 doctorvoice.org
 documentforce.com
@@ -9307,12 +9311,15 @@ dropbox.tech
 dropboxapi.com
 dropboxbusiness.com
 dropboxcaptcha.com
+dropboxexperiment.com
 dropboxforum.com
 dropboxforums.com
 dropboxinsiders.com
+dropboxlegal.com
 dropboxmail.com
 dropboxpartners.com
 dropboxstatic.com
+dropboxteam.com
 dropboxusercontent.com
 droplr.com
 drpc.org
@@ -14233,10 +14240,12 @@ helf.ac.uk
 helixstudios.net
 helloandroid.com
 helloavgirls.com
+hellofax.com
 hellofuture.ac.uk
 hellokittybeats.com
 hellomoto.com
 helloqueer.com
+hellosign.com
 hellosmartbook.com
 helloss.pw
 hellotxt.com
@@ -18288,6 +18297,7 @@ libraryinformationtechnology.com
 librarylovefest.com
 libraryofthumbs.com
 libredd.it
+librewolf.dev
 librewolf.net
 libsolutions.app
 libsolutions.domains
@@ -26166,6 +26176,7 @@ rt-school.online
 rt.com
 rt.rs
 rt.ru
+rt.services.visualstudio.com
 rtalabel.org
 rtarabic.com
 rtarabic.net
