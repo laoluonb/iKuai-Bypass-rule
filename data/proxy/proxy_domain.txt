@@ -31938,6 +31938,7 @@ api.thafonteneleacessorios.com.br
 api.thegardensysteem.com
 api.theinfluencermastercourse.com
 api.themindlevel.com
+api.themoviedb.org
 api.thetamovement.com.br
 api.thewebfactory.it
 api.thiagohota.com.br
@@ -368510,6 +368511,7 @@ youtuhe.com
 youtui.net
 youtui456.com
 youversion.com
+youversionapi.com
 youvisit.com
 youvisit.fr
 youweiprint.com

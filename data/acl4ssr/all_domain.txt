@@ -10185,6 +10185,7 @@ anthe-znn.com
 anthelion.me
 anthemportalcommence.com
 anthonycalzadilla.com
+anthropic.auth0.com
 anthropic.com
 anti-adblock.herokuapp.com
 anti1984.com
@@ -16038,6 +16039,7 @@ bskakeiotyvge.online
 bskblt.6thstreet.com
 bskilkkuooeyy.site
 bsky.app
+bsky.chat
 bsky.network
 bsky.social
 bsna.galeria-kaufhof.de
@@ -18644,7 +18646,9 @@ classroominc.actonservice.com
 classroomlf.com
 clataerie.help
 claude.ai
+claude.app
 claude.com
+claudemcpcontent.com
 claudeusercontent.com
 claverupmix.shop
 clawersalcine.qpon
