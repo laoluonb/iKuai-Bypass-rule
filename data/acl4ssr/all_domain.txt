@@ -10429,6 +10429,7 @@ api.ryanyao.design
 api.sae.systems
 api.shuaiapi.com
 api.steampowered.com
+api.themoviedb.org
 api.together.xyz
 api.viu.now.com
 api.wipmania.com
@@ -94761,6 +94762,7 @@ youtubegaming.com
 youtubei.googleapis.com
 youtubekids.com
 youversion.com
+youversionapi.com
 youwin.com
 youxiaoad.com
 youxu.info
