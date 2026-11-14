@@ -1249,6 +1249,7 @@
 51job.com
 51jobcdn.com
 51luoben.com
+51papaya.com
 51taifu.com
 51tongji.trafficmanager.net
 51yes.com
