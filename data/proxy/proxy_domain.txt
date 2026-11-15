@@ -52199,6 +52199,7 @@ buildings-sst.novadream.it
 buildkarrisitter.cfd
 buildnaq91.site
 buildneighbouringteam.com
+builds.dotnet.microsoft.com
 buildsmodeling.com
 buildsstate.com
 buildtrafficx.com
@@ -56344,6 +56345,7 @@ captivatingcanyon.com
 captivatingillusion.com
 captivatingpanorama.com
 captivatingperformance.com
+captive.apple.com
 captivebleed.com
 captiveimpossibleimport.com
 captivityhandleicicle.com
@@ -67291,6 +67293,7 @@ configcontrol.com
 configuration-lb.ls-apple.com.akadns.net
 configuration.apple.com
 configuration.apple.com.akadns.net
+configuration.ls.apple.com
 configuration.ttpsdk.info
 configurationluxuriantinclination.com
 configure.adlermode.com
@@ -84963,6 +84966,7 @@ debonairtree.com
 debonairway.com
 debony.xyz
 debosssaumya.shop
+debot.ai
 debridleech.com
 debrisstern.com
 debristopmeanwhile.com
@@ -91629,6 +91633,7 @@ dotmailer-surveys.com
 dotmatrixops.com
 dotmetrics.net
 dotmore.com.tw
+dotnetcli.trafficmanager.net
 dotnetkicks.com
 dotnetshoutout.com
 dotnxdomain.net
@@ -206714,6 +206719,7 @@ musiciansinceredumpling.com
 musickit.net
 musicnote.info
 musiconline.ac.uk
+musicstatus.itunes.apple.com
 musicstatus.music.apple.com
 musighkm.com
 musik-mp3.info
@@ -208394,6 +208400,7 @@ mzsantsemsgll.website
 mzscparkeayvs.site
 mzsodbvjicria.site
 mzstatic.com
+mzstorekit.itunes.apple.com
 mzt27txt549nvnc.cfd
 mztecqbedrxpi.site
 mzteishamp.com
@@ -249968,6 +249975,7 @@ remixespickerseggcup.cfd
 remixitched.shop
 remixslot.com
 remlso.robzone.cz
+remna.dev
 remna.st
 remnanttrickyoccurrence.com
 remnas.com
@@ -307349,6 +307357,7 @@ sunderland.ac.uk
 sunderlandcollege.ac.uk
 sunderlandsixthform.ac.uk
 sundersetrgh.site
+sundry-star-net-geo.trafficmanager.net
 sundxs.com
 sunfallbiali.qpon
 sunfarm.net
