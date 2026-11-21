@@ -8,6 +8,7 @@ api.together.xyz
 auth0.com
 bard.google.com
 chatgpt.com
+clau.de
 claude.ai
 claude.com
 claudeusercontent.com
@@ -21,9 +22,12 @@ cursor.sh
 events.statsigapi.net
 featuregates.org
 gemini.google.com
+geminiweb-pa.clients.google.com
+geminiweb-pa.clients6.google.com
 generativelanguage.googleapis.com
 grazie.ai
 grazie.aws.intellij.net
+grok.com
 identrust.com
 intercom.io
 intercomcdn.com
@@ -31,6 +35,8 @@ jetbrains.ai
 makersuite.google.com
 meta.ai
 mistral.ai
+notebooklm-pa.googleapis.com
+notebooklm.google
 notebooklm.google.com
 oaistatic.com
 oaiusercontent.com

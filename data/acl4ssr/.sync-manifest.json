@@ -165,6 +165,7 @@
     "data/acl4ssr/Providers/Ruleset/SteamCN_domain.txt",
     "data/acl4ssr/Providers/Ruleset/SteamRegionCheck_domain.txt",
     "data/acl4ssr/Providers/Ruleset/Steam_domain.txt",
+    "data/acl4ssr/Providers/Ruleset/Stripe_domain.txt",
     "data/acl4ssr/Providers/Ruleset/TIDAL_domain.txt",
     "data/acl4ssr/Providers/Ruleset/TaiWanGood_domain.txt",
     "data/acl4ssr/Providers/Ruleset/TapTap_domain.txt",
@@ -341,6 +342,7 @@
     "data/acl4ssr/Ruleset/SteamCN_domain.txt",
     "data/acl4ssr/Ruleset/SteamRegionCheck_domain.txt",
     "data/acl4ssr/Ruleset/Steam_domain.txt",
+    "data/acl4ssr/Ruleset/Stripe_domain.txt",
     "data/acl4ssr/Ruleset/TIDAL_domain.txt",
     "data/acl4ssr/Ruleset/TaiWanGood_domain.txt",
     "data/acl4ssr/Ruleset/TapTap_domain.txt",
@@ -393,15 +395,15 @@
       "source": "BanAD.list",
       "domain_output": "data/acl4ssr/BanAD_domain.txt",
       "isp_output": null,
-      "domains": 563,
+      "domains": 566,
       "ips": 0,
-      "skipped": 37
+      "skipped": 36
     },
     {
       "source": "BanEasyList.list",
       "domain_output": "data/acl4ssr/BanEasyList_domain.txt",
       "isp_output": "data/acl4ssr/BanEasyList_isp.txt",
-      "domains": 40873,
+      "domains": 43437,
       "ips": 104,
       "skipped": 6
     },
@@ -409,7 +411,7 @@
       "source": "BanEasyListChina.list",
       "domain_output": "data/acl4ssr/BanEasyListChina_domain.txt",
       "isp_output": "data/acl4ssr/BanEasyListChina_isp.txt",
-      "domains": 5045,
+      "domains": 5504,
       "ips": 5,
       "skipped": 6
     },
@@ -417,7 +419,7 @@
       "source": "BanEasyPrivacy.list",
       "domain_output": "data/acl4ssr/BanEasyPrivacy_domain.txt",
       "isp_output": "data/acl4ssr/BanEasyPrivacy_isp.txt",
-      "domains": 39843,
+      "domains": 40323,
       "ips": 9,
       "skipped": 6
     },
@@ -467,15 +469,15 @@
       "isp_output": null,
       "domains": 0,
       "ips": 0,
-      "skipped": 1507
+      "skipped": 1733
     },
     {
       "source": "ChinaMedia.list",
       "domain_output": "data/acl4ssr/ChinaMedia_domain.txt",
       "isp_output": "data/acl4ssr/ChinaMedia_isp.txt",
-      "domains": 30,
+      "domains": 31,
       "ips": 7,
-      "skipped": 16
+      "skipped": 14
     },
     {
       "source": "Download.list",
@@ -537,15 +539,15 @@
       "source": "Providers/BanAD.yaml",
       "domain_output": "data/acl4ssr/Providers/BanAD_domain.txt",
       "isp_output": null,
-      "domains": 563,
+      "domains": 566,
       "ips": 0,
-      "skipped": 38
+      "skipped": 37
     },
     {
       "source": "Providers/BanEasyList.yaml",
       "domain_output": "data/acl4ssr/Providers/BanEasyList_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanEasyList_isp.txt",
-      "domains": 40873,
+      "domains": 43437,
       "ips": 104,
       "skipped": 7
     },
@@ -553,7 +555,7 @@
       "source": "Providers/BanEasyListChina.yaml",
       "domain_output": "data/acl4ssr/Providers/BanEasyListChina_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanEasyListChina_isp.txt",
-      "domains": 5045,
+      "domains": 5504,
       "ips": 5,
       "skipped": 7
     },
@@ -561,7 +563,7 @@
       "source": "Providers/BanEasyPrivacy.yaml",
       "domain_output": "data/acl4ssr/Providers/BanEasyPrivacy_domain.txt",
       "isp_output": "data/acl4ssr/Providers/BanEasyPrivacy_isp.txt",
-      "domains": 39843,
+      "domains": 40323,
       "ips": 9,
       "skipped": 7
     },
@@ -603,15 +605,15 @@
       "isp_output": null,
       "domains": 0,
       "ips": 0,
-      "skipped": 1508
+      "skipped": 1734
     },
     {
       "source": "Providers/ChinaMedia.yaml",
       "domain_output": "data/acl4ssr/Providers/ChinaMedia_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ChinaMedia_isp.txt",
-      "domains": 30,
+      "domains": 31,
       "ips": 7,
-      "skipped": 19
+      "skipped": 15
     },
     {
       "source": "Providers/Download.yaml",
@@ -641,33 +643,33 @@
       "source": "Providers/ProxyGFWlist.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyGFWlist_domain.txt",
       "isp_output": null,
-      "domains": 4375,
+      "domains": 4404,
       "ips": 0,
-      "skipped": 16
+      "skipped": 12
     },
     {
       "source": "Providers/ProxyLite.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyLite_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ProxyLite_isp.txt",
-      "domains": 306,
+      "domains": 353,
       "ips": 80,
-      "skipped": 109
+      "skipped": 116
     },
     {
       "source": "Providers/ProxyMedia.yaml",
       "domain_output": "data/acl4ssr/Providers/ProxyMedia_domain.txt",
       "isp_output": "data/acl4ssr/Providers/ProxyMedia_isp.txt",
-      "domains": 303,
+      "domains": 259,
       "ips": 18,
-      "skipped": 160
+      "skipped": 121
     },
     {
       "source": "Providers/Ruleset/AI.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/AI_domain.txt",
       "isp_output": null,
-      "domains": 42,
+      "domains": 48,
       "ips": 0,
-      "skipped": 6
+      "skipped": 7
     },
     {
       "source": "Providers/Ruleset/AbemaTV.yaml",
@@ -675,7 +677,7 @@
       "isp_output": null,
       "domains": 4,
       "ips": 0,
-      "skipped": 5
+      "skipped": 4
     },
     {
       "source": "Providers/Ruleset/AccelerateDirectSites.yaml",
@@ -714,7 +716,7 @@
       "domain_output": null,
       "isp_output": "data/acl4ssr/Providers/Ruleset/AmazonIp_isp.txt",
       "domains": 0,
-      "ips": 1633,
+      "ips": 1754,
       "skipped": 3
     },
     {
@@ -731,7 +733,7 @@
       "isp_output": null,
       "domains": 1,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/AppleTV.yaml",
@@ -747,7 +749,7 @@
       "isp_output": null,
       "domains": 12,
       "ips": 0,
-      "skipped": 6
+      "skipped": 5
     },
     {
       "source": "Providers/Ruleset/Bahamut.yaml",
@@ -755,7 +757,7 @@
       "isp_output": null,
       "domains": 5,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Baidu.yaml",
@@ -769,9 +771,9 @@
       "source": "Providers/Ruleset/Bilibili.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Bilibili_domain.txt",
       "isp_output": null,
-      "domains": 20,
+      "domains": 21,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/BilibiliHMT.yaml",
@@ -867,13 +869,13 @@
       "isp_output": null,
       "domains": 2,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Developer.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/Developer_domain.txt",
       "isp_output": null,
-      "domains": 20,
+      "domains": 25,
       "ips": 0,
       "skipped": 3
     },
@@ -899,7 +901,7 @@
       "isp_output": null,
       "domains": 19,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Docker.yaml",
@@ -947,7 +949,7 @@
       "isp_output": null,
       "domains": 5,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Epic.yaml",
@@ -971,7 +973,7 @@
       "isp_output": null,
       "domains": 3,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/GameDownload.yaml",
@@ -1043,7 +1045,7 @@
       "isp_output": null,
       "domains": 5,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/HBO_GO_HKG.yaml",
@@ -1051,7 +1053,7 @@
       "isp_output": null,
       "domains": 18,
       "ips": 0,
-      "skipped": 5
+      "skipped": 4
     },
     {
       "source": "Providers/Ruleset/Heytap.yaml",
@@ -1099,7 +1101,7 @@
       "isp_output": "data/acl4ssr/Providers/Ruleset/Iqiyi_isp.txt",
       "domains": 16,
       "ips": 6,
-      "skipped": 5
+      "skipped": 4
     },
     {
       "source": "Providers/Ruleset/IqiyiHMT.yaml",
@@ -1171,7 +1173,7 @@
       "isp_output": null,
       "domains": 3,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/MGTVTV.yaml",
@@ -1219,7 +1221,7 @@
       "isp_output": null,
       "domains": 4,
       "ips": 0,
-      "skipped": 6
+      "skipped": 5
     },
     {
       "source": "Providers/Ruleset/NaSDDNS.yaml",
@@ -1251,7 +1253,7 @@
       "isp_output": "data/acl4ssr/Providers/Ruleset/Netflix_isp.txt",
       "domains": 19,
       "ips": 18,
-      "skipped": 7
+      "skipped": 6
     },
     {
       "source": "Providers/Ruleset/NetflixIP.yaml",
@@ -1267,7 +1269,7 @@
       "isp_output": null,
       "domains": 3,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Nintendo.yaml",
@@ -1299,7 +1301,7 @@
       "isp_output": null,
       "domains": 12,
       "ips": 0,
-      "skipped": 9
+      "skipped": 8
     },
     {
       "source": "Providers/Ruleset/OpenAi.yaml",
@@ -1331,7 +1333,7 @@
       "isp_output": null,
       "domains": 1,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Pixiv.yaml",
@@ -1443,7 +1445,7 @@
       "isp_output": null,
       "domains": 3,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Spark.yaml",
@@ -1459,7 +1461,7 @@
       "isp_output": null,
       "domains": 6,
       "ips": 0,
-      "skipped": 6
+      "skipped": 5
     },
     {
       "source": "Providers/Ruleset/Steam.yaml",
@@ -1486,12 +1488,20 @@
       "skipped": 4
     },
     {
+      "source": "Providers/Ruleset/Stripe.yaml",
+      "domain_output": "data/acl4ssr/Providers/Ruleset/Stripe_domain.txt",
+      "isp_output": null,
+      "domains": 9,
+      "ips": 0,
+      "skipped": 3
+    },
+    {
       "source": "Providers/Ruleset/TIDAL.yaml",
       "domain_output": "data/acl4ssr/Providers/Ruleset/TIDAL_domain.txt",
       "isp_output": null,
       "domains": 3,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/TaiWanGood.yaml",
@@ -1499,7 +1509,7 @@
       "isp_output": null,
       "domains": 2,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/TapTap.yaml",
@@ -1563,7 +1573,7 @@
       "isp_output": null,
       "domains": 9,
       "ips": 0,
-      "skipped": 5
+      "skipped": 4
     },
     {
       "source": "Providers/Ruleset/TopBlockedSites.yaml",
@@ -1603,7 +1613,7 @@
       "isp_output": null,
       "domains": 9,
       "ips": 0,
-      "skipped": 7
+      "skipped": 6
     },
     {
       "source": "Providers/Ruleset/Wechat.yaml",
@@ -1611,7 +1621,7 @@
       "isp_output": "data/acl4ssr/Providers/Ruleset/Wechat_isp.txt",
       "domains": 12,
       "ips": 9,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Whatsapp.yaml",
@@ -1667,7 +1677,7 @@
       "isp_output": null,
       "domains": 13,
       "ips": 0,
-      "skipped": 5
+      "skipped": 4
     },
     {
       "source": "Providers/Ruleset/YouTubeMusic.yaml",
@@ -1675,7 +1685,7 @@
       "isp_output": null,
       "domains": 1,
       "ips": 0,
-      "skipped": 4
+      "skipped": 3
     },
     {
       "source": "Providers/Ruleset/Youku.yaml",
@@ -1705,25 +1715,25 @@
       "source": "ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/ProxyGFWlist_domain.txt",
       "isp_output": "data/acl4ssr/ProxyGFWlist_isp.txt",
-      "domains": 6766,
+      "domains": 7119,
       "ips": 80,
-      "skipped": 104
+      "skipped": 116
     },
     {
       "source": "ProxyLite.list",
       "domain_output": "data/acl4ssr/ProxyLite_domain.txt",
       "isp_output": "data/acl4ssr/ProxyLite_isp.txt",
-      "domains": 306,
+      "domains": 353,
       "ips": 80,
-      "skipped": 108
+      "skipped": 115
     },
     {
       "source": "ProxyMedia.list",
       "domain_output": "data/acl4ssr/ProxyMedia_domain.txt",
       "isp_output": "data/acl4ssr/ProxyMedia_isp.txt",
-      "domains": 303,
+      "domains": 259,
       "ips": 18,
-      "skipped": 128
+      "skipped": 120
     },
     {
       "source": "Ruleset/360.list",
@@ -1761,9 +1771,9 @@
       "source": "Ruleset/AI.list",
       "domain_output": "data/acl4ssr/Ruleset/AI_domain.txt",
       "isp_output": null,
-      "domains": 43,
+      "domains": 48,
       "ips": 0,
-      "skipped": 5
+      "skipped": 6
     },
     {
       "source": "Ruleset/AbemaTV.list",
@@ -1818,7 +1828,7 @@
       "domain_output": null,
       "isp_output": "data/acl4ssr/Ruleset/AmazonIp_isp.txt",
       "domains": 0,
-      "ips": 1633,
+      "ips": 1754,
       "skipped": 2
     },
     {
@@ -1881,7 +1891,7 @@
       "source": "Ruleset/Bilibili.list",
       "domain_output": "data/acl4ssr/Ruleset/Bilibili_domain.txt",
       "isp_output": null,
-      "domains": 20,
+      "domains": 21,
       "ips": 0,
       "skipped": 2
     },
@@ -2009,7 +2019,7 @@
       "source": "Ruleset/Developer.list",
       "domain_output": "data/acl4ssr/Ruleset/Developer_domain.txt",
       "isp_output": null,
-      "domains": 20,
+      "domains": 25,
       "ips": 0,
       "skipped": 2
     },
@@ -2435,7 +2445,7 @@
       "isp_output": null,
       "domains": 0,
       "ips": 0,
-      "skipped": 3
+      "skipped": 2
     },
     {
       "source": "Ruleset/Marketing.list",
@@ -2641,9 +2651,9 @@
       "source": "Ruleset/ProxyGFWlist.list",
       "domain_output": "data/acl4ssr/Ruleset/ProxyGFWlist_domain.txt",
       "isp_output": null,
-      "domains": 4375,
+      "domains": 4404,
       "ips": 0,
-      "skipped": 17
+      "skipped": 13
     },
     {
       "source": "Ruleset/PublicDirectCDN.list",
@@ -2764,6 +2774,14 @@
       "domains": 17,
       "ips": 0,
       "skipped": 3
+    },
+    {
+      "source": "Ruleset/Stripe.list",
+      "domain_output": "data/acl4ssr/Ruleset/Stripe_domain.txt",
+      "isp_output": null,
+      "domains": 9,
+      "ips": 0,
+      "skipped": 2
     },
     {
       "source": "Ruleset/TIDAL.list",
@@ -3014,6 +3032,6 @@
       "skipped": 0
     }
   ],
-  "merged_domains": 96338,
-  "merged_ips": 10437
+  "merged_domains": 99851,
+  "merged_ips": 10558
 }

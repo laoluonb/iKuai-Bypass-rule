@@ -111,6 +111,7 @@
 | `Steam` | [下载](Steam_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Steam_domain.txt) | - |
 | `SteamCN` | [下载](SteamCN_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/SteamCN_domain.txt) | - |
 | `SteamRegionCheck` | [下载](SteamRegionCheck_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/SteamRegionCheck_domain.txt) | - |
+| `Stripe` | [下载](Stripe_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/Stripe_domain.txt) | - |
 | `TaiWanGood` | [下载](TaiWanGood_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/TaiWanGood_domain.txt) | - |
 | `TapTap` | [下载](TapTap_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/TapTap_domain.txt) | - |
 | `TeamViewer` | [下载](TeamViewer_domain.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/TeamViewer_domain.txt) | [下载](TeamViewer_isp.txt) / [Raw](https://raw.githubusercontent.com/laoluonb/iKuai-Bypass-rule/main/data/acl4ssr/Providers/Ruleset/TeamViewer_isp.txt) |
